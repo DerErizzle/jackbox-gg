@@ -26,7 +26,7 @@
                     }
                 }),
                 u = h().View.extend({
-                    template: s().template('<div class="overdrawnBold title">Draw your name below</div> <div id="nametag" class="nametag"> <div id="header" class="nametagHeader overdrawnBold">Hello, I\'m</div> <div id="sketchpad" class="nametagBody"></div> </div> <button id="submitButton" class="button submitButton">Submit</button> <div id="vipWarning" class="text">You must draw your name and click submit to proceed.</div>'),
+                    template: s().template('<div class="overdrawnBold title">Zeichne deinen Namen</div> <div id="nametag" class="nametag"> <div id="header" class="nametagHeader overdrawnBold">Hi, ich bin</div> <div id="sketchpad" class="nametagBody"></div> </div> <button id="submitButton" class="button submitButton">Senden</button> <div id="vipWarning" class="text">Du musst deinen Namen zeichnen und auf Senden klicken.</div>'),
                     className: "Name",
                     model: new g,
                     bindings: {
@@ -260,7 +260,7 @@
                         e && e.length > 0 && (e = s().map(e, ((t, o) => (t.choice = o, t.class = `mural-${G[e.length][o]} mural-${T[e.length]}`, t)))), this.choicesList.collection.set(e)
                     }
                 }),
-                N = '<div id="nametag" class="nametag" style="background-color:<%=color%>"> <div id="header" class="nametagHeader overdrawnBold">Hello, I\'m</div> <div id="body" class="nametagBody"><%=playerName%></div> </div>',
+                N = '<div id="nametag" class="nametag" style="background-color:<%=color%>"> <div id="header" class="nametagHeader overdrawnBold">Hi, ich bin</div> <div id="body" class="nametagBody"><%=playerName%></div> </div>',
                 O = L.d.extend({
                     events: s().extend({}, L.d.prototype.events, {
                         "click #censorOptions": "showCensorOptions"
@@ -353,7 +353,7 @@
                     childView: $
                 }),
                 z = R.E.extend({
-                    template: s().template('<div id="controller" class="state-controller controller-content"> <div id="prompt" class="prompt col-xs-12">prompt</div> <div id="chosen" class="chosen col-xs-12">asdf</div> <div class="error text-danger"></div> <div class="col-xs-6"> <div id="leftChoices" class="choices">choices</div> <span>Left</span> </div> <div class="col-xs-6"> <div id="rightChoices" class="choices">choices</div> <span>Right</span> </div> <button id="censorOptions" class="button">Censor Options</button> <div id="next-up"> <span id="next-up-span">You\'re Up Next!!</span> </div> <div class="audienceInstruction col-xs-12 text">Audience members get one reaction per drawing, so use them wisely!</div> </div>'),
+                    template: s().template('<div id="controller" class="state-controller controller-content"> <div id="prompt" class="prompt col-xs-12">prompt</div> <div id="chosen" class="chosen col-xs-12">asdf</div> <div class="error text-danger"></div> <div class="col-xs-6"> <div id="leftChoices" class="choices">choices</div> <span>Links</span> </div> <div class="col-xs-6"> <div id="rightChoices" class="choices">choices</div> <span>Rechts</span> </div> <button id="censorOptions" class="button">Zensur Optionen</button> <div id="next-up"> <span id="next-up-span">Du bist danach dran!!</span> </div> <div class="audienceInstruction col-xs-12 text">Das Publikum darf einmal pro Zeichnung reagieren!</div> </div>'),
                     events: {
                         "click #censorOptions": "onCensorOptionsClick"
                     },
@@ -660,7 +660,7 @@
                     },
                     initialize(e) {
                         const t = l.p.extend({
-                            template: s().template('<div id="player" class="playerTopBar"> <div id="playericon" class="playerIcon"></div> <div id="playername" class="playerName controller-text"> <div id="nametag" class="nametag"> <div id="header" class="nametagHeader overdrawnBold">Hello, I\'m</div> <div id="body" class="nametagBody"></div> </div> </div> </div> '),
+                            template: s().template('<div id="player" class="playerTopBar"> <div id="playericon" class="playerIcon"></div> <div id="playername" class="playerName controller-text"> <div id="nametag" class="nametag"> <div id="header" class="nametagHeader overdrawnBold">Hi, ich bin</div> <div id="body" class="nametagBody"></div> </div> </div> </div> '),
                             bindings: {
                                 ":el": {
                                     observe: ["username", "thumbnail"],
@@ -687,7 +687,7 @@
                         });
                         this.playerTopBar = new t, a.v.prototype.initialize.apply(this, [e])
                     },
-                    parseBlob: e => (e.playerInfo = e.playerInfo || {}, e.playerInfo.username = e.playerName || "Audience", "Gameplay" === e.state && (e.state = "Logo"), "Lobby" === e.state && (n.app.client.isRole("player") || (e.state = "Logo"), e.playerIsVIP = e.isAllowedToStartGame, e.playerCanStartGame = e.isAllowedToStartGame, e.playerCanCensor = e.canCensor, e.gameCanStart = -1 !== ["CanStart", "Countdown", "PostGame"].indexOf(e.lobbyState), e.gameIsStarting = "Countdown" === e.lobbyState, e.gameFinished = "PostGame" === e.lobbyState, e.sketchpad && (e.sketchpad.live = !0)), "EnterSingleText" === e.state && (e.prompt = {
+                    parseBlob: e => (e.playerInfo = e.playerInfo || {}, e.playerInfo.username = e.playerName || "Publikum", "Gameplay" === e.state && (e.state = "Logo"), "Lobby" === e.state && (n.app.client.isRole("player") || (e.state = "Logo"), e.playerIsVIP = e.isAllowedToStartGame, e.playerCanStartGame = e.isAllowedToStartGame, e.playerCanCensor = e.canCensor, e.gameCanStart = -1 !== ["CanStart", "Countdown", "PostGame"].indexOf(e.lobbyState), e.gameIsStarting = "Countdown" === e.lobbyState, e.gameFinished = "PostGame" === e.lobbyState, e.sketchpad && (e.sketchpad.live = !0)), "EnterSingleText" === e.state && (e.prompt = {
                         html: e.text
                     }, e.doneText = {
                         html: "Thanks"

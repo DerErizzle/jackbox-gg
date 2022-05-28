@@ -291,7 +291,7 @@
             s.r(e), s.d(e, {
                 default: () => ks
             });
-            var n = function() {
+            var n = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -337,7 +337,7 @@
             var i = s(2934),
                 l = s.n(i),
                 a = s(19734),
-                c = function() {
+                c = function () {
                     var t = this,
                         e = t.$createElement,
                         s = t._self._c || e;
@@ -588,7 +588,7 @@
                     }, [t._v("\n                " + t._s(t.bannerText || t.name) + "\n            ")])])])], 1)
                 };
             c._withStripped = !0;
-            var o = function() {
+            var o = function () {
                 var t = this,
                     e = t.$createElement,
                     n = t._self._c || e;
@@ -627,7 +627,7 @@
                         expression: "require(`../../images/playfield/audience.inline.svg`)"
                     }],
                     staticClass: "graphic"
-                }) : t._l(8, (function(e) {
+                }) : t._l(8, (function (e) {
                     return [t.info.avatarId === "Player" + e ? n("svg", {
                         directives: [{
                             name: "svg",
@@ -689,7 +689,7 @@
                 h = (0, p.Z)(r, o, [], !1, null, "ea891ba4", null);
             h.options.__file = "src/games/pp8/the-wheel/views/playfield/CornerBox.vue";
             const d = h.exports;
-            var v = function() {
+            var v = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -885,94 +885,94 @@
                 C = s(7310),
                 g = s(85608);
             const m = {
-                    ASK: "ASK",
-                    FILTER_ERROR: "You have used a word The Wheel does not approve of. Please try again.",
-                    NO: "NO",
-                    OR: "OR",
-                    SEND: "SEND",
-                    SUBMIT: "SUBMIT",
-                    TRY_AGAIN: "WAIT TO TRY AGAIN",
-                    UNDO: "UNDO",
-                    YES: "YES",
+                    ASK: "FRAGEN",
+                    FILTER_ERROR: "Du hast ein Wort benutzt, welches dem Rad nicht gefällt. Probiere es erneut.",
+                    NO: "NEIN",
+                    OR: "ODER",
+                    SEND: "SENDEN",
+                    SUBMIT: "ABSENDEN",
+                    TRY_AGAIN: "WARTE KURZ",
+                    UNDO: "ZURÜCK",
+                    YES: "JA",
                     AUDIENCE: {
-                        NAME: "THE AUDIENCE",
-                        VOTE_NOW: "VOTE NOW",
-                        THANKS: ["Thank you, dear audience.", "Every vote counts. Even yours!", "I thank you with all my enormity.", "I bestow upon you my deepest gratitude.", "Many thanks. I won't forget this."]
+                        NAME: "DAS PUBLIKUM",
+                        VOTE_NOW: "WÄHLE JETZT",
+                        THANKS: ["Danke, verehrtes Publikum.", "Jede Stimme zählt. Sogar deine!", "Ich danke dir mit meiner gesamten unglaublichen Größe.", "Ich möchte dir meinen tiefsten Dank aussprechen.", "Hab Dank. Ich werde das nicht vergessen."]
                     },
                     GUESSING: {
-                        BANNER: "WHAT AM I THINKING?",
-                        INCORRECT: "TRY AGAIN",
-                        CORRECT: "GOT IT",
-                        PLACEHOLDER: "Enter A Guess"
+                        BANNER: "WORAN DENKE ICH?",
+                        INCORRECT: "VERSUCH ES NOCHMAL",
+                        CORRECT: "ALLES KLAR",
+                        PLACEHOLDER: "Gib eine Vermutung ein"
                     },
                     MATCHING: {
-                        BANNER: "COUNTERPARTS",
-                        CORRECT: "MATCH",
-                        FROZEN: "INCORRECT"
+                        BANNER: "GEGENSÄTZE",
+                        CORRECT: "PASST",
+                        FROZEN: "FALSCH"
                     },
                     NUMERIC: {
-                        BANNER: "ENUMERATE"
+                        BANNER: "SCHÄTZEN"
                     },
                     PLACE_SLICES: {
-                        PLACE: "PLACE YOUR SLICES",
-                        SUBMIT: "DONE! PRESS SUBMIT",
-                        THANKS: "NICE JOB"
+                        PLACE: "PLATZIERE DEINE SCHEIBEN",
+                        SUBMIT: "FERTIG! DRÜCKE AUF SENDEN",
+                        THANKS: "GUTE ARBEIT"
                     },
                     QUESTION: {
-                        BANNER: "WELCOME",
-                        PLACEHOLDER: "Enter A Question"
+                        BANNER: "WILLKOMMEN",
+                        PLACEHOLDER: "Gib eine Frage ein"
                     },
                     RAPID: {
-                        BANNER: "THAT [small]OR[/small] THIS",
-                        CORRECT: "CORRECT",
-                        FROZEN: "INCORRECT"
+                        BANNER: "DIES [small]ODER[/small] DAS",
+                        CORRECT: "RICHTIG",
+                        FROZEN: "FALSCH"
                     },
                     SPIN: {
-                        ANSWER_BANNER: "YOU WIN!",
-                        MAIN_BANNER: "SPIN [small]THE[/small] WHEEL",
-                        RAINBOW_BANNER: "RAINBOW WHEEL",
-                        WIN_BANNER: "FOR [small]THE[/small] WIN"
+                        ANSWER_BANNER: "GEWONNEN!",
+                        MAIN_BANNER: "DREH [small]DAS[/small] RAD",
+                        RAINBOW_BANNER: "REGENBOGEN RAD",
+                        WIN_BANNER: "FÜR [small]DEN[/small] SIEG"
                     },
                     TYPING: {
-                        OBJECTIVE_BANNER: "DON'T FORGET TO WRITE",
-                        SUBJECTIVE_BANNER: "SUBJECTIVELY YOURS",
-                        CORRECT: "GOOD",
-                        TAKEN: "ANSWERED",
-                        OBJECTIVE_INCORRECT: "WRONG",
+                        OBJECTIVE_BANNER: "VERGISS NICHT ZU SCHREIBEN",
+                        SUBJECTIVE_BANNER: "RUNDE GRÜSSE",
+                        CORRECT: "KLASSE",
+                        TAKEN: "GEANTWORTET",
+                        OBJECTIVE_INCORRECT: "FALSCH",
                         SUBJECTIVE_INCORRECT: "NOPE",
-                        PLACEHOLDER: "Enter A Guess"
+                        PLACEHOLDER: "Gib eine Vermutung ab"
                     },
                     WAITING: {
-                        SPIN: '[player avatar="{avatar}"]{name}[/player] is the spinner',
-                        MESSAGES: ["Remember... patience is a virtue.", "This is a blank screen. Or is it?", "Action awaits!", "Oh, the waiting. The waiting!", "Just wait till the next part!", "Hey, nice controller! Sorry, just making conversation.", "(Insert on-hold music here)", "Sit tight, little meeple.", "I believe in you. Shhh... don't tell anyone.", "It's about to get exciting in here.", "Nothing to see here.", "Behold... a screen with only these words on it.", "Property of the Wheel of Enormous Proportions", "The Wheel Was Here"]
+                        SPIN: '[player avatar="{avatar}"]{name}[/player] ist dran',
+                        MESSAGES: ["Denk dran... Geduld ist eine Tugend", "Dieser Bildschirm ist leer. Oder auch nicht?", "Das Abenteuer wartet!", "Oh, warten. Ich liebe warten!", "Warte einfach bis es weitergeht!", "Hey, schickes Gerät! Sorry, ich wollte nur was nettes sagen.", "(Hier Aufzugmusik einfügen)", "Setz dich, mein Lieber.", "Ich glaube an dich. Psst, sag es aber keinem.", "Gleich wird es großartig.", "Hier gibt es nichts zu sehen.", "Sieh her... ein Bildschirm nur mit diesen Worten drauf.", "Eigentum des Rads von unglaublicher Größe.", "Das Rad war hier."]
                     },
                     ARIA: {
-                        ANSWER: "answer slice.",
-                        AUDIENCE: "audience slice.",
-                        BAD: "skull slice.",
-                        BONUS: "power slice for {for}.",
-                        EMPTY: "empty.",
-                        MULTIPLIER: "empty {multiplier}x multiplier.",
-                        NEIGHBOR: "neighbor slice.",
-                        PLAYER: "player slice for {for}.",
-                        POINTS: "{slice.data.points} point slice.",
-                        POINTS_FOR: "points slice for {for}.",
-                        RESERVED: "reserved for {for}.",
-                        WINNER: "winner slice for {for}.",
-                        KEEP_GOING: "keep going.",
-                        SPIN_POWER: "{power} percent power spin.",
-                        SPIN: "swipe down or tap quickly to spin",
-                        SLICE_COUNT: "you have 0 slices. | you have 1 slice. | you have {count} slices.",
-                        YOU_CAN_WIN: "You now have enough points to win.",
-                        YOUR_AVATAR: "Your avatar is",
-                        PLAYER1: "the royal",
-                        PLAYER2: "the knight",
-                        PLAYER3: "the mummy",
-                        PLAYER4: "the robot",
-                        PLAYER5: "the witch",
-                        PLAYER6: "the clown",
-                        PLAYER7: "the mermaid",
-                        PLAYER8: "the astroman"
+                        ANSWER: "Antwortenscheibe.",
+                        AUDIENCE: "Publikumsscheibe.",
+                        BAD: "Schädelscheibe.",
+                        BONUS: "Kraftscheibe für {for}.",
+                        EMPTY: "leer.",
+                        MULTIPLIER: "leerer {multiplier}x Multiplizierer.",
+                        NEIGHBOR: "Nachbarscheibe.",
+                        PLAYER: "Spielerscheibe für {for}.",
+                        POINTS: "{slice.data.points} Punktescheibe.",
+                        POINTS_FOR: "Punktescheibe für {for}.",
+                        RESERVED: "Reserviert für {for}.",
+                        WINNER: "Gewinnerscheibe für {for}.",
+                        KEEP_GOING: "mach weiter.",
+                        SPIN_POWER: "{power} Prozent Kraftdreher.",
+                        SPIN: "nach unten wischen oder schnell tippen zum drehen",
+                        SLICE_COUNT: "Du hast 0 Scheiben. | Du hast 1 Scheibe. | Du hast {count} Scheiben.",
+                        YOU_CAN_WIN: "Du hast jetzt genug Punkte, um zu gewinnen.",
+                        YOUR_AVATAR: "Dein Avatar ist",
+                        PLAYER1: "der Königliche",
+                        PLAYER2: "der Ritter",
+                        PLAYER3: "die Mumie",
+                        PLAYER4: "der Roboter",
+                        PLAYER5: "die Hexe",
+                        PLAYER6: "der Clown",
+                        PLAYER7: "die Meerjungfrau",
+                        PLAYER8: "der Astronaut"
                     }
                 },
                 y = {
@@ -1000,7 +1000,7 @@
                     }
                 },
                 watch: {
-                    sliceCount: function(t) {
+                    sliceCount: function (t) {
                         this.$announce(this.$tc("ARIA.SLICE_COUNT", this.sliceCount)), t ? this.toOpen() : this.toClosed()
                     }
                 },
@@ -1071,7 +1071,7 @@
                     }
                 },
                 watch: {
-                    "playerState.isWinner": function(t) {
+                    "playerState.isWinner": function (t) {
                         t ? this.$emit("statusChange", {
                             type: "winner",
                             bannerText: this.$t("SPIN.ANSWER_BANNER")
@@ -1079,11 +1079,11 @@
                             type: "none"
                         })
                     },
-                    "playerState.isInWinnerMode": function(t) {
+                    "playerState.isInWinnerMode": function (t) {
                         t && this.$announce(this.$t("ARIA.YOU_CAN_WIN"))
                     },
-                    status: function(t) {
-                        return e = this, s = void 0, i = function*() {
+                    status: function (t) {
+                        return e = this, s = void 0, i = function* () {
                             this.statusTimeout && (window.clearTimeout(this.statusTimeout), this.statusTimeout = null), this.currentStatus = {
                                 type: "none"
                             }, yield this.$nextTick(), this.currentStatus = t, (t.bannerText || t.bannerKey) && this.$announce(this.bannerText || ""), t.timeout && (this.statusTimeout = window.setTimeout((() => {
@@ -1091,7 +1091,7 @@
                                     type: "none"
                                 })
                             }), t.timeout))
-                        }, new((n = void 0) || (n = Promise))((function(t, l) {
+                        }, new((n = void 0) || (n = Promise))((function (t, l) {
                             function a(t) {
                                 try {
                                     o(i.next(t))
@@ -1110,7 +1110,7 @@
 
                             function o(e) {
                                 var s;
-                                e.done ? t(e.value) : (s = e.value, s instanceof n ? s : new n((function(t) {
+                                e.done ? t(e.value) : (s = e.value, s instanceof n ? s : new n((function (t) {
                                     t(s)
                                 }))).then(a, c)
                             }
@@ -1123,7 +1123,7 @@
             var b = (0, p.Z)(M, c, [], !1, null, "4ee1693e", null);
             b.options.__file = "src/games/pp8/the-wheel/views/playfield/Playfield.vue";
             const w = b.exports;
-            var z = function() {
+            var z = function () {
                 var t = this,
                     e = t.$createElement,
                     n = t._self._c || e;
@@ -1178,13 +1178,13 @@
             var S = (0, p.Z)(L, z, [], !1, null, "5bd3a8f0", null);
             S.options.__file = "src/games/pp8/the-wheel/views/shared/FrozenBox.vue";
             const E = S.exports;
-            var A = function() {
+            var A = function () {
                 var t = this,
                     e = t.$createElement,
                     n = t._self._c || e;
                 return n("div", {
                     staticClass: "choices scrollable trivia"
-                }, [n("PromptBox", t._b({}, "PromptBox", t.promptProps, !1)), t._v(" "), t.hasSubmitted ? t._e() : [t._l(t.choiceMap, (function(e, s) {
+                }, [n("PromptBox", t._b({}, "PromptBox", t.promptProps, !1)), t._v(" "), t.hasSubmitted ? t._e() : [t._l(t.choiceMap, (function (e, s) {
                     return n("GemButton", {
                         key: s,
                         class: e.classes,
@@ -1194,7 +1194,7 @@
                             theme: "choice"
                         },
                         on: {
-                            click: function(e) {
+                            click: function (e) {
                                 return t.onChoiceClick(s)
                             }
                         }
@@ -1220,7 +1220,7 @@
                 })] : t._e()]], 2)
             };
             A._withStripped = !0;
-            var B = function() {
+            var B = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -1348,7 +1348,7 @@
                         disabled: t.disabled
                     },
                     on: {
-                        click: function(e) {
+                        click: function (e) {
                             return e.preventDefault(), t.$emit("click", e)
                         }
                     }
@@ -1378,7 +1378,7 @@
             var k = (0, p.Z)(N, B, [], !1, null, "546fca46", null);
             k.options.__file = "src/games/pp8/the-wheel/views/shared/GemButton.vue";
             const P = k.exports;
-            var Z = function() {
+            var Z = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -1471,8 +1471,8 @@
             var O = (0, p.Z)(T, Z, [], !1, null, "136efdac", null);
             O.options.__file = "src/games/pp8/the-wheel/views/shared/PromptBox.vue";
             const R = O.exports;
-            var I = function(t, e, s, n) {
-                return new(s || (s = Promise))((function(i, l) {
+            var I = function (t, e, s, n) {
+                return new(s || (s = Promise))((function (i, l) {
                     function a(t) {
                         try {
                             o(n.next(t))
@@ -1491,7 +1491,7 @@
 
                     function o(t) {
                         var e;
-                        t.done ? i(t.value) : (e = t.value, e instanceof s ? e : new s((function(t) {
+                        t.done ? i(t.value) : (e = t.value, e instanceof s ? e : new s((function (t) {
                             t(e)
                         }))).then(a, c)
                     }
@@ -1570,7 +1570,7 @@
                     isChoosePlayers: t => "choosePlayers" === t.kind,
                     isChoices: t => "choices" === t.kind,
                     onChoiceClick(t) {
-                        return I(this, void 0, void 0, (function*() {
+                        return I(this, void 0, void 0, (function* () {
                             if (!this.isSending) {
                                 this.isSending = !0;
                                 try {
@@ -1600,7 +1600,7 @@
                         }))
                     },
                     onSubmitClick() {
-                        return I(this, void 0, void 0, (function*() {
+                        return I(this, void 0, void 0, (function* () {
                             if (!this.isSending) {
                                 this.isSending = !0;
                                 try {
@@ -1619,7 +1619,7 @@
             var D = (0, p.Z)($, A, [], !1, null, "48b5c973", null);
             D.options.__file = "src/games/pp8/the-wheel/views/Choices.vue";
             const G = D.exports;
-            var U = function() {
+            var U = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -1647,14 +1647,14 @@
                         disabled: !t.canSubmit
                     },
                     nativeOn: {
-                        click: function(e) {
+                        click: function (e) {
                             return t.onSubmitClick.apply(null, arguments)
                         }
                     }
                 })], 1)], 1)
             };
             U._withStripped = !0;
-            var Y = function() {
+            var Y = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -1815,7 +1815,7 @@
                 }), t._v(" "), s("path", {
                     staticClass: "f text ui ns brown d1",
                     attrs: {
-                        d: "M95.07,99.13l-2.29-.59L95,97.06,97,91.17c-1.19-2.17-1.79-3.26-3-5.41-5.91-2.29-10.84-.87-16.8.35l.1-.28\n                    c-3.08.15-4.62.24-7.7.46,4.54,7.19,3.08,16.27.86,24.13-1.31.75-2,1.11-3.28,\n                    1.81-1.07-.61-1.61-.91-2.68-1.5-1.44-8.09-2.36-16,1.27-23.62-4.23.51-6.35.8-10.57,1.42,1.09,2,1.64,3,2.73,5.08\n                    v11.74c1,3,1.44,4.47,2.41,7.56,2.51,1.09,3.77,1.66,6.29,2.79,2.18-.38,3.27-.6,5.45-1.07,1.43-4.43,2.14-6.69,\n                    3.57-11.31-.07-6.18-1.36-11.41,1.51-17.12,4.88,8.26,3.32,20.61.74,29.62,6.88-.49,12,1.4,18.68-1.72.59-3.55.88-5.33,\n                    1.47-8.88ZM87.2,88.23C88.71,89.73,89.47,90.5,91,92c-.55,1.23-.82,1.85-1.36,3.08L86.1,96.83\n                    c-.29-3.18-.43-4.76-.72-7.92Zm4.57,21c-1.31,1.19-2,1.79-3.27,3L86,110.82c.09-3.78.13-5.68.21-9.47l3.55-.45c1,2.15,\n                    1.46,3.22,2.43,5.39ZM44.28,96.12c-.62-.58-.93-.87-1.54-1.42.52-.86.78-1.3,1.31-2.2,1-.56,1.5-.85,2.51-1.44a65.38,\n                    65.38,0,0,1,6.14,3c0-2.51,0-3.77,0-6.28-6.41-.69-11.27,2.94-14.57,8.08.83,1.85,1.25,2.82,2.08,4.83,3.11.69,4.67,\n                    1.09,7.81,2,1,1.71,1.52,2.59,2.54,4.41l-.92,1.46c-1.29.52-1.93.77-3.22,1.22a86.15,86.15,0,0,0-7.12-6.45c0,2.48,0,\n                    3.72,0,6.2,2.51,1.36,4.46,2.87,7.3,3.6a64.86,64.86,0,0,0,6.94-2.91c.81-2.13,1.21-3.22,\n                    2-5.45-1.27-2.85-1.91-4.23-3.18-6.89C49.12,97,47.5,96.7,44.28,96.12Zm109.05-3.78,2-.06c2.72,2,4.07,2.85,6.78,\n                    4.48-.47-2.5-.7-3.78-1.17-6.38-7.79-1.28-11.74-1.77-19.56-2.47l0,0c-5.43-1-8.15-1.42-13.61-2.23l.16.33\n                    c-3.63-.32-5.47-.46-9.13-.68-2.12,7.26-3.17,11-5.29,\n                    18.51-1.81-7.42-2.72-11.19-4.54-18.75-3.48-.4-5.22-.57-8.71-.88,3.92,9.17.68,16.89.64,26.54-1.26,2.09-1.89,\n                    3.13-3.15,5.2,3.56.42,5.34.6,8.91.92-4.12-7.49-1.55-14.18-.9-22.23,2.15,9.12,3.23,13.66,5.38,22.61l2.37-2\n                    c2.28-8.89,3.42-13.29,5.69-21.88,1.06,8.17,3.59,14.57-.66,22.15,4-.3,5.94-.47,9.87-.87l-.38.81c5-.31,7.47-.52,\n                    12.43-1-4.74-6.35-3.23-13-3.68-20.51,1.79-2.41,2.71-3.61,4.44-5.75-.18,2.57-.28,3.93-.47,6.58,2.58-1.35,3.87-2,\n                    6.45-3.11l1,.27c-.08,7.79.92,14.06-3.06,21.15,4.59-.7,6.89-1.08,11.46-1.9C152.06,105.41,154.17,99.23,153.33,92.34Z\n                    m-24.91,22.17c-4.38-7.41-2.7-14.42-3.84-22.76,1.35-2.33,2-3.49,3.37-5.7A27.22,27.22,0,0,1,128.42,114.51Z"
+                        d: "M45,113.8c-1.1-0.3-1.6-0.5-2.7-0.9c-1.6-0.9-3.1-1.9-4.7-2.8c0-2.7,0-4,0-6.7c2.9,2.5,4.3,3.8,7.2,6.8\n	c1.1-0.4,2.2-0.9,3.3-1.4c0.4-0.6,0.6-0.9,0.9-1.6c-1-1.9-1.6-2.8-2.6-4.6c-2.6-0.7-6.8-1.1-7.9-2c-0.8-0.7-1.4-3.6-2.1-5.3\n	c1.4-1.9,2.2-2.9,3.6-4.9c2-1.2,3-1.9,5-3.2c2.4-0.1,3.7-0.2,6.1-0.3c0,2.6,0,4,0,6.6c-2.1-1.2-4.1-2.3-6.2-3.2\n	c-0.8,0.5-1.7,1-2.5,1.5c-0.5,1-0.8,1.4-1.3,2.3c0.6,0.6,0.9,0.9,1.5,1.5c3.3,0.6,4.9,1,8.2,1.8c1.1,2.3,2.1,4.7,3.2,7.2\n	c-0.7,2-1.4,3.9-2,5.7C49.2,112,47.8,112.6,45,113.8z M53.9,113.5c0.9-1.9,2.4-4,2.9-5.8c0.9-3.6,0.5-9.3,0.7-14\n	c-1-3-1.5-4.5-2.5-7.4c4.1-0.2,6.1-0.3,10.2-0.3c2.3-0.3,3.4-0.4,5.7-0.7c0.5,3,0.7,4.5,1.2,7.6c-1.6-1.4-3.3-2.7-4.9-4\n	c-1.7,0.1-2.6,0.1-4.3,0.2c-0.1,2.6-0.2,5.1-0.3,7.7c1.3,0,2-0.1,3.3-0.1c1.2-1,2.4-2,3.6-3c0.2,3.6,0.3,7.2,0.5,10.8\n	c-1.6-1.7-2.5-2.6-4.1-4.2c-1.4,0.2-2.1,0.4-3.4,0.6c-0.1,2.5-0.1,3.8-0.2,6.3c0.3,1.6,0.5,2.4,0.8,4c1.2,0.3,2.4,0.6,3.7,0.9\n	c2.4-2,3.6-3.1,5.9-5.2c-0.3,3-0.6,6-0.9,8.9C64.8,115.1,61.2,114.6,53.9,113.5z M93.6,119c-4.8-8.3-9.6-16.6-14.6-24.8\n	c-0.1,5.1-0.3,10.3-0.4,15.4c1.2,2.5,1.7,3.7,2.9,6.3c-3.4,0.2-5.2,0.3-8.6,0.3c1.2-2.3,1.8-3.4,3-5.8c0.1-8,0.2-12,0.3-20\n	c-1.1-1.9-2.2-3.8-3.3-5.6c2.9-0.3,4.4-0.4,7.4-0.6c4.4,6.6,6.6,10.2,11,17.3c0-4.1,0.1-6.1,0.1-10.1c-0.9-2.4-1.9-4.7-2.8-7\n	c3.9,0.1,5.8,0.1,9.6,0.3c-1.4,2.2-2,3.4-3.4,5.6C94.2,99.9,93.9,109.5,93.6,119z M108.1,117.2c-4.2-0.7-6.3-1.1-10.5-2\n	c0.9-2.7,1.4-4.1,2.3-6.8c-0.1-6,0.7-13.1-0.1-18c-0.3-1.6-1.4-3.7-2.1-5.6c3.2-0.4,4.9-0.6,8.1-0.9c2.3,0.2,3.5,0.3,5.9,0.5\n	c2.5,1.7,5,3.4,7.6,5.1c0.8,3.9,1.2,5.8,2.1,9.6c-0.5,4.2-0.8,6.3-1.3,10.5C115.2,112.6,112.8,114.1,108.1,117.2z M110.3,87.8\n	c-1.9,0-2.8,0-4.7,0c0.2,8,0.5,16.1,0.7,24.1c3.3-1.4,4.9-2.1,8.2-3.6c0.6-3.8,0.8-5.7,1.4-9.4c-0.6-2.8-0.8-6.7-1.8-8.3\n	C113.5,89.8,111.5,88.8,110.3,87.8z M121.1,115.6c0.9-2.3,2.4-5,2.9-7c0.9-4.3,0.5-10.5,0.7-15.8c-1-3.5-1.5-5.3-2.5-8.8\n	c4.1,0.6,6.2,1,10.2,1.7c2.3,0.1,3.4,0.2,5.7,0.4c0.5,3,0.7,4.5,1.2,7.4c-1.6-1.5-3.3-2.9-4.9-4.5c-1.7-0.2-2.6-0.2-4.3-0.4\n	c-0.1,2.7-0.2,5.4-0.3,8.1c1.3,0,2,0,3.3,0.1c1.2-0.9,2.4-1.8,3.6-2.7c0.2,3.5,0.3,7,0.5,10.5c-1.6-1.6-2.4-2.4-4.1-4.1\n	c-1.4,0.2-2.1,0.4-3.4,0.6c-0.1,2.7-0.1,4-0.2,6.7c0.3,1.7,0.5,2.5,0.9,4.2c1.2,0.2,2.4,0.3,3.7,0.4c2.4-2.3,3.6-3.5,5.9-5.6\n	c-0.3,2.8-0.6,5.6-0.8,8.5C132,115.6,128.4,115.6,121.1,115.6z M160.6,113.8c-5.8-6.1-8.7-10-14.5-18.7c-0.1,4.4-0.3,8.9-0.4,13.4\n	c1.2,2.1,1.7,3.1,2.9,5c-3.4,0.7-5.1,1-8.6,1.7c1.2-2.3,1.8-3.5,2.9-5.7c0.1-7.2,0.2-10.8,0.3-18c-1.1-1.8-2.2-3.7-3.3-5.6\n	c2.9,0.3,4.4,0.4,7.3,0.8c4.4,6.5,6.5,9.5,10.9,14.7c0-3,0.1-4.5,0.1-7.5c-0.9-1.8-1.9-3.7-2.8-5.6c3.8,0.7,5.7,1.1,9.5,1.9\n	c-1.3,1.3-2,1.9-3.3,3.3C161.2,101.5,161,105.6,160.6,113.8z"
                     }
                 })]), t._v(" "), s("path", {
                     staticClass: "edge",
@@ -1841,7 +1841,7 @@
             var K = (0, p.Z)(W, Y, [], !1, null, "3ad8c1d9", null);
             K.options.__file = "src/games/pp8/the-wheel/views/slices/SubmitButton.vue";
             const j = K.exports;
-            var V = function() {
+            var V = function () {
                 var t = this,
                     e = t.$createElement,
                     n = t._self._c || e;
@@ -1892,7 +1892,7 @@
                         enter: t.onEnter,
                         leave: t.onLeave
                     }
-                }, [t._l(t.definitions, (function(e, s) {
+                }, [t._l(t.definitions, (function (e, s) {
                     return [t.sliceComponents[s] ? n(t.sliceComponents[s], {
                         key: "slice-" + s,
                         tag: "component",
@@ -1904,7 +1904,7 @@
                             "aria-hidden": "true"
                         }
                     }) : t._e()]
-                }))], 2), t._v(" "), t._l(t.definitions, (function(e, s) {
+                }))], 2), t._v(" "), t._l(t.definitions, (function (e, s) {
                     return n("polygon", {
                         key: "active-" + s,
                         staticClass: "action",
@@ -1920,14 +1920,14 @@
                             points: "500,355.9 479.2,346.9 421.2,37.7 500,0 578.8,37.7 520.8,346.9"
                         },
                         on: {
-                            pointerboxchildup: function(e) {
+                            pointerboxchildup: function (e) {
                                 return t.onSliceClick(s)
                             },
-                            keyup: [function(e) {
+                            keyup: [function (e) {
                                 return !e.type.indexOf("key") && t._k(e.keyCode, "enter", 13, e.key, "Enter") ? null : t.onSliceClick(s)
-                            }, function(e) {
+                            }, function (e) {
                                 return !e.type.indexOf("key") && t._k(e.keyCode, "space", 32, e.key, [" ", "Spacebar"]) ? null : t.onSliceClick(s)
-                            }, function(e) {
+                            }, function (e) {
                                 return !e.type.indexOf("key") && t._k(e.keyCode, "delete", [8, 46], e.key, ["Backspace", "Delete", "Del"]) ? null : t.onDeletePressed.apply(null, arguments)
                             }]
                         }
@@ -1947,7 +1947,7 @@
                 }) : t._e()])
             };
             V._withStripped = !0;
-            var H = function() {
+            var H = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -1975,7 +1975,7 @@
             var q = (0, p.Z)(F, H, [], !1, null, "33715074", null);
             q.options.__file = "src/games/pp8/the-wheel/views/wheel/backgrounds/Main.vue";
             const X = q.exports;
-            var Q = function() {
+            var Q = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -1991,7 +1991,7 @@
                         "vector-effect": "non-scaling-stroke",
                         d: "M255.7,63.5l-4.2,5.9l-7.2,0.7l4.3,5.8l-1.5,7l6.8-2.3l6.2,3.6l0-7.2l5.4-4.8l-6.9-2.2L255.7,63.5z\n            M132.5,808.2l-7.1,1.3l-5.6-4.5l-1,7.1l-6,4l6.5,3.1l1.9,6.9l5-5.2l7.2,0.3l-3.4-6.3L132.5,808.2z\n            M133.4,178.3l-7.2,0.3l-5-5.2l-1.9,6.9l-6.5,3.1l6,4l1,7.1l5.6-4.5l7.1,1.3l-2.5-6.8L133.4,178.3z\n            M260.1,915.3l-6.2,3.6l-6.8-2.3l1.5,7l-4.3,5.8l7.2,0.7l4.2,5.9l2.9-6.6l6.9-2.2l-5.4-4.8L260.1,915.3z\n            M987.5,510.4l5.3-4.9l7.2,0.8l-3-6.6l3-6.6l-7.2,0.8l-5.3-4.9l-1.5,7.1l-6.3,3.6l6.3,3.6L987.5,510.4z\n            M12.5,489.2L7.2,494L0,493.2l3,6.6l-3,6.6l7.2-0.8l5.3,4.9l1.5-7.1l6.3-3.6l-6.3-3.6L12.5,489.2z\n            M419.7,6.2l-5.9,4.1l-7-1.8l2,6.9l-3.9,6.1l7.2,0.2l4.6,5.5l2.4-6.8l6.7-2.7l-5.7-4.4L419.7,6.2z\n            M42.1,662.7l-3.8-6.1l-3.3,6.4l-7,1.7l5,5.1l-0.6,7.2l6.5-3.2l6.7,2.7l-1.1-7.1l4.7-5.5L42.1,662.7z\n            M45.5,323.1l-6.7,2.7l-6.5-3.2l0.6,7.2l-5,5.1l7,1.7l3.3,6.4l3.8-6.1l7.1-1.2l-4.7-5.5L45.5,323.1z\n            M880.3,805l-5.6,4.5l-7.1-1.3l2.5,6.8l-3.4,6.3l7.2-0.3l5,5.2l1.9-6.9l6.5-3.1l-6-4L880.3,805z\n            M753,916.7l-6.8,2.3l-6.2-3.6l0,7.2l-5.4,4.8l6.9,2.2l2.9,6.6l4.2-5.9l7.2-0.7l-4.3-5.8L753,916.7z\n            M965.1,662.9l-3.3-6.4l-3.8,6.1l-7.1,1.2l4.7,5.5l-1.1,7.1l6.7-2.7l6.5,3.2l-0.6-7.2l5-5.1L965.1,662.9z\n            M878.8,173.4l-5,5.2l-7.2-0.3l3.4,6.3l-2.5,6.8l7.1-1.3l5.6,4.5l1-7.1l6-4l-6.5-3.1L878.8,173.4z\n            M967.6,322.6l-6.5,3.2l-6.7-2.7l1.1,7.1l-4.7,5.5l7.1,1.2l3.8,6.1l3.3-6.4l7-1.7l-5-5.1L967.6,322.6z\n            M595.1,978l-7.2-0.2l-4.6-5.5l-2.4,6.8l-6.7,2.7l5.7,4.4l0.5,7.2l5.9-4.1l7,1.8l-2-6.9L595.1,978z\n            M593.3,8.5l-7,1.8l-5.9-4.1l-0.5,7.2l-5.7,4.4l6.7,2.7l2.4,6.8l4.6-5.5l7.2-0.2l-3.9-6.1L593.3,8.5z\n            M419.1,979.1l-2.4-6.8l-4.6,5.5l-7.2,0.2l3.9,6.1l-2,6.9l7-1.8l5.9,4.1l0.5-7.2l5.7-4.4L419.1,979.1z\n            M744.3,63.5l-2.9,6.6l-6.9,2.2L740,77l0,7.2l6.2-3.6l6.8,2.3l-1.5-7l4.3-5.8l-7.2-0.7L744.3,63.5z"
                     }
-                }), t._v(" "), t._l(t.definitions, (function(e, n) {
+                }), t._v(" "), t._l(t.definitions, (function (e, n) {
                     return s("g", {
                         key: "empty-" + n,
                         staticClass: "empty",
@@ -2051,7 +2051,7 @@
             var tt = (0, p.Z)(J, Q, [], !1, null, "5f0d0aca", null);
             tt.options.__file = "src/games/pp8/the-wheel/views/wheel/backgrounds/Place.vue";
             const et = tt.exports;
-            var st = function() {
+            var st = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -2099,7 +2099,7 @@
             var it = (0, p.Z)(nt, st, [], !1, null, "638ddd39", null);
             it.options.__file = "src/games/pp8/the-wheel/views/wheel/backgrounds/Rainbow.vue";
             const lt = it.exports;
-            var at = function() {
+            var at = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -2137,7 +2137,7 @@
             var ot = (0, p.Z)(ct, at, [], !1, null, "2e7f39df", null);
             ot.options.__file = "src/games/pp8/the-wheel/views/wheel/backgrounds/Win.vue";
             const rt = ot.exports;
-            var pt = function() {
+            var pt = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -2219,7 +2219,7 @@
                 }) : t._e()])
             };
             pt._withStripped = !0;
-            var ht = function() {
+            var ht = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -2372,7 +2372,7 @@
             var gt = (0, p.Z)(Ct, pt, [], !1, null, "c9303b86", null);
             gt.options.__file = "src/games/pp8/the-wheel/views/wheel/slices/Graphic.vue";
             const mt = gt.exports;
-            var yt = function() {
+            var yt = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -2385,7 +2385,7 @@
                     attrs: {
                         points: "500,355.9 479.2,346.9 421.2,37.7 500,0 578.8,37.7 520.8,346.9"
                     }
-                }), t._v(" "), t._l(t.definition.slots, (function(e, n) {
+                }), t._v(" "), t._l(t.definition.slots, (function (e, n) {
                     return s("polygon", {
                         key: "player_" + n,
                         staticClass: "slot f s-xs",
@@ -2457,7 +2457,7 @@
             var xt = (0, p.Z)(ft, yt, [], !1, null, "e3f78ec8", null);
             xt.options.__file = "src/games/pp8/the-wheel/views/wheel/slices/Player.vue";
             const _t = xt.exports;
-            var Mt = function() {
+            var Mt = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -2961,8 +2961,8 @@
                     void 0 !== e.isSelected && (e.isSelected = !e.isSelected)
                 }
             }
-            var Bt = function(t, e, s, n) {
-                return new(s || (s = Promise))((function(i, l) {
+            var Bt = function (t, e, s, n) {
+                return new(s || (s = Promise))((function (i, l) {
                     function a(t) {
                         try {
                             o(n.next(t))
@@ -2981,7 +2981,7 @@
 
                     function o(t) {
                         var e;
-                        t.done ? i(t.value) : (e = t.value, e instanceof s ? e : new s((function(t) {
+                        t.done ? i(t.value) : (e = t.value, e instanceof s ? e : new s((function (t) {
                             t(e)
                         }))).then(a, c)
                     }
@@ -3026,13 +3026,13 @@
                     }
                 },
                 watch: {
-                    "player.slices": function(t) {
+                    "player.slices": function (t) {
                         this.manager.sync(t)
                     }
                 },
                 methods: {
                     onSliceClick(t) {
-                        return Bt(this, void 0, void 0, (function*() {
+                        return Bt(this, void 0, void 0, (function* () {
                             if (!this.isSending) {
                                 this.isSending = !0, this.manager.toggleSlice(t);
                                 try {
@@ -3048,7 +3048,7 @@
                         }))
                     },
                     onSubmitClick() {
-                        return Bt(this, void 0, void 0, (function*() {
+                        return Bt(this, void 0, void 0, (function* () {
                             if (!this.isSending) {
                                 this.isSending = !0;
                                 try {
@@ -3067,7 +3067,7 @@
             var kt = (0, p.Z)(Nt, U, [], !1, null, "72218387", null);
             kt.options.__file = "src/games/pp8/the-wheel/views/slices/ChooseSlices.vue";
             const Pt = kt.exports;
-            var Zt = function() {
+            var Zt = function () {
                 var t = this,
                     e = t.$createElement,
                     n = t._self._c || e;
@@ -3091,7 +3091,7 @@
                     staticClass: "form-box"
                 }, [n("form", {
                     on: {
-                        submit: function(e) {
+                        submit: function (e) {
                             return e.preventDefault(), t.onSubmit.apply(null, arguments)
                         }
                     }
@@ -3101,7 +3101,7 @@
                     },
                     model: {
                         value: t.value,
-                        callback: function(e) {
+                        callback: function (e) {
                             t.value = e
                         },
                         expression: "value"
@@ -3132,7 +3132,7 @@
                         name: "clue-list",
                         tag: "ul"
                     }
-                }, t._l(t.cluesList, (function(t) {
+                }, t._l(t.cluesList, (function (t) {
                     return n("li", {
                         directives: [{
                             name: "bb",
@@ -3145,7 +3145,7 @@
                 })), 0)], 1)
             };
             Zt._withStripped = !0;
-            var Tt = function() {
+            var Tt = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -3225,7 +3225,7 @@
                     },
                     on: {
                         input: t.onInput,
-                        keydown: function(e) {
+                        keydown: function (e) {
                             if (!e.type.indexOf("key") && t._k(e.keyCode, "enter", 13, e.key, "Enter")) return null;
                             e.preventDefault()
                         }
@@ -3332,11 +3332,11 @@
                 },
                 methods: {
                     onInput(t) {
-                        return e = this, s = void 0, i = function*() {
+                        return e = this, s = void 0, i = function* () {
                             const e = t.target,
                                 s = -1 === e.maxLength ? Number.MAX_SAFE_INTEGER : e.maxLength;
                             e.value.length > s ? e.value = e.value.substring(0, s) : (this.$emit("input", e.value), yield l().nextTick(), e.value !== this.value && (e.value = this.value))
-                        }, new((n = void 0) || (n = Promise))((function(t, l) {
+                        }, new((n = void 0) || (n = Promise))((function (t, l) {
                             function a(t) {
                                 try {
                                     o(i.next(t))
@@ -3355,7 +3355,7 @@
 
                             function o(e) {
                                 var s;
-                                e.done ? t(e.value) : (s = e.value, s instanceof n ? s : new n((function(t) {
+                                e.done ? t(e.value) : (s = e.value, s instanceof n ? s : new n((function (t) {
                                     t(s)
                                 }))).then(a, c)
                             }
@@ -3427,7 +3427,7 @@
                 },
                 methods: {
                     onSubmit() {
-                        return t = this, e = void 0, n = function*() {
+                        return t = this, e = void 0, n = function* () {
                             if (!this.isSending) {
                                 this.isSending = !0;
                                 try {
@@ -3440,7 +3440,7 @@
                                 }
                                 this.value = "", this.isSending = !1
                             }
-                        }, new((s = void 0) || (s = Promise))((function(i, l) {
+                        }, new((s = void 0) || (s = Promise))((function (i, l) {
                             function a(t) {
                                 try {
                                     o(n.next(t))
@@ -3459,7 +3459,7 @@
 
                             function o(t) {
                                 var e;
-                                t.done ? i(t.value) : (e = t.value, e instanceof s ? e : new s((function(t) {
+                                t.done ? i(t.value) : (e = t.value, e instanceof s ? e : new s((function (t) {
                                     t(e)
                                 }))).then(a, c)
                             }
@@ -3472,7 +3472,7 @@
             var Dt = (0, p.Z)($t, Zt, [], !1, null, "451b4290", null);
             Dt.options.__file = "src/games/pp8/the-wheel/views/guessing/Guessing.vue";
             const Gt = Dt.exports;
-            var Ut = function() {
+            var Ut = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -3509,7 +3509,7 @@
             var Kt = (0, p.Z)(Wt, Ut, [], !1, null, "0ea76297", null);
             Kt.options.__file = "src/games/pp8/the-wheel/views/Lobby.vue";
             const jt = Kt.exports;
-            var Vt = function() {
+            var Vt = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -3529,7 +3529,7 @@
                         tag: "ul",
                         "aria-label": t.player.headers[0]
                     }
-                }, t._l(t.items[0], (function(e, n) {
+                }, t._l(t.items[0], (function (e, n) {
                     return s("li", {
                         key: e.text,
                         staticClass: "item",
@@ -3538,7 +3538,7 @@
                         }
                     }, [s("button", {
                         on: {
-                            click: function(e) {
+                            click: function (e) {
                                 return e.preventDefault(), t.onItemClick(0, n)
                             }
                         }
@@ -3557,7 +3557,7 @@
                         tag: "ul",
                         "aria-label": t.player.headers[1]
                     }
-                }, t._l(t.items[1], (function(e, n) {
+                }, t._l(t.items[1], (function (e, n) {
                     return s("li", {
                         key: e.text,
                         staticClass: "item",
@@ -3566,7 +3566,7 @@
                         }
                     }, [s("button", {
                         on: {
-                            click: function(e) {
+                            click: function (e) {
                                 return e.preventDefault(), t.onItemClick(1, n)
                             }
                         }
@@ -3625,7 +3625,7 @@
                 })])])], 1)
             };
             Vt._withStripped = !0;
-            var Ht = function() {
+            var Ht = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -3946,7 +3946,7 @@
                     }
                 },
                 watch: {
-                    "player.freezeMs": function(t) {
+                    "player.freezeMs": function (t) {
                         t ? this.$emit("statusChange", {
                             type: "frozen",
                             bannerKey: "MATCHING.FROZEN"
@@ -3954,7 +3954,7 @@
                             type: "none"
                         })
                     },
-                    "player.items": function([t], [e]) {
+                    "player.items": function ([t], [e]) {
                         for (let s = 0; s < t.length; s++)
                             if (t[s].isAccepted && !e[s].isAccepted) {
                                 this.$emit("statusChange", {
@@ -3977,7 +3977,7 @@
                     },
                     submit() {
                         var t, e, s, n, i, l;
-                        return s = this, n = void 0, l = function*() {
+                        return s = this, n = void 0, l = function* () {
                             if (!this.canSend) return;
                             const s = null === (t = this.items[0][this.selected[0]]) || void 0 === t ? void 0 : t.index,
                                 n = null === (e = this.items[1][this.selected[1]]) || void 0 === e ? void 0 : e.index;
@@ -3993,7 +3993,7 @@
                                 }
                                 this.$set(this.selected, 0, -1), this.$set(this.selected, 1, -1), this.isSending = !1
                             }
-                        }, new((i = void 0) || (i = Promise))((function(t, e) {
+                        }, new((i = void 0) || (i = Promise))((function (t, e) {
                             function a(t) {
                                 try {
                                     o(l.next(t))
@@ -4012,7 +4012,7 @@
 
                             function o(e) {
                                 var s;
-                                e.done ? t(e.value) : (s = e.value, s instanceof i ? s : new i((function(t) {
+                                e.done ? t(e.value) : (s = e.value, s instanceof i ? s : new i((function (t) {
                                     t(s)
                                 }))).then(a, c)
                             }
@@ -4024,7 +4024,7 @@
             var Jt = (0, p.Z)(Qt, Vt, [], !1, null, "337a0260", null);
             Jt.options.__file = "src/games/pp8/the-wheel/views/matching/Matching.vue";
             const te = Jt.exports;
-            var ee = function() {
+            var ee = function () {
                 var t = this,
                     e = t.$createElement,
                     n = t._self._c || e;
@@ -4066,7 +4066,7 @@
                 })], 1)
             };
             ee._withStripped = !0;
-            var se = function() {
+            var se = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -4225,7 +4225,7 @@
                     }
                 })]), t._v(" "), s("div", {
                     staticClass: "digits"
-                }, t._l(t.digitCount, (function(e) {
+                }, t._l(t.digitCount, (function (e) {
                     return s("div", {
                         key: e,
                         staticClass: "numbers-container",
@@ -4275,7 +4275,7 @@
             var ie = (0, p.Z)(ne, se, [], !1, null, "7fd86d44", null);
             ie.options.__file = "src/games/pp8/the-wheel/views/numeric/DigitsBox.vue";
             const le = ie.exports;
-            var ae = function() {
+            var ae = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -4315,14 +4315,14 @@
                     attrs: {
                         offset: "1"
                     }
-                })], 1)], 1), t._v(" "), t._l(t.buttons, (function(e) {
+                })], 1)], 1), t._v(" "), t._l(t.buttons, (function (e) {
                     return s("button", {
                         key: e,
                         attrs: {
                             "aria-label": e
                         },
                         on: {
-                            click: function(s) {
+                            click: function (s) {
                                 return t.onButtonClick(e)
                             }
                         }
@@ -4501,8 +4501,8 @@
             var oe = (0, p.Z)(ce, ae, [], !1, null, "83ecf6ee", null);
             oe.options.__file = "src/games/pp8/the-wheel/views/numeric/HandsetBox.vue";
             const re = oe.exports;
-            var pe = function(t, e, s, n) {
-                return new(s || (s = Promise))((function(i, l) {
+            var pe = function (t, e, s, n) {
+                return new(s || (s = Promise))((function (i, l) {
                     function a(t) {
                         try {
                             o(n.next(t))
@@ -4521,7 +4521,7 @@
 
                     function o(t) {
                         var e;
-                        t.done ? i(t.value) : (e = t.value, e instanceof s ? e : new s((function(t) {
+                        t.done ? i(t.value) : (e = t.value, e instanceof s ? e : new s((function (t) {
                             t(e)
                         }))).then(a, c)
                     }
@@ -4566,7 +4566,7 @@
                         "0" !== this.digits && (1 === this.digits.length ? this.digits = "0" : this.digits = this.digits.slice(0, -1), this.onChange())
                     },
                     onChange() {
-                        return pe(this, void 0, void 0, (function*() {
+                        return pe(this, void 0, void 0, (function* () {
                             if (!this.isSending) {
                                 this.hasChanged = !0, this.isSending = !0, this.hasSent = !0, this.$announce(`${this.value}`);
                                 try {
@@ -4582,7 +4582,7 @@
                         }))
                     },
                     onSubmitClick() {
-                        return pe(this, void 0, void 0, (function*() {
+                        return pe(this, void 0, void 0, (function* () {
                             if (!this.isSending) {
                                 this.isSending = !0, this.hasSent = !0;
                                 try {
@@ -4601,7 +4601,7 @@
             var de = (0, p.Z)(he, ee, [], !1, null, "05553b0c", null);
             de.options.__file = "src/games/pp8/the-wheel/views/numeric/Numeric.vue";
             const ve = de.exports;
-            var ue = function() {
+            var ue = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -4633,7 +4633,7 @@
                         disabled: !t.history.length
                     },
                     nativeOn: {
-                        click: function(e) {
+                        click: function (e) {
                             return t.onUndoClick.apply(null, arguments)
                         }
                     }
@@ -4642,14 +4642,14 @@
                         disabled: 0 !== t.unplacedSlices
                     },
                     nativeOn: {
-                        click: function(e) {
+                        click: function (e) {
                             return t.onSubmitClick.apply(null, arguments)
                         }
                     }
                 }) : t._e()], 1)], 1)
             };
             ue._withStripped = !0;
-            var Ce = function() {
+            var Ce = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -4706,8 +4706,8 @@
             var me = (0, p.Z)(ge, Ce, [], !1, null, "d95ed536", null);
             me.options.__file = "src/games/pp8/the-wheel/views/slices/UndoButton.vue";
             const ye = me.exports;
-            var fe = function(t, e, s, n) {
-                return new(s || (s = Promise))((function(i, l) {
+            var fe = function (t, e, s, n) {
+                return new(s || (s = Promise))((function (i, l) {
                     function a(t) {
                         try {
                             o(n.next(t))
@@ -4726,7 +4726,7 @@
 
                     function o(t) {
                         var e;
-                        t.done ? i(t.value) : (e = t.value, e instanceof s ? e : new s((function(t) {
+                        t.done ? i(t.value) : (e = t.value, e instanceof s ? e : new s((function (t) {
                             t(e)
                         }))).then(a, c)
                     }
@@ -4774,7 +4774,7 @@
                 },
                 methods: {
                     onSliceClick(t) {
-                        return fe(this, void 0, void 0, (function*() {
+                        return fe(this, void 0, void 0, (function* () {
                             if (this.unplacedSlices) {
                                 this.unplacedSlices -= 1, this.history.push(t), this.manager.placeSlice(t), this.$emit("localSliceCountChange", this.unplacedSlices), this.isPatched || this.unplacedSlices || (this.isSubmitted = !0, this.$pauseEcastUpdates(), setTimeout((() => this.$resumeEcastUpdates()), 2e3));
                                 try {
@@ -4789,7 +4789,7 @@
                         }))
                     },
                     onUndoClick() {
-                        return fe(this, void 0, void 0, (function*() {
+                        return fe(this, void 0, void 0, (function* () {
                             if (!this.history || !this.history.length) return;
                             this.unplacedSlices += 1;
                             const t = this.history.pop();
@@ -4804,7 +4804,7 @@
                         }))
                     },
                     onSubmitClick() {
-                        return fe(this, void 0, void 0, (function*() {
+                        return fe(this, void 0, void 0, (function* () {
                             if (0 === this.unplacedSlices) {
                                 this.isSubmitted = !0, this.$pauseEcastUpdates(), setTimeout((() => this.$resumeEcastUpdates()), 2e3);
                                 try {
@@ -4822,7 +4822,7 @@
             var _e = (0, p.Z)(xe, ue, [], !1, null, "7418dde9", null);
             _e.options.__file = "src/games/pp8/the-wheel/views/slices/PlaceSlices.vue";
             const Me = _e.exports;
-            var be = function() {
+            var be = function () {
                 var t = this,
                     e = t.$createElement,
                     n = t._self._c || e;
@@ -4870,7 +4870,7 @@
             var Se = (0, p.Z)(Le, be, [], !1, null, "3ccfa681", null);
             Se.options.__file = "src/games/pp8/the-wheel/views/PostGame.vue";
             const Ee = Se.exports;
-            var Ae = function() {
+            var Ae = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -4885,7 +4885,7 @@
                     staticClass: "form-box"
                 }, [s("form", {
                     on: {
-                        submit: function(e) {
+                        submit: function (e) {
                             return e.preventDefault(), t.onSubmit.apply(null, arguments)
                         }
                     }
@@ -4897,7 +4897,7 @@
                     },
                     model: {
                         value: t.value,
-                        callback: function(e) {
+                        callback: function (e) {
                             t.value = e
                         },
                         expression: "value"
@@ -4950,14 +4950,14 @@
                 },
                 methods: {
                     onSubmit() {
-                        return t = this, e = void 0, n = function*() {
+                        return t = this, e = void 0, n = function* () {
                             try {
                                 yield this.$ecast.updateText(this.player.responseKey, this.value)
                             } catch (t) {
                                 if (t instanceof Be.EcastFilterError) return void(this.filterError = !0);
                                 this.$handleEcastError(t)
                             }
-                        }, new((s = void 0) || (s = Promise))((function(i, l) {
+                        }, new((s = void 0) || (s = Promise))((function (i, l) {
                             function a(t) {
                                 try {
                                     o(n.next(t))
@@ -4976,7 +4976,7 @@
 
                             function o(t) {
                                 var e;
-                                t.done ? i(t.value) : (e = t.value, e instanceof s ? e : new s((function(t) {
+                                t.done ? i(t.value) : (e = t.value, e instanceof s ? e : new s((function (t) {
                                     t(e)
                                 }))).then(a, c)
                             }
@@ -4989,7 +4989,7 @@
             var ke = (0, p.Z)(Ne, Ae, [], !1, null, "b7520044", null);
             ke.options.__file = "src/games/pp8/the-wheel/views/SingleTextEntry.vue";
             const Pe = ke.exports;
-            var Ze = function() {
+            var Ze = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -5008,9 +5008,9 @@
                         pointerboxstart: t.onPointerBoxStart,
                         pointerboxmove: t.onPointerBoxMove,
                         pointerboxend: t.onPointerBoxEnd,
-                        keyup: [function(e) {
+                        keyup: [function (e) {
                             return !e.type.indexOf("key") && t._k(e.keyCode, "enter", 13, e.key, "Enter") ? null : t.onTap.apply(null, arguments)
-                        }, function(e) {
+                        }, function (e) {
                             return !e.type.indexOf("key") && t._k(e.keyCode, "space", 32, e.key, [" ", "Spacebar"]) ? null : t.onTap.apply(null, arguments)
                         }]
                     }
@@ -5064,7 +5064,7 @@
                 Oe = s.n(Te),
                 Re = s(9707),
                 Ie = s(20909),
-                $e = function() {
+                $e = function () {
                     var t = this,
                         e = t.$createElement,
                         s = t._self._c || e;
@@ -5136,7 +5136,7 @@
                         }
                     }, [s("path", {
                         attrs: {
-                            d: "M455.12,2.35c8.26,13.61,12.39,20.43,20.65,34.09l-.84,49.49Q435.41,43.38,395.49,1.22q-26.65,1.16-53.28,2.61c9.6,11.32,\n                14.4,17,24,28.38L364.11,134c-8.51,12.49-12.77,18.75-21.27,31.3q31.14-3.65,62.34-6.68\n                c-8.42-12.13-12.64-18.18-21.06-30.25q1.58-38.7,3.16-77.39,53.37,59.42,106,119.5l7.17-139c9.78-10.78,14.67-16.15,\n                24.44-26.86Q490,3.23,455.12,2.35ZM311.9,47Q328.68,27.58,345.58,8.3,297,8.52,248.39,10l.83-1q-37.12,3.25-74.16,7.14c9.4,\n                11.08,14.1,16.64,23.51,27.79q-11,36.87-22,73.76Q161.32,68.53,146.1,19.41c-11.75,2.16-17.62,3.26-29.36,5.52Q99,76,81.34,\n                127.12L62.29,54.53c7.37-10.12,11.05-15.16,18.42-25.24Q40.28,34,0,39.79C9.69,52.23,14.53,58.47,24.23,71q14.43,62,28.85,\n                124c12.64-4.32,19-6.44,31.61-10.63q18.19-50.62,36.45-101.22,16.38,47.92,32.72,95.85c13.93-4.72,20.9-7,34.84-11.61\n                q18.15-64.12,36.35-128.22C234,28,238.81,21.93,247.15,11.54q14.52,19.8,29,39.63l.63,72.38q-14.43,23-28.81,46,45.44-2.72,\n                90.89-4.42c-9.68-14.51-14.52-21.74-24.21-36.17ZM635.05,4.89C643.31,19,647.44,26,655.69,40.15l-.84,49.44Q615.36,44.8,\n                575.44.39,548.77.06,522.12,0c9.61,11.86,14.42,17.81,24,29.74q-1,50.84-2.11,101.67c-8.51,12-12.77,18-21.28,30.09\n                q31.17-1.87,62.37-3.15c-8.43-12.61-12.64-18.9-21.07-31.45l3.16-77.21q53.37,62.41,105.94,125.49,3.58-69.28,7.16-138.57\n                c9.77-10.23,14.65-15.32,24.41-25.48Q669.92,7.74,635.05,4.89ZM771,151.48l-6.1-22.41c.59-13.85.89-20.78,1.47-34.62,\n                9.93-.52,14.88-.76,24.8-1.2,11.76,9.93,17.65,14.91,29.4,25l-3.78-57c-10.33,5.11-15.49,\n                7.69-25.83,12.89-9.66-.88-14.5-1.31-24.17-2.12C767.6,55.18,768,46.79,768.87,30c12.44,1.22,18.66,1.86,31.09,3.2,14.2,\n                10.36,21.3,15.57,35.49,26.09-3.61-16.39-5.42-24.58-9-40.95-16.62-1.37-24.94-2-41.58-3.16q-37-5.52-74-10.41l18.3,45.07\n                q-2.64,39.81-5.26,79.63c-8.25,13.32-12.37,20-20.62,33.36q65.63,6.71,130.94,15.71,3-22.83,6.08-45.68-21.48,12.06-42.83,\n                24.34C786.86,154.88,781.56,153.73,771,151.48ZM937.5,193.26q31.26.12,62.5.87c-10.77-10.89-16.16-16.32-27-27.11\n                q-11.28-25.87-22.58-51.74c9.12-2.49,13.68-3.71,22.79-6.14L990.6,76c-5.26-10.51-7.89-15.75-13.16-26.24\n                q-21-12.23-42.24-24.21-48.57-4-97.24-6.4c8.39,12.6,12.59,18.91,21,31.57v89.7c-6.55,15.26-9.82,22.9-16.37,38.19q36.73,\n                5.14,73.37,10.9-9.41-24.16-18.85-48.33L897.93,47c5.78-1,8.67-1.56,14.45-2.57,10,6.43,15,9.67,24.91,16.19,2.35,8.16,\n                3.52,12.24,5.86,20.4q-16.89,15-33.7,30.19Q923.49,152.21,937.5,193.26Z"
+                            d: "M127.5,165.6c-11.2,0-22.3,0-33.5,0.1c-6.1,2.2-12.1,4.4-18.1,6.6c-11.9-3.5-23.8-6.9-35.8-10.3\n	C28.5,147.2,16.8,132.6,5,118c5.7-16,11.4-31.9,17.3-47.8C36.9,61.6,51.4,53,66,44.6c12.1-0.5,24.2-0.9,36.3-1.2\n	c5.5-1.7,8.3-2.5,13.8-4.1c1.1,15.5,2.2,30.9,3.3,46.4c-9.2-7.2-18.4-14.3-27.6-21.4c-9.3-1.5-14-2.2-23.4-3.6\n	c-6.6,3.8-13.2,7.6-19.8,11.4C47,85.6,45.4,99,43.8,112.5c7.6,12.2,15.2,24.4,22.7,36.6c6.6,2.7,10,4,16.6,6.7\n	c5.5-1.9,13.9-3.5,16.3-5.9c1.3-1.3,2.3-5.8,3.4-8.6c-9-9.1-18.1-18.1-27.2-27.1c16.9-2.3,33.8-4.4,50.7-6.5\n	c-1.4,10.7-2.1,16-3.5,26.7C124.3,144.9,125.9,155.2,127.5,165.6z M131.3,162.1c4.3-9.6,11.5-20.8,13-28.6c3-15.4-2.1-41.3-3-62\n	c-6.2-10.7-12.3-21.3-18.6-32c20-1.2,40.1-2.1,60.2-2.9c11.1-1.3,22.3-2.6,33.4-3.8c3.4,10,6.7,20.1,10,30.1c-10-5-20-9.9-30.1-14.6\n	c-10,0.8-15,1.3-24.9,2.2c0.6,10.8,1.1,21.7,1.6,32.5c7.7-0.8,11.6-1.2,19.3-2c6.5-4.6,13-9.2,19.5-13.7c2.3,14.4,4.7,28.9,7.1,43.3\n	c-8.3-5-16.6-9.9-25-14.7c-7.8,1.8-11.6,2.7-19.4,4.5c0.7,10.7,1,16.1,1.7,26.9c2.6,6.5,4,9.8,6.6,16.3c6.9,0.2,13.9,0.4,20.9,0.6\n	c10.5-8.5,21-16.9,31.6-25.3c-0.6,12.1-1.1,24.2-1.7,36.3C199.3,156.9,165.3,159.2,131.3,162.1z M384.6,138.4\n	c-10.8,2.9-16.2,4.4-26.9,7.4c-9.9-25.3-19.9-50.5-30-75.7c-8.2,25.4-16.3,50.9-24.2,76.5c-9.8,2.6-14.7,4-24.4,6.7\n	c-9.9-32.5-20.1-64.9-30.5-97.3c-7.3-8.5-14.6-16.9-21.9-25.3c21.9-1.4,43.7-2.8,65.6-4c-5.5,7.4-8.2,11.1-13.7,18.5\n	c6.5,19,12.9,38,19.3,57.1c7.7-25.8,15.7-51.6,23.8-77.3c9.5-1.3,14.2-1.9,23.7-3.1c9.5,25.7,18.8,51.5,28,77.4\n	c5.1-18.7,10.2-37.4,15.4-56.1c-6.6-7.6-13.3-15.1-20-22.6c20-1,40.1-1.8,60.2-2.4c-6.3,7.5-12.6,15-18.9,22.5\n	C401.2,73.3,392.8,105.8,384.6,138.4z M482.7,113.8c6.4,9.6,12.8,19.2,19.2,28.8c-23.6-0.2-47.3-0.2-70.9,0\n	c7.2-11.5,14.4-23,21.8-34.4c-0.5-18.7-1.1-37.4-1.6-56.2c-8.2-11.1-16.6-22.1-24.9-33c26.8,0.6,53.7,1.4,80.5,2.5\n	c-9,9.5-18,19.1-26.9,28.7C480.7,71.3,481.7,92.6,482.7,113.8z M621.6,151.7C595,119.3,567.8,87.4,540.1,56\n	c-0.9,19.9-1.9,39.9-2.9,59.8c5.4,8,10.8,16,16.2,24c-16.2,0.9-32.4,2-48.5,3.1c5.5-7.9,11.1-15.7,16.7-23.6\n	c0.6-26.2,1.2-52.4,1.8-78.6c-6.5-7.6-12.9-15.3-19.4-22.9c14.4-0.1,28.7-0.2,43.1-0.2c21,22.4,41.8,45.1,62.3,68.1\n	c0.6-12.7,1.2-25.4,1.8-38.2c-5.2-9-10.5-18-15.8-27c18.8,1.1,37.5,2.4,56.2,3.7c-6.9,6.7-13.7,13.4-20.5,20.1\n	C627.8,80.1,624.7,115.9,621.6,151.7z M761,159.4c-25.2-33.5-50.9-66.6-77.3-99.2c-1.8,19.9-3.6,39.8-5.5,59.6\n	c5.1,8.2,10.1,16.5,15.1,24.7c-16.2,0.2-32.4,0.6-48.6,1c5.9-7.6,11.8-15.2,17.7-22.8c1.7-26.2,3.5-52.3,5.2-78.5\n	c-6.1-7.9-12.3-15.8-18.4-23.7c14.4,0.5,28.7,1.1,43,1.7c20,23.3,39.8,46.9,59.2,70.7c1.1-12.7,2.3-25.4,3.4-38.1\n	c-4.8-9.3-9.7-18.5-14.7-27.7c18.7,1.9,37.4,4,56.1,6.2c-7.2,6.4-14.3,12.7-21.4,19.2C770.3,88.1,765.6,123.7,761,159.4z\n	 M785.2,150.3c6.1-8.5,15.5-18.1,18.5-25.4c6.1-14.5,6.4-40.9,9.6-61.3c-3.8-11.7-7.7-23.4-11.7-35.1c19.9,2.9,39.7,6.1,59.5,9.4\n	c11.2,1,22.3,2,33.5,3c1.3,10.5,2.5,21,3.7,31.5c-8.7-6.9-17.6-13.8-26.5-20.4c-9.9-1.2-14.9-1.8-24.9-2.9\n	c-1.6,10.7-3.3,21.4-5.1,32.1c7.7,0.8,11.6,1.2,19.3,2c7.3-3.2,14.6-6.3,21.9-9.5c-0.6,14.6-1.3,29.2-1.8,43.8\n	c-7.1-6.5-14.3-13-21.5-19.5c-8,0.2-12,0.3-19.9,0.5c-1.5,10.7-2.3,16-3.8,26.7c1.3,6.9,1.9,10.4,3.1,17.3\n	c6.7,1.6,13.5,3.3,20.4,4.9c12-6.2,24-12.3,36.1-18.4c-3,11.7-6,23.4-9,35.2C852.8,159.1,819,154.5,785.2,150.3z M953.1,113.1\n	c10.1-7.7,20.3-15.3,30.5-22.9c-1-6.3-1.5-9.4-2.6-15.6c-6.2-4.2-12.4-8.4-18.5-12.7c-4.1,0.6-8.2,1.3-12.1,1.9\n	c-3.4,24.1-6.8,48.2-10.3,72.3c3.4,12.4,6.7,24.8,10,37.2c-18.9-3.1-37.8-6-56.7-8.9c5.3-9.8,10.8-19.6,16.4-29.3\n	c2.8-23,5.6-45.9,8.5-68.9c-4.7-8.2-9.4-16.3-14.1-24.5c26.4,1.7,52.7,3.7,79.1,5.9c10.7,6.2,21.4,12.5,32.1,18.9\n	c2.6,6.7,5.1,13.5,7.6,20.2c-6,8.4-12.1,16.8-18,25.2c-7.6,1.8-11.4,2.7-19,4.6c4.1,13.2,8.2,26.4,12.2,39.6\n	c7.4,8.3,11.1,12.5,18.5,20.9c-16.6-0.4-33.1-0.7-49.7-0.9C962.2,155.1,957.7,134.1,953.1,113.1z"
                         }
                     })])])
                 };
@@ -5145,7 +5145,7 @@
             var Ge = (0, p.Z)(De, $e, [], !1, null, "106f6fec", null);
             Ge.options.__file = "src/games/pp8/the-wheel/views/spin/Answer.vue";
             const Ue = Ge.exports;
-            var Ye = function() {
+            var Ye = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -5219,7 +5219,7 @@
                 })], 1)
             };
             Ye._withStripped = !0;
-            var We = function() {
+            var We = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -5276,7 +5276,7 @@
                 }), t._v(" "), s("path", {
                     staticClass: "text",
                     attrs: {
-                        d: "M690.4,118c-0.2-0.3-0.3-0.5-0.4-0.8c-4.3,1.6-6.4,2.5-10.7,4.1c0.9,1,1.9,1.3,3.1,2.1c1.5,6,2.6,11,4,17.1\n                    c-4.1-5.5-7.6-10.3-11.6-15.8c0.2-0.8,0.3-1.1,0.5-1.9c-0.1-0.2-0.1-0.3-0.2-0.4c-4.9,1.8-7.4,2.7-12.3,4.5c-0.4,\n                    0.6-0.6,0.9-0.9,1.4c6.1,4.3,9.9,10.6,10.7,17.8c-3.9-5.6-7.3-10.3-11.4-15.7c-0.1-1.4,0.3-2.3,0-3.6c-5.2,2-7.8,\n                    3.1-13,5.1c-0.1,0.7-0.2,1.3-0.3,2.1c0.6,0,0.9,0.1,1.4,0.1c12,12.6,18.8,28.7,31.1,40.3c1.9-1.6,2.9-2.4,4.8-3.9\n                    c-1.5-7-2.3-10.6-4-17.8c5,5.8,6,11.8,12.5,15.8c2-1.2,3-1.7,5-2.9c-3.5-15.9-5.2-29.4-10.5-45.1C689.2,119.5,\n                    689.6,119,690.4,118z M634.1,140.9c0.7-0.4,1-0.5,1.6-0.9c3,1.9,4.1,4.4,6.1,7c1.8-0.9,2.7-1.3,4.5-2.2c-0.7-5.7,\n                    1.1-10.1-1.6-15.1c-2.1,2.1-3.5,4.2-6.6,5c-4.9,1.8-7.4,2.6-12.3,4.4c-9.9,26.4,28.3,19.6,28.5,40.2c-0.6,0.9-0.8,\n                    1.6-1.6,2.3c-1.2-0.3-1.8-0.5-2.9-0.9c-1.3-2.8-2-4.2-3.3-7c-2.3,0.2-3.5,0.3-5.8,0.5c2.1,7-1.7,13.8,2.7,20.2\n                    c2.7-6.4,9.2-7.9,15.2-11C678.1,154.5,634,158.8,634.1,140.9z M777.3,135.1c-1.8,0.4-2.7,0.6-4.4,1c-0.1,3.6-0.2,\n                    5.4-0.4,8.9c-0.9,0.9-1.4,1.4-2.3,2.3c-1.2,0-1.9,0.1-3.1,0.1c-4.7-8.2-5.5-14-9.7-22.9c1.6-0.2,2.4-0.3,4-0.6c1.4,\n                    1.8,2.7,2.7,4.3,4.4c1.4-1.4,2.1-2,3.5-3.4c-1.6-3.7-2.4-5.6-4-9.3c-2.1-0.9-3.2-1.3-5.3-2.1c-0.3,2.2-0.4,3.3-0.7,\n                    5.5c-1.7,0.5-2.5,0.7-4.2,1.1c-3-7.3-4.6-10.9-7.6-18c1.4-1,2.8-0.5,4.5-0.8c3.6,1.4,5.5,3.8,8,6.5c2-0.6,2.9-1,\n                    4.9-1.6c-3.4-5-5.2-7.5-8.5-12.2c-8.6,3.1-13,4.7-21.6,7.8c-0.1,0.5-0.2,0.8-0.3,1.3c10.1,13.4,14.1,31.2,21.6,46.4\n                    c-0.4,1.2-0.6,1.7-1.1,2.9c0.4,0.4,0.6,0.6,1,0.9c10.3-1.1,15.6-1.4,26-2C780.7,145.6,779.9,140.5,777.3,135.1z\n                    M737.6,152.8c-2.9-6.9-4.4-10.5-7.5-17.6c2.8-1.1,4.2-1.7,7-2.8c1.6-2.8,2.4-4.2,3.9-7c-1.2-4.8-1.8-7.3-3-12.1\n                    c-2.5-2.4-3.7-3.6-6.2-5.9c-4.4-0.9-6.7-1.3-11.1-2.1c-5,2.6-7.5,4-12.6,6.6c-0.7,1.4-1,2.1-1.7,3.5c0.8,0.8,1.1,\n                    1.2,1.9,2c0.5-0.5,0.8-0.7,1.3-1.1c5.8,12.6,11.3,25.4,16.5,38.3c-0.7,1.2-1,1.8-1.7,3c0.4,0.5,0.7,0.8,1.1,1.3\n                    c6.8-1.5,10.3-2.2,17.3-3.2c-0.3-0.8-0.4-1.2-0.7-2C740.3,153.3,739.4,153.1,737.6,152.8z M728.2,130.7\n                    c-0.9-1.2-1.4-1.8-2.3-2.9c-2.5-6.7-3.7-10.1-6.3-16.6c1.8-0.2,2.6-0.3,4.4-0.6c2.9,6.2,4.3,9.4,7.1,15.8c-0.5,\n                    1.5-0.8,2.3-1.3,3.8C729.2,130.4,728.9,130.5,728.2,130.7z M704.3,117c0.3-1.3,0.5-2,0.8-3.3\n                    c-0.1-0.2-0.1-0.3-0.2-0.5c-5.4-0.2-9.2,2.1-14.2,3.7c0.1,0.7,0.1,1.3,0.2,2c1,0.3,1.5,0.5,2.5,0.8c5.7,12.7,11.2,\n                    25.6,16.3,38.6c-0.3,1.6-0.5,2.5-0.8,4.1c0.5,0.6,0.8,0.9,1.3,1.5c5.5-1.8,8.3-2.6,13.8-4.2c0.2-0.4,0.3-0.6,\n                    0.5-1.1c-1.2-0.7-1.8-1.1-3-1.8C716,143.1,710.6,130.6,704.3,117z"
+                        d: "M661.3,140.6c-0.7,0.6-1.3,1.2-2,1.7c0.3,0.8,0.4,1.2,0.7,2.1c0,0.3,0,0.4,0.1,0.7c0,0.3,0,0.4,0.1,0.7\n	c0,1.4,0.1,2.8,0.1,4.2c0.6,7.3,1.2,14.7,1.8,22.2c-1.4,0.8-2.8,1.6-4.2,2.3c-0.6-0.3-1.3-0.5-1.9-0.8c-2.1-3.2-4.2-6.3-6.3-9.5\n	c0.5,4,0.9,8.1,1.4,12.2c-1.7,1.2-2.5,1.8-4.2,3c-1.1-0.6-1.6-1-2.6-1.6c-0.2-0.5-0.3-0.7-0.4-1.2c-3.1-4.5-6.3-9.2-9.4-13.8\n	c-2.2-3.3-4.5-6.7-6.7-10.2c-0.4-0.4-0.8-0.9-1.2-1.3c-0.4,0-0.7-0.1-1.1-0.1c0.1-0.2,0.1-0.4,0.2-0.6c0.1-0.3,0.2-0.5,0.3-0.8\n	c4.5-1.3,6.7-2,11.1-3.3c0,0.1,0,0.1,0.1,0.2c-0.2,0.9-0.3,1.4-0.5,2.3c1.8,2.8,2.7,4.2,4.5,7c1,1.6,1.5,2.4,2.6,3.9\n	c0-0.5,0-0.8-0.1-1.3c-0.1-1.3-0.2-2.6-0.3-4c-1.5-2.2-2.3-3.3-3.9-5.6c-0.7-0.5-1.3-1-2-1.4c0.3-0.3,0.7-0.8,1-1\n	c2.4-1.4,6.9-2,10.4-3c0,0.1,0.1,0.2,0.1,0.3c-0.3,0.5-0.4,0.8-0.7,1.3c1.5,2.3,2.2,3.5,3.7,5.8c1.3,1.9,2,2.8,3.3,4.7\n	c-0.2-3.1-0.3-4.6-0.5-7.6c-0.1-1.3-0.2-2.5-0.3-3.7c-0.8-0.5-1.2-0.7-2-1.2c0-0.1-0.1-0.1-0.1-0.2c3.6-1.1,5.4-1.7,9.1-2.9\n	C661.2,140.3,661.2,140.4,661.3,140.6z M662.7,139.6c3.3-1,4.9-1.5,8.2-2.5c1.1-0.1,2.3-0.2,3.5-0.2c0,0.1,0.1,0.2,0.1,0.3\n	c-0.4,0.9-0.7,1.3-1.1,2.1c1.6,4.9,2.5,7.4,4.1,12.2c1.4,4.1,2.4,10.5,4.1,12.3c0.3,0.3,1.4,0.6,2.1,0.9c-0.2,0.3-0.3,0.4-0.5,0.7\n	c-3.7,1.4-7.4,2.8-11.1,4.2c-0.3-0.4-0.5-0.6-0.8-0.9c0.4-1.1,0.6-1.7,1-2.8c-2.6-8.2-4.7-21.6-7.8-24.6c-0.2-0.2-1.3-0.3-1.9-0.5\n	c0-0.2,0-0.3,0-0.5C662.6,140.2,662.6,139.9,662.7,139.6z M690.4,131c0.9-0.3,1.4-0.5,2.3-0.8c1.4-1.1,2.2-1.6,3.6-2.7\n	c0.3,0.6,0.4,0.9,0.6,1.5c-0.7,3.2-1,4.8-1.7,7.9c-1.6,0.6-2.3,0.9-3.9,1.5c-0.7-1-1.5-2.1-2.2-3.1c-0.6-0.4-0.9-0.5-1.4-0.9\n	c-0.6,0.3-0.9,0.4-1.4,0.6c-0.1,1-0.1,2.1-0.2,3.1c1.1,1,2.3,1.9,3.4,2.9c4.4,1.5,6.6,2.3,10.9,3.7c1,0.8,2.1,1.6,3.2,2.3\n	c0.3,1,0.5,1.5,0.9,2.5c0.3,1,0.5,1.4,0.8,2.4c-0.6,1.6-0.8,2.4-1.4,3.9c-1.4,1.3-2.9,2.6-4.3,3.9c-3.4,1.1-5,1.6-8.4,2.7\n	c-0.9,0.3-1.3,0.5-2.1,0.8c-1.2,1.2-1.9,1.7-3.1,2.9c-0.5-1.2-0.8-1.8-1.3-3c0.6-2.2,1.3-4.5,1.9-6.7c0-0.7-0.1-1.3-0.1-2\n	c1.9-0.1,2.8-0.2,4.7-0.4c0.6,1.3,1.1,3.5,1.8,4c0.3,0.3,1.5,0.4,2.2,0.5c0.1-0.1,0.2-0.1,0.3-0.1c0.4-0.4,0.9-0.8,1.3-1.3\n	c0-1.2,0-2.3-0.1-3.5c-0.7-1-1.4-2-2.1-3c-5.3-1.8-7.9-2.8-13.2-4.7c-1.1-0.8-1.6-1.2-2.6-2c-0.6-1.9-0.9-2.8-1.5-4.6\n	c1.2-2.1,1.8-3.1,2.9-5.2C684.2,132.9,686.3,132.3,690.4,131z M719.2,131.2c-1.9,0.6-2.9,1-4.8,1.6c-0.5-1.5-0.7-2.2-1.2-3.7\n	c-0.9-0.7-1.4-1-2.3-1.7c-0.6,0.2-0.9,0.2-1.5,0.4c-0.3,1.2-0.5,1.8-0.9,3c1,3.7,2.1,7.5,3.1,11.2c1.3,2.1,1.9,3.1,3.2,5.2\n	c1.1,0.5,1.7,0.7,2.8,1.2c0.8-0.3,1.2-0.4,2-0.6c0.5-0.9,0.8-1.4,1.3-2.4c-0.4-1.3-0.6-1.9-1-3.2c1.9-0.6,2.8-0.9,4.7-1.5\n	c0.5,2,1.1,4.1,1.6,6.1c-0.7,1.7-1,2.5-1.7,4.1c-1,0.9-2.1,1.8-3.2,2.8c-2.3,0.7-3.5,1.1-5.8,1.8c-1.9-0.4-2.9-0.6-4.8-0.9\n	c-1.5-1.3-3-2.6-4.5-3.9c-0.8-2.1-1.1-3.1-1.9-5.1c-0.8-2.2-1.2-3.3-2-5.4c-0.1-2.3-0.4-5-0.1-6.9c0.2-1.2,0.9-3.3,1.5-4.3\n	c0.6-1.1,2.1-2.3,3.2-3.4c2.8-0.9,4.1-1.4,6.9-2.3c1.9,0.3,2.8,0.5,4.7,0.8c0.5,0.6,1,1.1,1.6,1.7\n	C719.9,127.5,719.5,129.4,719.2,131.2z M730.2,150.3c-0.4-0.5-0.6-0.8-1-1.3c0.4-1.1,0.6-1.7,1-2.8c-2.5-7.9-4.9-15.7-7.4-23.6\n	c-0.7-0.3-1.1-0.4-1.8-0.7c0.1-0.4,0.1-0.7,0.2-1.1c4.2-1.6,6.4-2.4,10.6-4c0.3,0.5,0.4,0.8,0.7,1.3c-0.2,0.4-0.3,0.6-0.6,0.9\n	c1,3.6,1.4,5.4,2.4,9c1.4-0.5,2.1-0.7,3.5-1.2c-1.2-3.6-1.9-5.4-3.1-9c-0.3-0.2-0.5-0.3-0.8-0.4c-0.1-0.5-0.2-0.8-0.3-1.3\n	c0,0,0,0,0,0c4-1.5,5.9-2.2,9.9-3.7c0.4,0.3,0.6,0.4,1.1,0.7c-0.1,0.3-0.2,0.4-0.3,0.7c2.9,9,5.8,18,8.7,26.9\n	c0.4,0.1,0.9,0.2,1.4,0.3c0.1,0.8,0.2,1.2,0.4,2.1c-4.6,1.3-6.9,2-11.5,3.3c-0.3-0.6-0.4-0.9-0.7-1.5c0.1-0.3,0.1-0.5,0.2-0.8\n	c-1.4-4.9-2.8-9.8-4.2-14.7c-1.3,0.4-2,0.7-3.3,1.1c1.9,5.6,2.9,8.5,4.8,14.1c0.5,0.3,0.7,0.5,1.2,0.8c0.1,0.5,0.2,0.8,0.3,1.4\n	C737,148.2,734.7,148.9,730.2,150.3z M765.9,103.6c1.9,2.8,2.8,4.2,4.7,7c-1.6,0.6-2.4,1-3.9,1.6c-0.9-0.8-1.8-1.6-2.7-2.5\n	c-1-0.3-1.5-0.5-2.4-0.8c-1.1,0.2-1.7,0.3-2.8,0.6c-0.3,0.2-0.4,0.3-0.7,0.4c1.3,4.3,1.9,6.4,3.2,10.7c1.3-0.5,2-0.7,3.3-1.2\n	c0.4-1.2,0.9-2.4,1.3-3.6c1.5,0.3,2.3,0.4,3.8,0.7c0.7,2.1,1,3.2,1.7,5.4c-1.3,1.1-1.9,1.6-3.1,2.7c-0.8-0.6-1.6-1.2-2.4-1.8\n	c-0.1-0.2-0.2-0.2-0.3-0.4c-1.2,0.3-1.9,0.5-3.1,0.9c1.6,5.2,2.3,7.8,3.9,12.9c0.3,0.2,0.4,0.4,0.7,0.6c1-0.2,1.4-0.3,2.4-0.5\n	c0.7-0.6,1.3-1.2,2-1.9c0.5-2.3,0.8-3.4,1.3-5.8c1.4-0.5,2.1-0.7,3.5-1.2c0.4,1.3,0.6,2,1.1,3.3c0.2,2.6,0.3,4,0.6,6.6\n	c-8.1,1.9-12.1,2.9-20.1,5c-0.2-0.2-0.4-0.3-0.6-0.5c0.4-0.7,0.8-1.4,1.1-2c-2.9-8.9-5.9-17.8-8.8-26.7c-0.6-0.4-0.9-0.6-1.6-1\n	c0.2-0.3,0.3-0.6,0.5-0.9C755.3,108,758.9,106.6,765.9,103.6z"
                     }
                 })], 1), t._v(" "), s("g", {
                     staticClass: "light light-1 white",
@@ -5321,7 +5321,7 @@
                 }), t._v(" "), s("path", {
                     staticClass: "text",
                     attrs: {
-                        d: "M721.1,234.2c-2.8,2.3-4.2,3.5-7,5.7c-1.3,5.2-1.9,7.7-3.3,12.9c5.7,5.4,10.4,9.5,18.7,10.5c3.9-3.6,5.9-5.5,9.7-9.2\n                    c0.3-6.8-0.7-12.1-4.6-17.9C729.2,235.4,726.5,235,721.1,234.2z M728.5,260.2c-4.3-3-7.5-5.6-9.6-10.3c1.3-4.8,\n                    2-7.2,3.3-12.1c3.1,1.2,4.7,1.8,7.8,3c1.5,2.9,2.2,4.4,3.7,7.4C731.7,253.1,730.7,255.5,728.5,260.2z M759.5,256.1\n                    c3.9-1.4,5.9-2.2,9.8-3.6c-5.6-2.3-8.2-6.2-11.7-10.7c1.3-1,1.9-1.5,3.2-2.5c0.4-2.7,0.6-4.1,0.9-6.9\n                    c-6.6-9.3-17.8-2.9-26.8-0.6c2,1.7,3,2.5,5,4.2c2.2,8.1,5.7,14.4,3.9,22.8c4.8-0.9,7.3-1.3,12.1-2.2\n                    c-6.5-7.1-7.3-14.8-10.1-23.6c0.8-0.5,1.3-0.8,2.1-1.3c1.9,0.5,2.8,0.8,4.7,1.3c0.8,1.3,1.2,1.9,2,3.2c-1.5,\n                    2.9-2.2,4.4-3.7,7.2C754.4,248.6,756.2,251.1,759.5,256.1z"
+                        d: "M719.6,262l-5.4-0.9c-1.8-1.5-3.7-2.9-5.5-4.4l2.1-7.6l4.2-3.6c2.6,0.2,5.3,0.4,7.9,0.6c0.8,1.5,1.6,3,2.4,4.4\n	c0,1.9,0.1,3.8,0.1,5.7C723.5,258.2,721.5,260.1,719.6,262z M715.6,247.6c-0.7,2.4-1.4,4.8-2.1,7.2l1.8,3c1.3,0.9,2.5,1.7,3.8,2.6\n	l3.2-7.2l-2.1-4.1L715.6,247.6z M734.7,257.1l-7.5,1.1l0.7-3.6c-0.8-2.8-1.7-5.6-2.5-8.3c-0.7-0.7-1.4-1.5-2.2-2.2l5.5-2l4.1-1\n	c2,0.3,3.9,0.5,5.9,0.8l2.7,4.2l0.5,5.3L734.7,257.1z M732.3,242.9l-3.3,1c1.2,3.7,2.4,7.4,3.7,11.1l5.2-3.2l-0.3-4.7\n	c-0.8-1.2-1.6-2.4-2.3-3.5C734.3,243.3,733.3,243.1,732.3,242.9z M743.6,254c0.3-1.3,0.7-2.6,1-3.9c-0.6-2.6-1.1-5.2-1.7-7.8l-3-3.7\n	l7.2-1.6l4-1.2l2,3.6c-1.3-0.4-2.7-0.8-4-1.2l-3,0.8c0.3,1.4,0.6,2.7,0.9,4.1l2.3-0.7c0.7-0.7,1.4-1.4,2.1-2.2\n	c0.6,1.8,1.3,3.5,1.9,5.3l-3.4-1.3l-2.3,1l0.8,3.4l1.2,1.9c0.9-0.1,1.8-0.3,2.6-0.4l3.3-3.9c0.2,1.5,0.4,3.1,0.7,4.6L743.6,254z\n	 M761.5,241.5l2.3-4.3l-1.1-1.7c-0.9-0.2-1.8-0.4-2.7-0.6c-0.4,0.3-0.9,0.6-1.3,0.8l2.5,9.1l3.1,3.9l-7.1,1.8\n	c0.1-1.4,0.3-2.9,0.5-4.3l-2.4-8.6c-0.9-0.7-1.9-1.5-2.8-2.2l9.2-3.2c1.5,0.2,3.1,0.4,4.6,0.6c0.6,0.7,1.3,1.3,1.9,2l-0.7,3.9\n	l-1.9,1.5l3.5,4l3.2,1.5l-5.8,2.5L761.5,241.5z"
                     }
                 })], 1), t._v(" "), s("g", {
                     staticClass: "light light-2 red-orange",
@@ -5366,7 +5366,7 @@
                 }), t._v(" "), s("path", {
                     staticClass: "text text-2",
                     attrs: {
-                        d: "M744.5,333.9c1.9-1.7,2.9-2.5,4.8-4.2c-3.2-4.2-4.9-6.2-8.2-10.5c-11.3,0.5-20.1,3.9-31,0c-1.8,0.7-2.7,1.1-4.5,1.9\n                    c-0.8,5.3-1.3,8-2.1,13.5c1.8,1.6,2.7,2.3,4.5,3.8c2.8-4.4,4.2-6.5,7-10.6c1.1,0.1,1.6,0.1,2.7,0.1c3.3,17.4,8,\n                    34.6,8.4,52.3c-1,1-1.5,1.6-2.4,2.6c0.3,0.7,0.5,1,0.8,1.7c8-2.5,12-3.6,20.1-5.5c0.1-0.7,0.2-1,0.4-1.7\n                    c-1.7-0.5-2.6-0.8-4.4-1.3c-1.5-16.9-7.7-33.8-7.6-50.6c0.9-0.1,1.3-0.1,2.1-0.2C739,328.9,740.8,330.6,744.5,\n                    333.9z M803.3,369.3c-1.6-9.2-2.4-13.8-4.1-23c3.7-0.9,5.5-1.4,9.1-2.3c2.7-3.3,4-5,6.5-8.5\n                    c-0.1-6.5-0.2-9.8-0.5-16.5c-2.3-3.4-3.5-5.1-5.8-8.4c-5-1.4-7.5-2.1-12.5-3.4c-6.6,3.3-9.9,4.7-16.7,7.4\n                    c-1.2,1.7-1.8,2.5-3,4.1c0.7,1.1,1,1.6,1.7,2.7c0.8-0.5,1.2-0.7,1.9-1.2c3.2,16.1,6.2,32.2,8.9,48.4\n                    c-1.2,1.3-1.8,1.9-3,3.2c0.1,0.3,0.3,0.5,0.4,0.7c-1.1-0.9-1.9-1.5-3.2-2.5c-6-17.7-12.2-35.1-18.9-52.6c-3.2,\n                    0.1-4.8,0.2-8,0.2c-0.8,19.1-2,38.1-3.6,57.1c-1,0.8-1.4,1.1-2.4,1.9c0.1,0.7,0.2,1.1,0.3,1.8c5.6-1,8.4-1.4,\n                    14-2.1c0.3-0.7,0.4-1.1,0.7-1.8c-1-0.6-1.5-0.9-2.6-1.5c0.2-4.1-0.9-6.9,0.2-10.9c1.1-0.1,1.6-0.1,2.7-0.2c1.3,4.2,\n                    2,6.3,3.2,10.5c-0.9,1-1.4,1.5-2.3,2.4c0.1,0.4,0.1,0.5,0.1,0.9c7.6-0.6,11.5-0.8,19.2-0.8c0.3-0.8,0.5-1.2,0.8-1.9\n                    c0.1,0.1,0.1,0.3,0.2,0.4c8.7-0.2,13.1-0.1,22,0.5c-0.1-1.1-0.1-1.6-0.2-2.7C806.5,370.6,805.4,370.2,803.3,369.3z\n                    M762.9,357.2c-0.9-6.1-1-10.1-1.8-16.2c2.8,5.3,3.6,10.1,4.2,15.9C764.3,357,763.8,357.1,762.9,357.2z M796.4,336.5\n                    c-1.1-8.6-1.7-13-3-21.7c2.1-0.2,3.2-0.2,5.3-0.4c1.8,8.4,2.6,12.6,4.3,21.1c-1,1.9-1.6,2.8-2.6,4.6c-0.8,0.2-1.3,\n                    0.2-2.1,0.4C797.5,338.8,797.1,338.1,796.4,336.5z"
+                        d: "M702.6,337c1.2,0.3,2.4,0.6,3.5,0.9c7.4-0.6,11.1-0.9,18.5-1.6c1.7,2.1,3.4,4.3,5.1,6.4c-1.2,0.8-2.4,1.7-3.6,2.6\n	c-2.1-1.7-4.1-3.4-6.1-5.1c-0.6,0.1-0.9,0.1-1.5,0.1c-0.3,0.8-0.5,1.6-0.7,2.4c1.2,9.5,2.4,19,3.6,28.5c1,0.3,2.1,0.5,3.1,0.8\n	c-0.1,0.4-0.2,0.6-0.3,1c-5.9,1.3-8.8,1.9-14.6,3.3c-0.2-0.4-0.3-0.6-0.5-1.1c0.6-0.5,1.6-1.1,1.8-1.5c0.5-1,0.1-3.9,0.1-5.8\n	c-1.4-10.3-2.1-15.4-3.5-25.7c-0.8,0-1.2,0-1.9,0c-1.9,2.2-3.8,4.4-5.7,6.7c-1.2-0.8-1.8-1.3-2.9-2.1c1-3.3,1.5-5,2.4-8.2\n	C700.5,337.8,701.2,337.5,702.6,337z M730.9,336.2c3.7-0.4,5.6-0.6,9.3-1.1c1.2,0.2,2.5,0.3,3.8,0.4c0,0.1,0,0.2,0,0.3\n	c-0.6,0.9-1,1.3-1.6,2.1c0.8,5.7,1.2,8.6,2,14.4c0.7,4.8,0.5,12,2,14.4c0.3,0.4,1.4,0.9,2.1,1.4c-0.3,0.3-0.4,0.4-0.7,0.7\n	c-4.3,0.7-8.6,1.5-12.9,2.4c-0.3-0.5-0.4-0.7-0.7-1.2c0.7-1.2,1-1.8,1.7-2.9c-1.2-9.6-0.7-24.7-3.5-28.7c-0.2-0.3-1.3-0.6-2-0.9\n	c0.1-0.2,0.1-0.4,0.1-0.6C730.7,336.8,730.8,336.5,730.9,336.2z M769.7,334.2c1.2,1.4,2.4,2.8,3.5,4.2c-0.4,3.2-0.5,4.8-0.9,7.9\n	c-2.1,1.8-3.2,2.7-5.3,4.4c-2.7,0.6-4,0.9-6.7,1.5c0.7,4.8,1.1,7.3,1.8,12.1c1.3,0.2,2.5,0.4,3.7,0.6c0,0.5,0,0.8,0.1,1.4\n	c-6.2,0.7-9.3,1-15.5,1.8c-0.2-0.4-0.4-0.6-0.6-1c0.9-0.8,1.3-1.2,2.2-2c-1.5-10.9-2.2-16.3-3.7-27.2c-0.6,0.2-0.9,0.4-1.5,0.6\n	c-0.4-0.6-0.6-0.9-1-1.5c1-0.9,1.5-1.3,2.5-2.2c5.1-1.2,7.6-1.8,12.7-3C764.5,332.8,766.2,333.2,769.7,334.2z M759,347\n	c0.4,0.8,0.7,1.3,1.1,2.1c0.6-0.1,0.9-0.1,1.5-0.2c0.9-1,1.3-1.4,2.2-2.4c-0.6-4.3-0.9-6.5-1.5-10.8c-1.6,0-2.3,0-3.9,0\n	C758.6,340.2,758.7,342.5,759,347z M797.2,330c1.2,1.4,2.4,2.9,3.5,4.3c-0.3,3.3-0.5,5-0.9,8.3c-2.1,1.9-3.1,2.8-5.3,4.6\n	c-2.7,0.6-4,0.9-6.7,1.5c0.7,4.9,1.1,7.4,1.8,12.4c1.3,0.3,2.5,0.5,3.7,0.8c0,0.6,0,0.8,0.1,1.4c-6.2,0.5-9.4,0.7-15.6,1.3\n	c-0.2-0.4-0.4-0.6-0.6-1c0.9-0.8,1.3-1.2,2.2-2c-1.5-10.9-2.2-16.4-3.7-27.3c-0.6,0.3-0.9,0.4-1.5,0.6c-0.4-0.6-0.6-0.9-1-1.5\n	c1-0.9,1.5-1.4,2.5-2.3c5-1.3,7.6-2,12.6-3.5C792,328.6,793.7,329.1,797.2,330z M786.6,343.4c0.4,0.8,0.7,1.3,1.1,2.1\n	c0.6-0.1,0.9-0.2,1.5-0.3c0.9-1,1.3-1.5,2.2-2.5c-0.6-4.5-0.9-6.7-1.5-11.1c-1.6,0-2.3,0-3.9,0.1\n	C786.2,336.4,786.3,338.7,786.6,343.4z M823,321.9c1.5,3.4,2.2,5.1,3.7,8.5c-1.8,0.4-2.7,0.6-4.6,0.9c-0.8-1.1-1.6-2.1-2.4-3.2\n	c-1-0.6-1.5-0.8-2.5-1.4c-1.3,0-1.9,0-3.1,0.1c-0.4,0.1-0.5,0.2-0.9,0.3c0.5,4.9,0.8,7.3,1.3,12.2c1.5-0.3,2.3-0.4,3.9-0.7\n	c0.7-1.2,1.4-2.4,2.1-3.6c1.6,0.6,2.4,0.9,3.9,1.5c0.3,2.5,0.5,3.7,0.8,6.2c-1.6,0.9-2.4,1.3-3.9,2.2c-0.8-0.8-1.5-1.6-2.2-2.5\n	c-0.1-0.2-0.2-0.3-0.3-0.5c-1.4,0.1-2.1,0.2-3.5,0.3c0.6,5.9,1,8.8,1.6,14.7c0.2,0.3,0.4,0.5,0.6,0.8c1.1,0,1.6,0,2.7-0.1\n	c0.8-0.5,1.7-1,2.5-1.6c1-2.4,1.5-3.6,2.6-6c1.6-0.2,2.4-0.4,4-0.6c0.2,1.5,0.3,2.2,0.5,3.7c-0.3,2.9-0.4,4.4-0.7,7.2\n	c-9.1,0.4-13.6,0.7-22.7,1.3c-0.2-0.3-0.3-0.4-0.6-0.6c0.6-0.6,1.1-1.3,1.6-2c-1.4-10.2-2.8-20.4-4.1-30.6c-0.6-0.6-0.9-0.9-1.5-1.5\n	c0.2-0.3,0.5-0.6,0.7-0.9C810.7,324.5,814.8,323.7,823,321.9z"
                     }
                 })], 1), t._v(" "), s("g", {
                     staticClass: "light light-3 white",
@@ -5411,7 +5411,7 @@
                 }), t._v(" "), s("path", {
                     staticClass: "text",
                     attrs: {
-                        d: "M773.4,447.8c-0.8-3.4-1.2-5-2.1-8.4c-9.7,0.8-14.5,1.2-24.2,2.1c0,2.8,0,4.1-0.1,6.9c3.1-1.7,4.6-2.5,7.6-4.2c0.5,\n                    0,0.8,0.1,1.3,0.1c0.5,8.4,2.4,15.4-2.3,22.9c5.6-0.3,8.5-0.5,14.1-0.8c-5.7-6.9-3.9-14.3-5.5-22.6c1-0.2,1.4-0.3,\n                    2.4-0.5C768.1,445.1,769.9,446,773.4,447.8z M800.8,441.8c-5.1-1.7-7.7-2.6-12.8-4.2c-3.3,1.8-4.9,2.7-8.2,4.5\n                    c-2.4,4.9-3.6,7.4-6.1,12.2c4.4,6.3,8.1,11.2,16,13.6c4.7-3,7-4.5,11.6-7.5C803.1,453.7,803.4,448.3,800.8,441.8z\n                    M789.4,464.7c-3.5-3.7-6.2-6.9-7.1-11.9c2.4-4.6,3.6-6.8,5.9-11.5c2.8,1.7,4.2,2.6,7,4.3c0.8,3.2,1.2,4.8,2,8\n                    C794.1,458.1,792.6,460.3,789.4,464.7z"
+                        d: "M753.2,456.5l-1.8,4.7l-3,0.8c-1.2-0.2-2.4-0.5-3.6-0.7l-1.5-3.2l-0.3-5.3l-1.6-2.4c2-0.1,3.9-0.3,5.9-0.4l-1.2,2.6\n	c0.1,1.7,0.2,3.4,0.3,5.2c0.2,0.8,0.5,1.5,0.7,2.3l1.5,0.5l1.8-0.9c0.3-1,0.6-1.9,0.9-2.9l-0.3-5.1l-1.5-2l4.3-0.1l-1,2.3\n	C752.8,453.4,753,455,753.2,456.5z M769.4,458.1l1.5,2.2l-5.5,0.3l1.4-2.9l-1.5-5.7c-0.9,2.9-1.8,5.7-2.7,8.6\n	c-0.4,0.3-0.8,0.5-1.3,0.8c-1.1-2.8-2.3-5.6-3.4-8.5c-0.2,1.9-0.5,3.9-0.7,5.8l1.6,2.6l-4.9-0.1l1.7-2.1l0.4-7.7\n	c-0.4-0.8-0.9-1.5-1.3-2.3l4.8,0.1l2.9,7l2.6-7.3l5.1-0.2l-1.8,2.5L769.4,458.1z M780.5,460.3l-5.8-0.5l1.2-2.6\n	c-0.1-2.2-0.3-4.4-0.4-6.6c-0.4-0.7-0.8-1.3-1.2-2l4.4-0.5l3.2,0c1.4,0.5,2.8,1.1,4.2,1.6l1.3,3.6l-0.5,4L780.5,460.3z M781.2,449.4\n	l-2.6,0.1c0.3,3,0.5,5.9,0.8,8.9l4.4-1.5l0.6-3.5c-0.4-1-0.8-2-1.1-3C782.5,450.1,781.8,449.7,781.2,449.4z M796.2,457.2l-0.7-2\n	l-3.3,0.4l-1,2l1.7,1.8l-5.4,0.2l2.2-1.9l3.2-9.8c0.8-0.3,1.6-0.7,2.4-1c1.5,3.4,2.9,6.9,4.4,10.3l1.2,1.6c-2,0-4,0.1-6,0.2\n	C795.3,458.4,795.8,457.8,796.2,457.2z M792.7,454.1l2.1-0.1l-1-3.4L792.7,454.1z M805.5,459.4l-1.5-0.1c-0.9-0.3-1.8-0.6-2.6-1\n	l-0.2-3.6l4.2,3c0.6-0.3,1.2-0.6,1.8-0.9l0.5-0.8l-1.5-2.1c-1.5-0.3-2.9-0.5-4.4-0.8c-0.4-0.9-0.9-1.9-1.3-2.8l1.9-2.5l2.7-1.4\n	l3.4,0.1l0.2,3c-1.2-0.6-2.3-1.1-3.5-1.7c-0.5,0.2-0.9,0.4-1.4,0.7l-0.7,1.2l0.9,0.8l4.6,0.9c0.6,1.1,1.3,2.1,1.9,3.2\n	c-0.3,0.9-0.7,1.8-1,2.7L805.5,459.4z"
                     }
                 })], 1), t._v(" "), s("g", {
                     staticClass: "light light-4 orange",
@@ -5456,7 +5456,7 @@
                 }), t._v(" "), s("path", {
                     staticClass: "text",
                     attrs: {
-                        d: "M722.4,534.2c0.8-2.3,1.2-3.4,2-5.7c1,0,1.5,0,2.5,0c2.4,3.2,2.4,6.4,3.3,10.1c2.6,0,4,0,6.6,0c2.8-5.2,4.1-7.7,\n                    6.8-12.8c-0.1-1.2-0.1-1.8-0.2-3.1c-3.7,1.1-6.7,2.5-10.7,1.7c-6.9-0.8-10.3-1.3-17.1-2.3c-18.3,13.3,1.1,30.5,\n                    12.2,41.1c1.4,4.9,1.2,8.7-0.7,13.4c-1.2,0.6-1.9,1.3-3.2,1.7c-1.2-0.9-1.8-1.3-3-2.2c0-3.5,0-5.2-0.1-8.7\n                    c-2.9-0.8-4.3-1.3-7.2-2.1c-1.6,8.5-9.7,13.8-8.1,23.1c12.8-10.6,27.4,1.6,37.4-16.6C747.5,554.3,726.7,549.4,\n                    722.4,534.2z M779.1,532.2c-4.8-2.4-7.2-3.5-12-6c-7.5,0.6-11.3,0.9-18.8,1.2c-1.6,1.1-2.4,1.7-4,2.8c0.5,1.2,0.7,\n                    1.7,1.1,2.9c0.9-0.2,1.3-0.3,2.2-0.6c-0.3,15-0.9,30.1-1.9,45.1c-1.5,1.1-2.3,1.7-3.8,2.8c0.2,0.7,0.4,1,0.6,1.7\n                    c9.1,0,13.6,0.1,22.6,0.6c0.1-0.9,0.2-1.4,0.3-2.3c-2-0.8-3-1.2-5.1-1.9c0.4-8,0.6-11.9,0.8-19.9c4-0.3,6-0.5,\n                    9.9-0.8c3.5-2.3,5.2-3.4,8.6-5.7c1.3-5,2-7.5,3.2-12.5C781.5,536.7,780.7,535.2,779.1,532.2z M767.7,550.4c-1.5,\n                    1.3-2.2,2-3.7,3.3c-0.9,0-1.3,0-2.2,0c-0.4-1.5-0.6-2.2-1-3.6c0.8-7.4,1.2-11.1,1.9-18.5c2.2,0.4,3.3,0.7,5.6,1.1\n                    C768,539.7,767.9,543.3,767.7,550.4z M801.4,532.7c1.1-1.3,1.7-2,2.8-3.4c0-0.2,0-0.3,0-0.6\n                    c-6.7-1.9-12.2-0.6-19-0.7c-0.3,0.8-0.6,1.4-0.8,2.2c1,0.7,1.6,1,2.6,1.7c-0.4,15.4-1.2,30.8-2.4,46.1c-1.3,\n                    1.6-1.9,2.4-3.2,4c0.3,0.8,0.4,1.3,0.6,2.1c7.5,0.4,11.3,0.7,18.8,1.4c0.5-0.4,0.7-0.6,1.2-0.9\n                    c-1-1.3-1.5-1.9-2.6-3.2C800.5,564.5,801.1,549.8,801.4,532.7z M843.7,520.6c-5.1,1.3-7.7,1.9-12.8,3c0,1,0,1.5,0,\n                    2.5c1.6,1.3,2.3,2,3.9,3.4c-0.2,7.9-0.4,11.8-0.7,19.7c-3.6-10.1-5.5-14.9-9.3-24.1c-7,1-10.6,1.4-17.6,2.1c-0.4,\n                    1.2-0.6,1.9-0.9,3.1c1.2,0.6,1.8,1,3.1,1.6c-0.3,16.6-0.8,33.1-1.6,49.7c-1.5,0.8-2.2,1.2-3.7,2.1c0.3,1,0.5,1.5,\n                    0.9,2.5c6.6,0.6,9.8,1,16.4,1.9c0.4-1.1,0.6-1.7,0.9-2.8c-1.9-1.1-2.9-1.6-4.8-2.6c1.1-12,1.5-18.1,2.2-30.2c5.6,\n                    14.3,8.2,21.8,13.1,38.3c3.7,0.6,5.6,0.9,9.2,1.6c1.6-21.6,2.6-43.2,2.9-64.9c0.9-1.5,1.4-2.2,2.4-3.7C845.7,522.5,\n                    845.1,521.8,843.7,520.6z"
+                        d: "M760.6,593.3c-2.8,0.4-4.2,0.5-7.1,0.9c-3.6-1.8-8.2-3.3-10.8-5.2c-2.1-1.5-4.9-4.8-6.5-7.1c-1.6-2.4-3.3-6.1-4.4-9.1\n	c-1-2.7-1.7-6-2.6-8.9c-0.9-3.7-1.4-5.5-2.4-9.2c-0.3,9.7-0.5,14.6-0.9,24.3c1.7,0.8,2.5,1.2,4.2,2c0,0.5,0,0.8-0.1,1.3\n	c-10.5-0.1-15.8,0-26.3,0.1c0-0.4,0-0.6,0-0.9c1.4-1,2.8-1.9,4.2-2.8c1.1-19.2,2.2-38.3,3.2-57.5c-1.4-0.8-2.8-1.7-4.2-2.7\n	c2-1.1,3-1.6,5.1-2.6c3.6-0.6,7.1-1.2,10.7-1.8c4.8,0.4,7.3,0.5,12.1,0.8c3.3,1.4,7.1,2.5,9.8,4.1c2.1,1.2,5.6,3.5,6.8,5.1\n	c1.1,1.5,1.8,5,2.7,7.4c-0.5,3.1-0.8,4.7-1.3,7.8c-4.1,3.1-6.2,4.7-10.4,7.9c3,11.2,6,22.4,9.1,33.6c1.3,3,1.9,4.5,3.2,7.5\n	C756.7,589.9,758.6,591.6,760.6,593.3z M734.9,536.8c0.2-5.8,0.3-8.6,0.5-14.4c-0.5-0.8-0.9-1.5-1.3-2.3c-1.4-0.2-2-0.4-3.4-0.6\n	c-0.5,0.6-1.1,1.1-1.7,1.7c-0.8,8.7-1.2,13-2,21.7c1.2,0,1.9,0.1,3.1,0.1c1.4-0.5,2-0.7,3.4-1.2C734,540.1,734.5,538.4,734.9,536.8z\n	 M787.9,520.6c2.9,19.7,5.7,39.4,8.5,59.2c1.6,1.4,2.3,2.1,3.9,3.5c-0.7,0.9-1,1.4-1.6,2.3c-9.7-1-14.5-1.5-24.2-2.3\n	c0-0.4,0-0.6,0-1c1.2-0.7,2.4-1.4,3.5-2.1c-0.4-4-0.9-7.9-1.4-11.9c-1.4-0.1-2-0.2-3.4-0.3c-0.4,0.5-0.6,0.8-0.9,1.3\n	c-0.7,3.4-1.4,6.9-2,10.3c1.1,0.9,1.7,1.3,2.8,2.2c-0.5,0.6-0.9,1.1-1.4,1.7c-7.2-0.3-10.8-0.5-18-0.7c0-0.8,0.1-1.2,0.1-2\n	c1.4-0.6,2.1-0.9,3.5-1.5c6.9-20.1,13.8-40.2,20.7-60.4C781.9,519.6,783.9,520,787.9,520.6z M776.7,544.7c-0.9,6.2-1.3,9.3-2.1,15.5\n	c0,0.9-0.1,1.3-0.1,2.2c1.2,0.1,1.8,0.1,2.9,0.2c0.4-4,0.5-6.1,0.9-10.1C777.8,549.9,777.3,547.4,776.7,544.7z M849.7,570.6\n	c-2.1,4.2-4.1,10.2-6.3,12.3c-1.9,1.8-6.9,3.2-10.3,4.7c-6.5-0.2-9.8-0.4-16.3-0.5c-5.9-2.2-8.8-3.3-14.7-5.4c0-1.1,0-1.7,0.1-2.9\n	c1.7-0.4,3.3-0.8,4.9-1.2c0.3-4.1,0.5-6.1,0.8-10.2c0.4-13.1,0.8-26.3,1.2-39.4c-1.4-0.8-2.7-1.5-4.1-2.3c0-0.4,0-0.6,0-1.1\n	c5.2-1.8,10.3-3.7,15.6-5.5c7.6,0.9,11.4,1.3,19,2.1c2.7,2.5,5.3,5,8,7.6c1.3,3.3,2,5,3.3,8.3C850.5,548.3,850.1,559.4,849.7,570.6z\n	 M830.6,577.9c0.5-17.3,1.1-34.7,1.6-52c-0.8-0.5-1.6-1-2.3-1.5c-0.9,0.9-1.4,1.4-2.3,2.4c-0.6,17.6-1.2,35.2-1.8,52.8\n	c0.5,0.5,0.7,0.7,1.2,1.2c0.8,0,1.2,0,2,0.1C829.6,579.8,830.1,578.8,830.6,577.9z"
                     }
                 })], 1), t._v(" "), s("g", {
                     staticClass: "light light-5 white",
@@ -5501,7 +5501,7 @@
                 }), t._v(" "), s("path", {
                     staticClass: "text",
                     attrs: {
-                        d: "M743.3,651.2c3,2.3,4.5,3.5,7.6,5.8c0-3.4-0.1-5.1-0.2-8.5c-9.7-0.8-14.5-1.2-24.2-2.1c-0.6,2.7-1,4-1.6,6.7\n                    c3.4-1.1,5.1-1.7,8.4-2.8c0.5,0.1,0.7,0.2,1.2,0.3c-1.4,8.2-1.2,15.4-7.4,21.9c5.6,0.7,8.4,1,14,1.6\n                    c-4.1-7.8-0.6-14.6-0.3-22.9C741.8,651.2,742.3,651.2,743.3,651.2z M785.1,651.7c-5.9-0.6-8.9-0.9-14.8-1.5c1,2.4,\n                    1.5,3.7,2.5,6.1c-0.7,2.4-1,3.7-1.7,6.1c-4.1-0.4-6.1-0.6-10.1-0.9c0-2.6,0.1-4,0.1-6.6c1.7-2,2.6-3,4.3-5\n                    c-5.3-0.8-7.9-1.2-13.2-2c4.7,7.3,1.9,14.2,1.5,22.3c-2.2,2.1-3.2,3.1-5.4,5.1c5.3,0.6,7.9,0.9,13.1,1.6\n                    c-1.2-4-1.5-7.4-0.8-11.6c4,0.5,5.9,0.8,9.9,1.3c-0.6,4.6-2.3,8.1-5,11.9c5.3,0.2,8,0.3,13.3,0.5\n                    c-0.9-2.3-1.3-3.4-2.2-5.6c1.1-6.5,1.7-9.7,2.7-16.2C781.6,655,782.7,653.9,785.1,651.7z M792.5,678.2c-0.7-3.7,\n                    0.2-6.6,0.9-10.2c1.7,0,2.5-0.1,4.2-0.1c1.7,1.8,2.5,2.7,4.2,4.6c0.4-4.1,0.6-6.1,1-10.2c-1.9,0.9-2.8,1.3-4.7,2.2\n                    l-4-0.5c0.6-3,0.9-4.5,1.5-7.4c2.1,0.3,3.1,0.4,5.2,0.7c2.1,1.9,3.2,2.8,5.3,4.7c-0.2-2.9-0.2-4.4-0.4-7.3\n                    c-6.9-0.4-12.4-1.6-19.1-2.8c3,9.6,1,20.1-5.8,27.8c8.6,1.5,12.9,2.2,21.6,3.7c1-3.3,1.5-4.9,2.5-8.2c-3.2,1.7-4.8,\n                    2.5-8,4.2C795.1,678.9,794.2,678.7,792.5,678.2z"
+                        d: "M752,673.8l9.1-3.7l-2.7,7.6l-23.3-2.5l18.8-23.5l-7.7-1.4l-8.4,5.2c0-3.1,0.1-6.1,0.1-9.2l26.3,2.4\n	c-5.9,7.9-11.7,15.8-17.6,23.7L752,673.8z M789.3,669l-5.9,10.8l-7.5,0.9c-2.8-1-5.5-2-8.3-3.1l-2.5-8.4l1.3-13l-3.1-6.4\n	c4.8,0.4,9.6,0.8,14.3,1.2l-3.8,5.9c-0.4,4.2-0.8,8.4-1.1,12.6c0.3,1.9,0.5,3.9,0.8,5.8l3.5,1.7l4.6-1.6c1.1-2.2,2.1-4.4,3.2-6.6\n	l1.1-12.4l-3-5.3l10.4,1.2l-3.3,5.1C789.7,661.4,789.5,665.2,789.3,669z"
                     }
                 })], 1), t._v(" "), s("g", {
                     staticClass: "light light-6 yellow",
@@ -5546,7 +5546,7 @@
                 }), t._v(" "), s("path", {
                     staticClass: "text",
                     attrs: {
-                        d: "M698.4,723.6c0-0.5,0.1-0.7,0.1-1.2c-6.5-1.5-9.7-2.3-16.2-4c0.4,1.9,1.4,2.9,2.2,4.6c-2.7,7.5-5,13.4-7.9,20.9\n                    c-0.8-8.9-1.5-16.6-2.3-25.5c0.8-0.6,1.2-0.9,2-1.6c0-0.3,0-0.4,0.1-0.6c-7.3-2.1-10.9-3.1-18.2-5.4c-0.9,0.3-1.3,\n                    0.4-2.1,0.7c4.1,9,4.8,18.7,0.4,27.7c-0.8-9.2-1.5-16.8-2.7-26.1c0.9-1.5,2-2.2,2.4-3.8c-7.8-2.3-11.7-3.5-19.4-6\n                    c-0.6,0.7-1.1,1.3-1.7,1.9c0.7,0.6,1,0.8,1.7,1.4c6.1,23.5,3.5,46.7,9.1,69.6c3.2-0.3,4.8-0.4,8-0.7c3.3-9.1,\n                    4.9-13.6,7.9-22.6c1.6,9.9-1.5,17.5,2.9,26.5c3,0.1,4.5,0.2,7.6,0.3c6.8-18.5,16.4-36.4,21.4-55.3C695.7,724.3,\n                    696.6,724.1,698.4,723.6z M723.9,788.4c5.5-17.9,10.5-35.9,15.1-54c0.9-0.4,1.3-0.7,2.2-1.1c-1-1-1.5-1.4-2.4-2.4\n                    c-7.1-1.3-10.7-2-17.8-3.5c0,0,0-0.1,0-0.1c-8.5-1.7-12.7-2.7-21.1-4.6c-0.5,0.7-0.7,1-1.2,1.7c0.8,1.3,1.3,2,2.1,\n                    3.3c-3.2,17.2-6.8,34.2-10.7,51.2c-1.6,1.6-2.4,2.4-4,4.1c0.1,1.4,0.1,2,0.2,3.4c7.7,1.7,11.6,2.6,19.3,4.3\n                    c0.3-0.7,0.5-1,0.8-1.7c6.5,1.8,9.8,2.8,16.3,4.6c1.7-1.8,2.5-2.6,4.2-4.4C725.8,788.9,725.1,788.7,723.9,788.4z\n                    M707.5,785.6c-0.9,0-1.4,0-2.3-0.1c0,0.5-0.1,0.8-0.1,1.3c-0.2-0.1-0.3-0.1-0.4-0.2c3.1-12.7,4.5-19.1,7.1-31.9\n                    c1.7,0.4,2.5,0.6,4.2,1C712.7,767.7,711,773.7,707.5,785.6z M717.3,750.3c-1.8-0.4-2.7-0.6-4.5-1c1.9-7.3,2.9-10.9,\n                    4.6-18.2c1-0.5,1.4-0.8,2.4-1.4c0.5,0.7,0.7,1,1.2,1.7C719.6,739,718.9,742.8,717.3,750.3z M761.8,784c-3.3,\n                    3.4-4.9,5.1-8.1,8.5c-1.9,0.6-2.8,0.9-4.7,1.4c-1.5-0.4-2.2-0.7-3.7-1.1c1.5-10.3,5.4-16.1,8-26.4c2.1,0.5,3.1,0.8,\n                    5.2,1.3c0.2,2.3,0.9,3.8,1.4,6c2.9-0.7,4.3-1,7.2-1.7c1.3-4.1,2-6.2,3.3-10.3c-1.8-1.7-2.8-2.6-4.6-4.4c-2.2,\n                    1.9-3.4,2.9-5.6,4.8c-2.4-0.4-3.6-0.5-6-0.9c2.6-8.3,3.8-12.4,6.3-20.8c2.4-0.2,3.9,1,6.2,1.6c2.9,3,3.4,6.2,4,10.1\n                    c2.9,0.3,4.4,0.5,7.4,0.8c0.3-6.2,0.4-9.3,0.4-15.5c-13.5-1.4-20.2-2.4-33.4-4.6c-0.6,0.4-0.9,0.7-1.5,1.1c0.5,1.3,\n                    0.8,2,1.3,3.3c-4.3,17.9-9.1,35.6-14.4,53.2c-1.4,1-2.2,1.5-3.6,2.5c0.1,0.6,0.2,0.8,0.3,1.4c12.8,3.2,19.2,4.8,\n                    31.9,7.9c3.5-6,6.9-10.7,8.8-17.4C765.4,784.5,764.2,784.3,761.8,784z M798.8,791.1c-5.2,4.6-9.3,13.2-17.5,9.7\n                    c2.3-11,6.7-16.9,10.1-27.8c2.1,0.4,3.1,0.7,5.2,1.1c0,2.4,0.7,3.9,1,6.3c3-0.8,4.5-1.2,7.5-2.1c1.7-4.4,2.5-6.7,\n                    4.1-11.1c-1.7-1.7-2.6-2.6-4.4-4.3c-2.4,2.2-3.6,3.2-6.1,5.3c-2.4-0.2-3.6-0.4-6.1-0.6c3.2-8.8,4.8-13.2,7.8-22\n                    c2.3-0.4,4,0.7,6.2,1.2c2.9,3.1,3,6.3,3.4,10.3c3,0.2,4.5,0.2,7.5,0.4c0.7-6.6,1-9.9,1.5-16.4\n                    c-13.7-0.4-20.5-0.8-34-2.1c-0.7,0.5-1,0.7-1.6,1.2c0.5,1.3,0.7,2,1.1,3.3c-5.5,18.6-11.7,37-18.3,55.2c-1.5,\n                    1.1-2.3,1.6-3.8,2.6c0.1,0.6,0.1,0.9,0.2,1.4c12.8,3.2,19.1,4.7,31.9,7.9c4-6.4,7.8-11.6,10.3-18.8C802.5,791.5,\n                    801.3,791.4,798.8,791.1z M849,744.6c0.4-1,0.6-1.5,0.9-2.5c-9.6,0.1-14.3,0-23.8-0.3c-0.7,0.8-1.1,1.2-1.8,1.9\n                    c3.7,16.3-14.4,45.2-19.7,62.5c-1.8,0.2-2.7,0.3-4.4,0.5c-0.1,1.7-0.2,2.5-0.3,4.2c12.3,2,20.6,7.3,33.1,5.9\n                    c4.4-6.9,6.6-10.4,10.9-17.4c-3.4-0.5-5.1-0.8-8.5-1.3c-3.5,4.7-6,8.9-11.6,11.5c-2-0.4-2.9-0.6-4.9-1c8.7-20,\n                    16.9-40,24.7-60.3C845.7,746.8,846.8,746.1,849,744.6z"
+                        d: "M658.1,750.1c-2.2,2.8-4.7,7.2-6.7,8.4c-1.7,1-5.7,1.1-8.6,1.6c-4.9-1.6-7.4-2.4-12.3-4c-4.1-3.2-6.1-4.8-10.2-8.1\n	c0.2-0.9,0.3-1.4,0.5-2.4c1.3,0.1,2.6,0.2,3.9,0.2c0.9-3.3,1.4-4.9,2.3-8.2c2.4-10.8,4.9-21.6,7.3-32.5c-0.9-1-1.8-2-2.6-3\n	c0.1-0.4,0.1-0.5,0.1-0.9c4.1,0,8.3-0.1,12.4-0.1c5.5,2.9,8.3,4.4,13.8,7.2c1.6,2.8,3.2,5.6,4.8,8.3c0.5,3,0.7,4.5,1.2,7.4\n	C661.6,734.6,660.4,739.8,658.1,750.1z M642.4,751.8c3.1-13.9,6.2-27.8,9.4-41.7c-0.5-0.6-1-1.2-1.5-1.9c-0.8,0.5-1.3,0.8-2.1,1.3\n	c-3.2,14.2-6.5,28.4-9.7,42.6c0.3,0.5,0.4,0.7,0.7,1.2c0.6,0.2,0.9,0.3,1.5,0.5C641.3,753.1,641.9,752.4,642.4,751.8z M697.1,787.9\n	c-2.2-0.3-3.4-0.4-5.6-0.6c-2.5-2.2-5.7-4.5-7.4-6.7c-1.4-1.8-3-5-3.8-7.3c-0.9-2.4-1.5-5.8-1.9-8.4c-0.3-2.4-0.4-5.3-0.6-7.8\n	c-0.1-3.2-0.2-4.8-0.4-8c-1.8,7.8-2.7,11.7-4.5,19.5c1.1,1,1.7,1.6,2.8,2.6c-0.1,0.4-0.2,0.6-0.3,1c-8-2.5-11.9-3.9-19.8-6.6\n	c0.1-0.3,0.1-0.4,0.2-0.7c1.2-0.4,2.4-0.7,3.6-1.1c3.7-14.9,7.5-29.8,11.2-44.7c-1-0.9-1.9-1.9-2.9-2.9c1.7-0.5,2.6-0.7,4.3-1.2\n	c2.8,0.2,5.7,0.3,8.6,0.4c3.7,1.1,5.5,1.6,9.3,2.7c2.3,1.7,5.1,3.3,6.9,5c1.5,1.4,3.8,3.8,4.4,5.4c0.6,1.5,0.6,4.4,0.9,6.6\n	c-0.9,2.5-1.4,3.7-2.3,6.2c-3.7,1.8-5.6,2.8-9.3,4.6c0.5,9.9,1,19.8,1.6,29.7c0.5,2.8,0.8,4.1,1.3,6.9\n	C694.7,784.3,695.9,786.1,697.1,787.9z M686.5,736c1.1-4.7,1.6-7,2.6-11.7c-0.2-0.7-0.5-1.4-0.6-2.1c-1-0.4-1.5-0.6-2.5-1.1\n	c-0.5,0.4-1,0.7-1.6,1.1c-2,6.9-2.9,10.3-4.9,17.2c1,0.3,1.4,0.4,2.4,0.7c1.1-0.1,1.7-0.2,2.8-0.3\n	C685.3,738.5,685.9,737.3,686.5,736z M738.1,732.5c0.2,5.3,0.2,7.9,0.4,13.2c-2.6-0.6-3.8-0.8-6.4-1.4c-0.5-1.9-1-3.8-1.5-5.7\n	c-1-1.3-1.5-2-2.4-3.4c-1.6-0.7-2.4-1.1-4-1.9c-0.5,0-0.8-0.1-1.3-0.1c-1.9,7-2.8,10.5-4.7,17.4c2.1,0.5,3.2,0.8,5.3,1.3\n	c1.5-1.2,3.1-2.4,4.6-3.6c1.7,1.7,2.6,2.5,4.3,4.2c-0.8,3.4-1.3,5.1-2.1,8.5c-2.5,0.4-3.8,0.6-6.3,0.9c-0.6-1.5-1.1-3-1.6-4.5\n	c0-0.3-0.1-0.5-0.1-0.8c-1.9-0.6-2.9-0.9-4.7-1.5c-2.2,8.4-3.4,12.6-5.6,21c0.1,0.5,0.2,0.8,0.4,1.3c1.4,0.5,2.1,0.7,3.6,1.2\n	c1.4-0.3,2.8-0.6,4.2-1c2.6-2.7,3.9-4.1,6.5-6.8c2.2,0.5,3.4,0.7,5.6,1.1c-0.5,2-0.8,3.1-1.3,5.1c-1.9,3.7-2.8,5.5-4.7,9.2\n	c-10.3-2.7-20.5-5.7-30.7-8.9c-0.2-0.5-0.2-0.7-0.4-1.2c1.1-0.6,2.1-1.3,3.2-1.9c3.7-15.1,7.3-30.3,11-45.4c-0.5-1.2-0.7-1.8-1.1-3\n	c0.5-0.3,0.9-0.6,1.4-0.8C719.1,727.8,728.6,730.3,738.1,732.5z M731.1,787.9c-0.1-1.1-0.1-1.7-0.2-2.8c1.5-1.4,2.3-2,3.8-3.4\n	c3.6-14.2,7.3-28.4,10.8-42.6c-0.7-1.1-1-1.7-1.7-2.8c0.5-0.6,0.7-0.9,1.2-1.5c6.8,1.6,10.2,2.3,17,3.7c-0.1,1-0.1,1.5-0.2,2.5\n	c-0.6,0.4-0.9,0.5-1.5,0.9c-1.8,6.2-2.8,9.3-4.6,15.5c2.2,0.5,3.3,0.7,5.5,1.2c1.5-6.4,2.2-9.7,3.7-16.1c-0.2-0.5-0.4-0.8-0.6-1.3\n	c0.3-0.9,0.4-1.3,0.7-2.2c0,0,0,0,0,0.1c6.4,1.4,9.6,2.1,16,3.3c0.3,0.8,0.5,1.2,0.8,2c-0.4,0.3-0.6,0.4-1,0.7\n	c-3.8,15.5-7.6,30.9-11.5,46.4c0.5,0.5,1,1,1.6,1.5c-0.5,1.3-0.8,2-1.3,3.3c-7.2-1.3-10.9-2.1-18.1-3.6c0.1-1.1,0.2-1.7,0.3-2.8\n	c0.4-0.4,0.6-0.7,1-1.1c2.4-8.5,4.8-17,7.2-25.6c-2.1-0.5-3.2-0.7-5.3-1.2c-2.3,10.1-3.5,15.2-5.8,25.3c0.4,0.9,0.6,1.3,1,2.1\n	c-0.3,0.9-0.5,1.4-0.8,2.3C741.7,790.4,738.2,789.6,731.1,787.9z M817.6,748.5c0.2,5.1,0.3,7.7,0.5,12.8c-2.6-0.3-3.9-0.4-6.6-0.7\n	c-0.5-1.8-1.1-3.6-1.5-5.4c-1-1.2-1.5-1.8-2.5-3c-1.7-0.6-2.5-0.8-4.1-1.4c-0.5,0-0.8,0-1.3,0c-1.9,7-2.8,10.5-4.7,17.5\n	c2.2,0.3,3.3,0.4,5.5,0.7c1.6-1.3,3.1-2.6,4.7-4c1.8,1.5,2.7,2.2,4.5,3.6c-0.8,3.4-1.3,5.1-2.1,8.5c-2.6,0.6-3.9,0.9-6.4,1.5\n	c-0.6-1.4-1.1-2.8-1.7-4.2c0-0.3-0.1-0.5-0.1-0.8c-1.9-0.4-2.9-0.6-4.9-1c-2.3,8.4-3.4,12.6-5.6,21c0.2,0.5,0.2,0.8,0.4,1.3\n	c1.5,0.3,2.2,0.5,3.7,0.8c1.4-0.4,2.8-0.9,4.3-1.4c2.6-2.9,4-4.3,6.6-7.3c2.3,0.2,3.4,0.3,5.8,0.5c-0.5,2-0.8,3.1-1.3,5.1\n	c-1.9,3.8-2.8,5.7-4.7,9.5c-10.5-1.6-21-3.5-31.4-5.6c-0.2-0.5-0.2-0.7-0.4-1.1c1.1-0.7,2.2-1.4,3.3-2.2c3.7-15.1,7.3-30.2,11-45.4\n	c-0.5-1.1-0.7-1.7-1.2-2.8c0.5-0.3,1-0.6,1.4-1C798.2,745.9,807.9,747.3,817.6,748.5z M860.1,757.5c-4,16.4-8,32.9-12,49.3\n	c-3.7-0.2-5.5-0.3-9.2-0.5c-2.5-10.7-4.9-21.3-7.3-32c-2.3,8.6-4.7,17.3-7,25.9c1.5,0.7,3,1.4,4.5,2.1c-0.5,1-0.8,1.4-1.3,2.4\n	c-6.4-0.5-9.6-0.8-16-1.5c-0.2-0.9-0.3-1.4-0.5-2.3c1.6-0.7,2.4-1.1,4-1.8c3.4-14.8,6.9-29.7,10.3-44.5c-0.9-0.7-1.7-1.3-2.6-2\n	c0.5-0.9,1.1-1.8,1.6-2.7c6.8,0.7,10.2,1,17.1,1.6c1.8,8.6,2.8,12.9,4.6,21.4c1.6-6.3,2.4-9.5,4-15.8c-1.2-1.4-1.8-2.1-3.1-3.5\n	c0.2-0.8,0.3-1.2,0.5-2c5,0.2,7.6,0.3,12.6,0.4c1.1,1.2,1.6,1.8,2.6,3.1C862,756,861.1,756.7,860.1,757.5z"
                     }
                 })], 1), t._v(" "), s("g", {
                     staticClass: "light light-7 white",
@@ -5664,7 +5664,7 @@
             var Fe = (0, p.Z)(He, Ye, [], !1, null, "0184ede7", null);
             Fe.options.__file = "src/games/pp8/the-wheel/views/spin/Main.vue";
             const qe = Fe.exports;
-            var Xe = function() {
+            var Xe = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -5872,7 +5872,7 @@
             var Je = (0, p.Z)(Qe, Xe, [], !1, null, "676f8778", null);
             Je.options.__file = "src/games/pp8/the-wheel/views/spin/Rainbow.vue";
             const ts = Je.exports;
-            var es = function() {
+            var es = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -6041,10 +6041,10 @@
                     }
                 },
                 watch: {
-                    "player.slices": function(t) {
+                    "player.slices": function (t) {
                         this.sliceManager.parse(t)
                     },
-                    isRainbowActive: function(t) {
+                    isRainbowActive: function (t) {
                         var e;
                         t || (this.hasSent = !1, this.isSpinning = !1, u.p8.killTweensOf(this.velocityTracked), this.velocityTracked.rotation = null !== (e = this.player.initialDegrees + 10) && void 0 !== e ? e : 10)
                     }
@@ -6118,7 +6118,7 @@
                         })), this.send(e), setTimeout((() => this.$resumeEcastUpdates()), 2e3)
                     },
                     send(t) {
-                        return e = this, s = void 0, i = function*() {
+                        return e = this, s = void 0, i = function* () {
                             if (!this.isSending) {
                                 this.isSending = !0;
                                 try {
@@ -6131,7 +6131,7 @@
                                 }
                                 this.hasSent = !0, this.isSending = !1
                             }
-                        }, new((n = void 0) || (n = Promise))((function(t, l) {
+                        }, new((n = void 0) || (n = Promise))((function (t, l) {
                             function a(t) {
                                 try {
                                     o(i.next(t))
@@ -6150,7 +6150,7 @@
 
                             function o(e) {
                                 var s;
-                                e.done ? t(e.value) : (s = e.value, s instanceof n ? s : new n((function(t) {
+                                e.done ? t(e.value) : (s = e.value, s instanceof n ? s : new n((function (t) {
                                     t(s)
                                 }))).then(a, c)
                             }
@@ -6163,7 +6163,7 @@
             var as = (0, p.Z)(ls, Ze, [], !1, null, "eb6d1820", null);
             as.options.__file = "src/games/pp8/the-wheel/views/spin/Spin.vue";
             const cs = as.exports;
-            var os = function() {
+            var os = function () {
                 var t = this,
                     e = t.$createElement,
                     n = t._self._c || e;
@@ -6181,14 +6181,14 @@
                         expression: "require('../../images/divider-long.inline.svg')"
                     }],
                     staticClass: "divider top"
-                }), t._v(" "), t._l(t.choices, (function(e, s) {
+                }), t._v(" "), t._l(t.choices, (function (e, s) {
                     return n("ToggleButton", {
                         key: e.text,
                         attrs: {
                             choice: e
                         },
                         on: {
-                            click: function(e) {
+                            click: function (e) {
                                 return t.onItemClick(s)
                             }
                         }
@@ -6214,7 +6214,7 @@
                 })], 2)
             };
             os._withStripped = !0;
-            var rs = function() {
+            var rs = function () {
                 var t = this,
                     e = t.$createElement,
                     n = t._self._c || e;
@@ -6324,7 +6324,7 @@
                         "aria-pressed": t.choice.isSelected
                     },
                     on: {
-                        click: function(e) {
+                        click: function (e) {
                             return e.preventDefault(), t.$emit("click", e)
                         }
                     }
@@ -6342,8 +6342,8 @@
             var hs = (0, p.Z)(ps, rs, [], !1, null, "3e37dd40", null);
             hs.options.__file = "src/games/pp8/the-wheel/views/tapping-list/ToggleButton.vue";
             const ds = hs.exports;
-            var vs = function(t, e, s, n) {
-                return new(s || (s = Promise))((function(i, l) {
+            var vs = function (t, e, s, n) {
+                return new(s || (s = Promise))((function (i, l) {
                     function a(t) {
                         try {
                             o(n.next(t))
@@ -6362,7 +6362,7 @@
 
                     function o(t) {
                         var e;
-                        t.done ? i(t.value) : (e = t.value, e instanceof s ? e : new s((function(t) {
+                        t.done ? i(t.value) : (e = t.value, e instanceof s ? e : new s((function (t) {
                             t(e)
                         }))).then(a, c)
                     }
@@ -6383,7 +6383,7 @@
                     isSending: !1
                 }),
                 watch: {
-                    "player.choices": function() {
+                    "player.choices": function () {
                         this.choices = [...this.player.choices]
                     }
                 },
@@ -6395,7 +6395,7 @@
                 },
                 methods: {
                     onItemClick(t) {
-                        return vs(this, void 0, void 0, (function*() {
+                        return vs(this, void 0, void 0, (function* () {
                             if (!this.isSending) {
                                 this.isSending = !0, this.choices[t].isSelected = !this.choices[t].isSelected;
                                 try {
@@ -6412,7 +6412,7 @@
                         }))
                     },
                     onSubmitClick() {
-                        return vs(this, void 0, void 0, (function*() {
+                        return vs(this, void 0, void 0, (function* () {
                             if (!this.isSending) {
                                 this.isSending = !0;
                                 try {
@@ -6431,7 +6431,7 @@
             var Cs = (0, p.Z)(us, os, [], !1, null, "db7f36ae", null);
             Cs.options.__file = "src/games/pp8/the-wheel/views/tapping-list/TappingList.vue";
             const gs = Cs.exports;
-            var ms = function() {
+            var ms = function () {
                 var t = this,
                     e = t.$createElement,
                     n = t._self._c || e;
@@ -6465,7 +6465,7 @@
                         theme: "choice"
                     },
                     on: {
-                        click: function(e) {
+                        click: function (e) {
                             return t.onChoiceClick(0)
                         }
                     }
@@ -6503,7 +6503,7 @@
                         theme: "choice"
                     },
                     on: {
-                        click: function(e) {
+                        click: function (e) {
                             return t.onChoiceClick(1)
                         }
                     }
@@ -6525,7 +6525,7 @@
                     isSending: !1
                 }),
                 watch: {
-                    player: function(t, e) {
+                    player: function (t, e) {
                         const s = e.freezeMs,
                             n = t.freezeMs;
                         n ? this.$emit("statusChange", {
@@ -6550,7 +6550,7 @@
                 },
                 methods: {
                     onChoiceClick(t) {
-                        return e = this, s = void 0, i = function*() {
+                        return e = this, s = void 0, i = function* () {
                             if (!this.isSending) {
                                 this.isSending = !0;
                                 try {
@@ -6563,7 +6563,7 @@
                                 }
                                 this.isSending = !1
                             }
-                        }, new((n = void 0) || (n = Promise))((function(t, l) {
+                        }, new((n = void 0) || (n = Promise))((function (t, l) {
                             function a(t) {
                                 try {
                                     o(i.next(t))
@@ -6582,7 +6582,7 @@
 
                             function o(e) {
                                 var s;
-                                e.done ? t(e.value) : (s = e.value, s instanceof n ? s : new n((function(t) {
+                                e.done ? t(e.value) : (s = e.value, s instanceof n ? s : new n((function (t) {
                                     t(s)
                                 }))).then(a, c)
                             }
@@ -6595,7 +6595,7 @@
             var fs = (0, p.Z)(ys, ms, [], !1, null, "42945394", null);
             fs.options.__file = "src/games/pp8/the-wheel/views/TappingRapid.vue";
             const xs = fs.exports;
-            var _s = function() {
+            var _s = function () {
                 var t = this,
                     e = t.$createElement,
                     n = t._self._c || e;
@@ -6610,7 +6610,7 @@
                     staticClass: "form-box"
                 }, [n("form", {
                     on: {
-                        submit: function(e) {
+                        submit: function (e) {
                             return e.preventDefault(), t.onSubmit.apply(null, arguments)
                         }
                     }
@@ -6620,7 +6620,7 @@
                     },
                     model: {
                         value: t.value,
-                        callback: function(e) {
+                        callback: function (e) {
                             t.value = e
                         },
                         expression: "value"
@@ -6672,10 +6672,10 @@
                     attrs: {
                         offset: "1"
                     }
-                })], 1)], 1), t._v(" "), t._l(t.slots, (function(e, s) {
+                })], 1)], 1), t._v(" "), t._l(t.slots, (function (e, s) {
                     return n("div", {
                         key: s
-                    }, t._l(e, (function(e, s) {
+                    }, t._l(e, (function (e, s) {
                         return n("div", {
                             key: s,
                             staticClass: "slot",
@@ -6786,7 +6786,7 @@
                     }
                 },
                 watch: {
-                    player: function({
+                    player: function ({
                         lastResult: t
                     }) {
                         if (!t) return;
@@ -6813,7 +6813,7 @@
                 },
                 methods: {
                     onSubmit() {
-                        return t = this, e = void 0, n = function*() {
+                        return t = this, e = void 0, n = function* () {
                             if (!this.isSending) {
                                 this.isSending = !0;
                                 try {
@@ -6826,7 +6826,7 @@
                                 }
                                 this.value = "", this.isSending = !1
                             }
-                        }, new((s = void 0) || (s = Promise))((function(i, l) {
+                        }, new((s = void 0) || (s = Promise))((function (i, l) {
                             function a(t) {
                                 try {
                                     o(n.next(t))
@@ -6845,7 +6845,7 @@
 
                             function o(t) {
                                 var e;
-                                t.done ? i(t.value) : (e = t.value, e instanceof s ? e : new s((function(t) {
+                                t.done ? i(t.value) : (e = t.value, e instanceof s ? e : new s((function (t) {
                                     t(e)
                                 }))).then(a, c)
                             }
@@ -6862,7 +6862,7 @@
             var ws = (0, p.Z)(bs, _s, [], !1, null, null, null);
             ws.options.__file = "src/games/pp8/the-wheel/views/typing-list/TypingList.vue";
             const zs = ws.exports;
-            var Ls = function() {
+            var Ls = function () {
                 var t = this,
                     e = t.$createElement,
                     s = t._self._c || e;
@@ -7214,7 +7214,7 @@
                 }
                 return n[t]
             }
-            i.keys = function() {
+            i.keys = function () {
                 return Object.keys(n)
             }, i.resolve = l, t.exports = i, i.id = 17995
         },

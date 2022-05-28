@@ -390,14 +390,14 @@
                         ".blockedMessage": {
                             observe: "blocked",
                             onGet(e) {
-                                return !0 === e ? `You are not receiving messages from ${this.model.attributes.name}` : ""
+                                return !0 === e ? `Du bekommst keine Nachrichten von ${this.model.attributes.name}` : ""
                             }
                         },
                         ".monsterClassIntro": {
                             observe: ["self", "monster"],
                             onGet(e) {
                                 let t = "a";
-                                return -1 !== "aeiouAEIOU".indexOf(e[1].name[0]) && (t = "an"), !0 === e[0] ? `You are ${t}` : `This player is ${t}`
+                                return -1 !== "aeiouAEIOU".indexOf(e[1].name[0]) && (t = "an"), !0 === e[0] ? `Du bist ${t}` : `Dieser Spieler ist ${t}`
                             }
                         },
                         ".monsterClassName": {
@@ -451,7 +451,7 @@
                             }, {
                                 name: "class",
                                 observe: "playerName",
-                                onGet: e => "AUDIENCE" === e ? "hidden" : ""
+                                onGet: e => "PUBLIKUM" === e ? "hidden" : ""
                             }]
                         },
                         ".startChattingButton": {
@@ -463,7 +463,7 @@
                         }
                     },
                     initialize() {
-                        this.template = l().template('<div class="titleBar"> <div class="playerName">playername</div> <div class="playerInDisguise">(in disguise)</div> </div> <div class="profileContent"> <div class="closeButton"></div> <div class="blockedMessage">You are not receiving messages from Kimberly</div> <div class="monsterIcon chatAvatars"><div class="blockedIcon"></div></div> <div class="monsterClass"><span class="monsterClassIntro">monsterClassIntro</span><br><span class="monsterClassName">monsterClassName</span></div> <div class="monsterPower"> <span class="monsterPowerIntro">Powers:</span> <p class="monsterPowerDescription">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laureet dolore magna aliquam</p> </div> <button class="startChattingButton btn">Start Chatting!</button> <button class="blockButton btn">Block</button> </div>'), this.render()
+                        this.template = l().template('<div class="titleBar"> <div class="playerName">playername</div> <div class="playerInDisguise">(in disguise)</div> </div> <div class="profileContent"> <div class="closeButton"></div> <div class="blockedMessage">Du bekommst keine Nachrichten von Kimberly</div> <div class="monsterIcon chatAvatars"><div class="blockedIcon"></div></div> <div class="monsterClass"><span class="monsterClassIntro">monsterClassIntro</span><br><span class="monsterClassName">monsterClassName</span></div> <div class="monsterPower"> <span class="monsterPowerIntro">Kräfte:</span> <p class="monsterPowerDescription">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laureet dolore magna aliquam</p> </div> <button class="startChattingButton btn">Jetzt chatten!</button> <button class="blockButton btn">Block</button> </div>'), this.render()
                     },
                     render() {
                         return this.$el.html(this.template(this.model.attributes)), this.stickit(), this
@@ -664,7 +664,7 @@
                     }), this.chatDetailInput = new g.E({
                         preventAutosize: !0,
                         model: new(r().Model)({
-                            placeholder: "send a message",
+                            placeholder: "Sende eine Nachricht",
                             inlineSubmit: !0,
                             maxLength: 50
                         })
@@ -684,7 +684,7 @@
                     var e = this;
                     return S((function*() {
                         const t = e;
-                        if (e.player = e.model.get("player"), e.chat = e.model.get("chat") || {}, e.model.get("chosenDateUserId") && (e.chat.mode = "browse"), e.player && (e.summaryTopComponent.model.set("player", e.player), "chat" === e.chat.mode ? (e.summaryTopComponent.model.set("mode", "TIME TO CHAT"), e.summaryTopComponent.model.set("description", "Click on a player to message them")) : "date" === e.chat.mode ? (e.summaryTopComponent.model.set("mode", "TIME TO CHOOSE"), e.summaryTopComponent.model.set("description", "Who do you want to date?")) : "browse" === e.chat.mode && null !== e.model.get("chosenDateUserId") && (e.summaryTopComponent.model.set("mode", "DATE CHOSEN"), e.summaryTopComponent.model.set("description", "Wait for others to choose"))), e.chat) {
+                        if (e.player = e.model.get("player"), e.chat = e.model.get("chat") || {}, e.model.get("chosenDateUserId") && (e.chat.mode = "browse"), e.player && (e.summaryTopComponent.model.set("player", e.player), "chat" === e.chat.mode ? (e.summaryTopComponent.model.set("mode", "ZEIT ZU SCHREIBEN"), e.summaryTopComponent.model.set("description", "Klicke auf einen Spieler, um mit ihm zu schreiben")) : "date" === e.chat.mode ? (e.summaryTopComponent.model.set("mode", "ZEIT ZU WÄHLEN"), e.summaryTopComponent.model.set("description", "Wen möchtest du daten?")) : "browse" === e.chat.mode && null !== e.model.get("chosenDateUserId") && (e.summaryTopComponent.model.set("mode", "DATE GEWÄHLT"), e.summaryTopComponent.model.set("description", "Warte auf die Auswahl der anderen"))), e.chat) {
                             let o;
                             if (d.app.client.isRole("player")) {
                                 if (o = !1, e.model.changed.alerts && (e.showAlerts(e.model.get("alerts")), C.b.vibrate()), e.oldUnread < e.chat.unread && (C.b.vibrate(), e.playSound()), e.chatDetailComponent.model.set("unread", e.chat.unread), e.oldUnread = e.chat.unread, null !== e.detailContactId) {
@@ -696,9 +696,9 @@
                                         t && t.$el.scrollTop(t.$el[0].scrollHeight)
                                     }
                                 }
-                                e.summaryCollection.set(e.chat.conversations), "chat" === e.chat.mode ? (e.bottomComponent.model.set("text", `You have ${e.chat.messagesAvailableToSend}${1===e.chat.messagesAvailableToSend?" message ":" messages "} left to send`), e.bottomComponent.model.set("background", e.player.color.medium)) : "date" === e.chat.mode ? e.bottomComponent.model.set("text", "Click DATE button on this screen, or within a conversation if still reading.") : e.bottomComponent.model.set("text", ""), e.chat.mode && e.mode !== e.chat.mode && (!e.detailContactId && e.getRegion("summary") && e.getRegion("summary").currentView === e.summaryList ? e.showChatSummary() : e.detailContactId && e.showChatDetail(e.detailContactId)), e.mode = e.chat.mode, e.chat.showProfile && e.showPlayerProfile(e.player, !0)
+                                e.summaryCollection.set(e.chat.conversations), "chat" === e.chat.mode ? (e.bottomComponent.model.set("text", `You have ${e.chat.messagesAvailableToSend}${1===e.chat.messagesAvailableToSend?" message ":" messages "} left to send`), e.bottomComponent.model.set("background", e.player.color.medium)) : "date" === e.chat.mode ? e.bottomComponent.model.set("text", "Klicke den DATE Knopf auf dem Bildschirm, oder während einer Konversation.") : e.bottomComponent.model.set("text", ""), e.chat.mode && e.mode !== e.chat.mode && (!e.detailContactId && e.getRegion("summary") && e.getRegion("summary").currentView === e.summaryList ? e.showChatSummary() : e.detailContactId && e.showChatDetail(e.detailContactId)), e.mode = e.chat.mode, e.chat.showProfile && e.showPlayerProfile(e.player, !0)
                             } else if (d.app.client.isRole("audience")) {
-                                if (e.model.changed.alerts && e.showAlerts(e.model.get("alerts")), e.summaryTopComponent.model.set("player", e.player), e.summaryTopComponent.model.set("mode", "AUDIENCE"), e.summaryTopComponent.model.set("description", "Vote what to say next"), o = e.chat && e.chat.history.length > e.chatDetailCollection.length, e.chat && e.chat.history) {
+                                if (e.model.changed.alerts && e.showAlerts(e.model.get("alerts")), e.summaryTopComponent.model.set("player", e.player), e.summaryTopComponent.model.set("mode", "AUDIENCE"), e.summaryTopComponent.model.set("description", "Wähle, was als nächstes gesagt werden soll"), o = e.chat && e.chat.history.length > e.chatDetailCollection.length, e.chat && e.chat.history) {
                                     e.allContacts = l().union([e.player], e.chat.contacts);
                                     let t = 0;
                                     e.fullHistory = l().map(e.chat.history, (o => (o.sender = l().findWhere(e.allContacts, {

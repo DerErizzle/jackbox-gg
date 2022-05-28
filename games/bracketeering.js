@@ -55,8 +55,8 @@
                             },
                             confirmButtonColor: "#000000",
                             cancelButtonColor: "#ff00ff",
-                            confirmButtonText: "YES, CENSOR IT!",
-                            cancelButtonText: "CANCEL"
+                            confirmButtonText: "JA, ZENSIEREN!",
+                            cancelButtonText: "ABBRECHEN"
                         }).then((e => {
                             e.value && t.triggerMethod("client:message", {
                                 action: n,
@@ -68,7 +68,7 @@
                         }) : this.model.get("isAudience") && (this.triggerMethod("client:message", {
                             type: "vote",
                             vote: s
-                        }), this.promptComponent.model.set("html", `Thank you. Your choice: <span>${this.model.get("choices")[s].html}</span>`), this.choicesList.collection.reset()), !1
+                        }), this.promptComponent.model.set("html", `Danke. Deine Wahl: <span>${this.model.get("choices")[s].html}</span>`), this.choicesList.collection.reset()), !1
                     }
                 }),
                 p = n.v.extend({

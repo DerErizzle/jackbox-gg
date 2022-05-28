@@ -176,7 +176,7 @@
                 }),
                 y = a().View.extend({
                     model: new p,
-                    template: n().template('<div id="controller" class="state-controller controller-content"> <div id="prompt" class="prompt text col-xs-12"></div> <div id="namesRegion" class="names"></div> <div id="instructionsRegion" class="instructions"></div> <div id="rolesRegion" class="roles"></div> <button id="submit" class="button choice-button btn btn-lg submit">SUBMIT</button> <div id="mirror" class="mirror"></div> </div>'),
+                    template: n().template('<div id="controller" class="state-controller controller-content"> <div id="prompt" class="prompt text col-xs-12"></div> <div id="namesRegion" class="names"></div> <div id="instructionsRegion" class="instructions"></div> <div id="rolesRegion" class="roles"></div> <button id="submit" class="button choice-button btn btn-lg submit">SENDEN</button> <div id="mirror" class="mirror"></div> </div>'),
                     className: "Sortable scrollable",
                     regions: {
                         prompt: "#prompt",
@@ -219,7 +219,7 @@
                                 showDoubleDown: t
                             })));
                         this.namesList.collection.set(e), this.rolesList.collection.set(o);
-                        const i = this.model.get("isAudience") ? "Drag one player to the role that fits them best." : "Drag players into their roles";
+                        const i = this.model.get("isAudience") ? "Ziehe den Spieler auf die Rolle, die zu ihm passt." : "Ziehe Spieler zu ihren Rollen.";
                         this.instructionView.model.set("html", i), this.chosen = !1, this.stickit()
                     },
                     onRender() {
@@ -343,7 +343,7 @@
                             cappedEnds: !0
                         }, t.prompt = {
                             html: "Draw yourself"
-                        }, t.playerInfo.playerColor && (t.background = t.playerInfo.playerColor)), "MakeSingleChoice" === t.state && t.choices && t.choices.length > 0 && "CENSOR ANSWERS" === t.choices[t.choices.length - 1].text && (t.choices[t.choices.length - 1].className = "censorAnswers"), t.isAudience ? t.playerInfo.username = "AUDIENCE" : t.playerInfo.hidden = !0, t
+                        }, t.playerInfo.playerColor && (t.background = t.playerInfo.playerColor)), "MakeSingleChoice" === t.state && t.choices && t.choices.length > 0 && "CENSOR ANSWERS" === t.choices[t.choices.length - 1].text && (t.choices[t.choices.length - 1].className = "censorAnswers"), t.isAudience ? t.playerInfo.username = "PUBLIKUM" : t.playerInfo.hidden = !0, t
                     },
                     getGameLayout(e) {
                         switch (e) {

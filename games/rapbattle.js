@@ -20,13 +20,13 @@
                         if (e.classes = e.classes || [], "EnterSingleText" === e.state) {
                             let t = (e.prompt.html || "").toUpperCase().split("<BR>");
                             t = t.map((e => -1 === e.indexOf("<DIV>") ? `<DIV>${e}</DIV>` : e)), e.prompt.html = t.join(""), e.actions = [], e.actions.push({
-                                text: "Submit",
+                                text: "Senden",
                                 action: "submit"
                             }), e.canRhymeForMe && e.actions.push({
-                                text: "Write For Me",
+                                text: "Reime für mich",
                                 key: "help"
                             }), e.suggestions && e.suggestions.length > 0 && e.actions.push({
-                                text: "Suggestions",
+                                text: "Beispiele",
                                 action: "suggestion"
                             })
                         } else "MakeSingleChoice" === e.state && (e.choiceType && "PlayerVote" === e.choiceType && e.classes.push("playerVote"), "repeating" === e.type ? (e.classes.push("actionChoice"), e.maxVotes = i.app.client.isRole("player") ? 200 : 100) : e.classes.includes("actionChoice") && (e.type = "repeating", e.maxVotes = i.app.client.isRole("player") ? 200 : 100), "Tap if you think this rhyme is DOPE" === e.prompt.text && (e.type = "repeating", e.maxVotes = i.app.client.isRole("player") ? 200 : 100));

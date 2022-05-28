@@ -75,10 +75,10 @@
                             customClass: {
                                 popup: "ridictionary"
                             },
-                            title: "Censor this?",
+                            title: "Zensieren?",
                             showCancelButton: !0,
-                            confirmButtonText: "Yes, Censor!",
-                            cancelButtonText: "No!",
+                            confirmButtonText: "Ja, zensieren!",
+                            cancelButtonText: "Nein!",
                             confirmButtonColor: "#900"
                         }).then((t => {
                             t.value && this.triggerMethod("client:message", {
@@ -102,7 +102,7 @@
                     },
                     parseBlob(t) {
                         const e = t;
-                        if (e.classes = e.classes || [], e.playerInfo = e.playerInfo || {}, e.playerInfo.classes = e.playerInfo.classes || [], e.playerInfo.avatar = e.playerInfo.avatar || "Avatar_Other", e.playerInfo.classes.push(e.playerInfo.color), e.isAudience && (e.playerInfo.avatar = "Avatar_A", e.playerInfo.username = "AUDIENCE"), e.playerInfo.username) {
+                        if (e.classes = e.classes || [], e.playerInfo = e.playerInfo || {}, e.playerInfo.classes = e.playerInfo.classes || [], e.playerInfo.avatar = e.playerInfo.avatar || "Avatar_Other", e.playerInfo.classes.push(e.playerInfo.color), e.isAudience && (e.playerInfo.avatar = "Avatar_A", e.playerInfo.username = "PUBLIKUM"), e.playerInfo.username) {
                             const t = e.playerInfo.username.length;
                             this.fullNameLength = this.fullNameLength || t, this.fullNameLength === t && (e.playerInfo.username = e.playerInfo.username.slice(1))
                         }
@@ -111,7 +111,7 @@
                             action: "paste",
                             block: !1
                         }, {
-                            text: "submit",
+                            text: "senden",
                             action: "submit",
                             block: !1
                         }]), "MakeSingleChoice" === e.state && e.announcePrompt && (e.textDescriptions = e.textDescriptions || [], e.textDescriptions.push({

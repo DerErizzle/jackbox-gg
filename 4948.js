@@ -159,14 +159,14 @@
                     staticClass: "constrain"
                 }, [s("div", {
                     staticClass: "top-items"
-                }, [s("h3", [e._v("RECENT GAMES")]), e._v(" "), s("button", {
+                }, [s("h3", [e._v("DEINE LETZTEN SPIELE")]), e._v(" "), s("button", {
                     staticClass: "view-all",
                     on: {
                         click: function(t) {
                             return t.preventDefault(), e.onPastGamesClick.apply(null, arguments)
                         }
                     }
-                }, [e._v("VIEW ALL")])]), e._v(" "), e._l(e.recentGames, (function(e) {
+                }, [e._v("ALLE ANZEIGEN")])]), e._v(" "), e._l(e.recentGames, (function(e) {
                     return s("PastGame", {
                         key: e.url,
                         staticClass: "home",
@@ -184,7 +184,7 @@
                             return t.preventDefault(), e.onPastGamesClick.apply(null, arguments)
                         }
                     }
-                }, [e._v("\n                View All Past Games\n            ")]) : e._e()], 2)]) : e._e()], 1)
+                }, [e._v("\n                Alle vergangenen Spiele ansehen\n            ")]) : e._e()], 2)]) : e._e()], 1)
             };
             i._withStripped = !0;
             var a, o = s(39666),
@@ -1263,14 +1263,14 @@
                     staticClass: "constrain"
                 }, [e.artifacts.artifacts.length ? s("div", {
                     staticClass: "top-items"
-                }, [s("h3", [e._v("YOUR PAST GAMES")]), e._v(" "), s("button", {
+                }, [s("h3", [e._v("DEINE LETZTEN SPIELE")]), e._v(" "), s("button", {
                     staticClass: "manage",
                     on: {
                         click: e.onManageClick
                     }
-                }, [e._v("\n                " + e._s(e.isManaging ? "DONE" : "MANAGE") + "\n            ")])]) : s("p", {
+                }, [e._v("\n                " + e._s(e.isManaging ? "FERTIG" : "VERWALTEN") + "\n            ")])]) : s("p", {
                     staticClass: "empty"
-                }, [e._v("No Past Games Yet")]), e._v(" "), s("transition-group", {
+                }, [e._v("Keine Spiele bisher")]), e._v(" "), s("transition-group", {
                     attrs: {
                         name: "list-transition"
                     }
@@ -1342,9 +1342,9 @@
                     staticClass: "name"
                 }, [e._v(e._s(e.name))]), e._v(" "), i("p", {
                     staticClass: "date"
-                }, [i("span", [e._v("PLAYED ON")]), e._v(e._s(e.artifact.date))])]), e._v(" "), e.viewed || e.artifact.viewed ? e._e() : i("p", {
+                }, [i("span", [e._v("GESPIELT AM")]), e._v(e._s(e.artifact.date))])]), e._v(" "), e.viewed || e.artifact.viewed ? e._e() : i("p", {
                     staticClass: "new"
-                }, [e._v("NEW")])]), e._v(" "), e.config && e.config.shopItems && e.config.shopItems.length ? i("div", {
+                }, [e._v("NEU")])]), e._v(" "), e.config && e.config.shopItems && e.config.shopItems.length ? i("div", {
                     staticClass: "items"
                 }, e._l(e.config.shopItems, (function(t) {
                     return i("div", {
@@ -1423,7 +1423,7 @@
                     },
                     cta() {
                         var e, t;
-                        return (null === (t = null === (e = this.config) || void 0 === e ? void 0 : e.shopItems) || void 0 === t ? void 0 : t.length) ? "VIEW GAME & SHOP" : "VIEW THIS GAME"
+                        return (null === (t = null === (e = this.config) || void 0 === e ? void 0 : e.shopItems) || void 0 === t ? void 0 : t.length) ? "SPIEL ANZEIGEN & SHOPPEN" : "SPIEL ANZEIGEN"
                     }
                 },
                 watch: {

@@ -185,10 +185,10 @@
                     staticClass: "submit-button control",
                     attrs: {
                         type: "submit",
-                        value: "Submit",
+                        value: "Absenden",
                         disabled: e.submitDisabled
                     }
-                }, [e._v("\n            Submit\n        ")])], 1)])
+                }, [e._v("\n            Absenden\n        ")])], 1)])
             };
             u._withStripped = !0;
             var p = s(44285),
@@ -421,7 +421,7 @@
                         role: "region",
                         "aria-label": "instructions"
                     }
-                }, [e._v("\n        Build your business card by clicking your name below. Once added, you can select your character.\n    ")]), e._v(" "), s("TopBar", {
+                }, [e._v("\n        Erstelle dein Namensschild, indem du deinen Namen unten anklickst. Wähle im Anschluss deinen Charakter aus.\n    ")]), e._v(" "), s("TopBar", {
                     attrs: {
                         username: e.info.name,
                         "add-word": function() {
@@ -492,13 +492,13 @@
                 }, [e.names.length ? e._e() : s("div", {
                     staticClass: "name-instructions",
                     style: e.instructionStyles
-                }, [e._v("\n            Drag your name to the card below\n        ")])]), e._v(" "), s("div", {
+                }, [e._v("\n            Ziehe deinen Namen auf deine Karte\n        ")])]), e._v(" "), s("div", {
                     class: e.names.length ? "paper-container slide-down" : "paper-container"
                 }, [s("div", {
                     staticClass: "paper"
                 }, [s("draggable", {
                     class: e.names.length || e.draggingName ? "name-draggable" : "name-draggable name-empty",
-                    style: "--content: 'Name here'",
+                    style: "--content: 'Name hier'",
                     attrs: {
                         group: {
                             name: "name",
@@ -524,7 +524,7 @@
                     }, [e._v(e._s(t))])
                 })), 0), e._v(" "), s("draggable", {
                     class: !e.names.length || e.stamps.length || e.draggingAvatar ? "stamp-draggable" : "stamp-draggable empty",
-                    style: "--content: 'Stamp here'",
+                    style: "--content: 'Hier stempeln'",
                     attrs: {
                         group: {
                             name: "stamp",
@@ -1004,14 +1004,14 @@
                             e.showShuffled ? e.showShuffled = !1 : e.shuffleStash()
                         }
                     }
-                }, [e._v("\n                " + e._s(e.showShuffled ? "Show Original" : "Shuffle") + "\n            ")]), e._v(" "), s("button", {
+                }, [e._v("\n                " + e._s(e.showShuffled ? "Original zeigen" : "Mischen") + "\n            ")]), e._v(" "), s("button", {
                     staticClass: "unshuffle control",
                     on: {
                         click: function(t) {
                             e.showSorted ? e.showSorted = !1 : e.sortStash()
                         }
                     }
-                }, [e._v("\n                " + e._s(e.showSorted ? "Show Original" : "Sort") + "\n            ")])])]), e._v(" "), s("transition", {
+                }, [e._v("\n                " + e._s(e.showSorted ? "Original zeigen" : "Sortieren") + "\n            ")])])]), e._v(" "), s("transition", {
                     attrs: {
                         name: "clipboard",
                         appear: ""
@@ -1109,14 +1109,14 @@
                             return t.preventDefault(), e.onSubmit.apply(null, arguments)
                         }
                     }
-                }, [e._v("\n                        Submit\n                    ")]), e._v(" "), e.answer.length || e.submitting ? e._e() : s("button", {
+                }, [e._v("\n                        Absenden\n                    ")]), e._v(" "), e.answer.length || e.submitting ? e._e() : s("button", {
                     staticClass: "start control",
                     on: {
                         click: function(t) {
                             return t.preventDefault(), e.startForMe.apply(null, arguments)
                         }
                     }
-                }, [e._v("\n                        Start for me\n                    ")])])]), e._v(" "), s("ProgressBar", {
+                }, [e._v("\n                        Starte für mich\n                    ")])])]), e._v(" "), s("ProgressBar", {
                     attrs: {
                         progress: e.player.progress,
                         submitted: e.submitting
@@ -1822,14 +1822,14 @@
                             e.showShuffled ? e.showShuffled = !1 : e.shuffleStash()
                         }
                     }
-                }, [e._v("\n                " + e._s(e.showShuffled ? "Show Original" : "Shuffle") + "\n            ")]), e._v(" "), s("button", {
+                }, [e._v("\n                " + e._s(e.showShuffled ? "Original zeigen" : "Mischen") + "\n            ")]), e._v(" "), s("button", {
                     staticClass: "unshuffle control",
                     on: {
                         click: function(t) {
                             e.showSorted ? e.showSorted = !1 : e.sortStash()
                         }
                     }
-                }, [e._v("\n                " + e._s(e.showSorted ? "Show Original" : "Sort") + "\n            ")])])]), e._v(" "), s("transition", {
+                }, [e._v("\n                " + e._s(e.showSorted ? "Original zeigen" : "Sortieren") + "\n            ")])])]), e._v(" "), s("transition", {
                     attrs: {
                         name: "clipboard",
                         appear: ""
@@ -1964,7 +1964,7 @@
                             return t.preventDefault(), e.onSubmit.apply(null, arguments)
                         }
                     }
-                }, [e._v("\n                        Submit\n                    ")]), e._v(" "), e.hasEmptyBlank ? s("button", {
+                }, [e._v("\n                        Absenden\n                    ")]), e._v(" "), e.hasEmptyBlank ? s("button", {
                     staticClass: "start control",
                     attrs: {
                         disabled: !!e.answers[e.focusedIndex].length
@@ -1974,7 +1974,7 @@
                             return t.preventDefault(), e.startForMe.apply(null, arguments)
                         }
                     }
-                }, [e._v("\n                        Start for me\n                    ")]) : e._e()])])])])], 1)
+                }, [e._v("\n                        Starte für mich\n                    ")]) : e._e()])])])])], 1)
             };
             ee._withStripped = !0;
             var te = function(e, t, s, a) {

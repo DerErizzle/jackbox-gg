@@ -77,10 +77,10 @@
                         autocapitalize: "characters",
                         className: "",
                         inlineSubmit: !1,
-                        inlineSubmitText: "Submit",
+                        inlineSubmitText: "Senden",
                         error: "",
                         strings: {
-                            ERROR_NOTHING_ENTERED: "You need to enter something!"
+                            ERROR_NOTHING_ENTERED: "Du musst etwas eingeben!"
                         }
                     }
                 }),
@@ -237,7 +237,7 @@
                             action: "submit"
                         }],
                         strings: {
-                            ERROR_NOTHING_ENTERED: "You need to enter something!"
+                            ERROR_NOTHING_ENTERED: "Du musst etwas eingeben!"
                         },
                         autocapitalize: "characters"
                     }
@@ -382,7 +382,7 @@
                 D = u.S.extend({
                     defaults: {
                         toggled: !1,
-                        leftLabel: "Regular Prompt",
+                        leftLabel: "Normaler Prompt",
                         rightLabel: "Thriplash Prompt"
                     }
                 }),

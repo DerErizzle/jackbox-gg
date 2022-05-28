@@ -22,7 +22,7 @@
                     model: new p({}),
                     template: r().template(`${d.Z}<div class="mech"></div>`),
                     update() {
-                        this.strings = this.model.get("strings"), this.model.get("gameCanContinue") ? (this.strings.button_sameplayers = "Start Next Gauntlet", this.strings.button_newplayers = "Quit") : (this.strings.button_sameplayers = "Same Players", this.strings.button_newplayers = "New Players"), c.W.prototype.update.apply(this)
+                        this.strings = this.model.get("strings"), this.model.get("gameCanContinue") ? (this.strings.button_sameplayers = "Nächste Prüfung starten", this.strings.button_newplayers = "Quit") : (this.strings.button_sameplayers = "Gleiche Spieler", this.strings.button_newplayers = "Andere Spieler"), c.W.prototype.update.apply(this)
                     }
                 }),
                 h = n.p.extend({

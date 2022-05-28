@@ -282,8 +282,8 @@
                 },
                 onRoomWasDestroyed() {
                     d.app.storage && d.app.storage.isSupported && (d.app.storage.remove("roomCode"), d.app.storage.remove("reconnect")), g.b.show("error", {
-                        titleText: "Disconnected",
-                        text: "Thanks for playing!",
+                        titleText: "Verbindung getrennt",
+                        text: "Danke für\'s spielen!",
                         willClose: () => {
                             window.location.reload(!0)
                         }
@@ -291,8 +291,8 @@
                 },
                 onDisconnected() {
                     g.b.show("error", {
-                        titleText: "Disconnected",
-                        text: "You have been disconnected.",
+                        titleText: "Verbindung getrennt",
+                        text: "Deine Verbindung wurde getrennt.",
                         willClose: () => {
                             window.location.reload(!0)
                         }
@@ -449,7 +449,7 @@
                 c.done ? e(r) : Promise.resolve(r).then(n, s)
             }
             const p = c.I.extend({
-                template: a().template('<div id="page-triviadeath" class="page"> <div id="player" class="dark-background light-text"> <h1><%=username%></h1> </div> <div id="preload" class="preload"></div> <div id="game" class="game pt-pageholder"> <div id="state-lobby" class="pt-page-off game-page textured-background"> <div class="container"> <br/><span id="lobby-text"></span><br/> <form class="pure-form"> <button type="button" id="button-startgame" class="light-text button-game button-xlarge pure-button pure-input-1">EVERYBODY\'S IN</button> <button type="button" id="button-stopcountdown" class="light-text button-game button-xlarge pure-button pure-input-1">CANCEL</button> <button type="button" id="button-sameplayers" class="light-text button-game button-xlarge pure-button pure-input-1 button-endbuttons">same players</button> <button type="button" id="button-newplayers" class="light-text button-game button-xlarge pure-button pure-input-1 button-endbuttons">new players</button> </form> </div> </div> <div id="state-logo" class="pt-page-off game-page black-background logo-image"> </div> <div id="state-make-single-choice" class="pt-page-off game-page textured-background"> <div id="make-single-choice-text" class="dark-text white-background" style="width:100%;text-align:center"></div> <div id="make-single-choice-choices"></div> </div> <div id="state-make-many-choices" class="pt-page-off game-page textured-background"> <div id="make-many-choices-text" class="dark-text white-background" style="width:100%;text-align:center"></div> <div class="container"> <div id="make-many-choices-sub-text" class="white-text" style="width:100%;text-align:center"></div> <div id="make-many-choices-choices" class="row light-text" style="width:100%"></div> <div id="make-many-choices-submit-button-container" style="width:100%;display:table"> <button type="button" id="make-many-choices-submit-button" class="light-text button-game button-xlarge pure-button pure-input-1">SUBMIT</button> </div> </div> </div> <div id="state-enter-single-text" class="pt-page-off game-page textured-background"> <div> <div id="enter-single-text-text-container" class="white-background"></div> <div id="enter-single-text-error" class="red-background"></div> <div id="enter-single-text-input-container" class="container"> <form class="pure-form" id="enter-single-text-field"> <div class="pure-u-1"> <input id="enter-single-text-input" name="enter-single-text-input-field" class="pure-input-1 capitalize" type="text" maxlength="45" placeholder="ENTER HERE" autocapitalize="off" autocorrect="off" autocomplete="off"> </div> <button type="submit" id="enter-single-text-submit" class="light-text button-game button-large pure-button capitalize right"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;SEND</button> </form> </div> </div> </div> <div id="state-enter-single-drawing" class="pt-page-off pushed-down-page game-page textured-background"> <div id="enter-single-drawing-text-container" class="white-background">Lorem Ipsum</div> <canvas id="sketchpad" class="sketchpad" width="240" height="320" style="background-color:#fff"> Sorry, your browser is not supported. </canvas> <form id="enter-single-drawing-submit-container" class="pure-form container"> <button type="submit" id="enter-single-drawing-submit" class="light-text submit-drawing button-game button-large pure-button pure-input-1" style="margin-top:0"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;send</button> </form> </div> <div id="state-grid" class="pt-page-off game-page textured-background"> <div id="grid-text" class="white-background"></div> <div id="grid-main"></div> <div id="grid-progress"> <button type="submit" id="grid-submit" class="light-text button-game button-large pure-button capitalize"></button> </div> </div> <div id="state-game-results" class="pt-page-off game-page black-background"> <div id="top-text" class="white-background"></div> <div id="bottom-text" class="white-text"></div> </div> </div> </div> '),
+                template: a().template('<div id="page-triviadeath" class="page"> <div id="player" class="dark-background light-text"> <h1><%=username%></h1> </div> <div id="preload" class="preload"></div> <div id="game" class="game pt-pageholder"> <div id="state-lobby" class="pt-page-off game-page textured-background"> <div class="container"> <br/><span id="lobby-text"></span><br/> <form class="pure-form"> <button type="button" id="button-startgame" class="light-text button-game button-xlarge pure-button pure-input-1">ALLE BEREIT</button> <button type="button" id="button-stopcountdown" class="light-text button-game button-xlarge pure-button pure-input-1">ABBRECHEN</button> <button type="button" id="button-sameplayers" class="light-text button-game button-xlarge pure-button pure-input-1 button-endbuttons">same players</button> <button type="button" id="button-newplayers" class="light-text button-game button-xlarge pure-button pure-input-1 button-endbuttons">new players</button> </form> </div> </div> <div id="state-logo" class="pt-page-off game-page black-background logo-image"> </div> <div id="state-make-single-choice" class="pt-page-off game-page textured-background"> <div id="make-single-choice-text" class="dark-text white-background" style="width:100%;text-align:center"></div> <div id="make-single-choice-choices"></div> </div> <div id="state-make-many-choices" class="pt-page-off game-page textured-background"> <div id="make-many-choices-text" class="dark-text white-background" style="width:100%;text-align:center"></div> <div class="container"> <div id="make-many-choices-sub-text" class="white-text" style="width:100%;text-align:center"></div> <div id="make-many-choices-choices" class="row light-text" style="width:100%"></div> <div id="make-many-choices-submit-button-container" style="width:100%;display:table"> <button type="button" id="make-many-choices-submit-button" class="light-text button-game button-xlarge pure-button pure-input-1">SENDEN</button> </div> </div> </div> <div id="state-enter-single-text" class="pt-page-off game-page textured-background"> <div> <div id="enter-single-text-text-container" class="white-background"></div> <div id="enter-single-text-error" class="red-background"></div> <div id="enter-single-text-input-container" class="container"> <form class="pure-form" id="enter-single-text-field"> <div class="pure-u-1"> <input id="enter-single-text-input" name="enter-single-text-input-field" class="pure-input-1 capitalize" type="text" maxlength="45" placeholder="HIER EINGEBEN" autocapitalize="off" autocorrect="off" autocomplete="off"> </div> <button type="submit" id="enter-single-text-submit" class="light-text button-game button-large pure-button capitalize right"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;SENDEN</button> </form> </div> </div> </div> <div id="state-enter-single-drawing" class="pt-page-off pushed-down-page game-page textured-background"> <div id="enter-single-drawing-text-container" class="white-background">Lorem Ipsum</div> <canvas id="sketchpad" class="sketchpad" width="240" height="320" style="background-color:#fff"> Sorry, your browser is not supported. </canvas> <form id="enter-single-drawing-submit-container" class="pure-form container"> <button type="submit" id="enter-single-drawing-submit" class="light-text submit-drawing button-game button-large pure-button pure-input-1" style="margin-top:0"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;send</button> </form> </div> <div id="state-grid" class="pt-page-off game-page textured-background"> <div id="grid-text" class="white-background"></div> <div id="grid-main"></div> <div id="grid-progress"> <button type="submit" id="grid-submit" class="light-text button-game button-large pure-button capitalize"></button> </div> </div> <div id="state-game-results" class="pt-page-off game-page black-background"> <div id="top-text" class="white-background"></div> <div id="bottom-text" class="white-text"></div> </div> </div> </div> '),
                 testBlob: null,
                 grid: null,
                 lastDollInfo: null,
@@ -491,9 +491,9 @@
                                 for (let e = 0; e < t.players.length; e++) t.players[e].id === h.app.client.userId && (s = t.players[e]);
                                 const c = n ? n.state : "";
                                 if (s) {
-                                    if (o += `<p>${s.wonGame?"CONGRATULATIONS":"SUCH A TRAGEDY!"}</p>`, "MakeSingleChoice" === c)
+                                    if (o += `<p>${s.wonGame?"GLÜCKWUNSCH":"WELCH TRAUERSPIEL!"}</p>`, "MakeSingleChoice" === c)
                                         for (let t = 0; t < n.choices.length; t++) o += `<button data-choice="${t}" class="light-text button-choice button-game button-large btn btn-block">${n.choices[t].text}</button>`;
-                                    a += `<p>${s.wonGame?"You survived the game!":"You did not survive the game"}</p>`, a += "<BR>", a += `<p>Your final score: $${s.score}</p>`
+                                    a += `<p>${s.wonGame?"Du hast das Spiel überlebt!":"Du hast das Spiel nicht überlebt"}</p>`, a += "<BR>", a += `<p>Deine Punktzahl: $${s.score}</p>`
                                 }
                                 const r = e.model.get("room").artifact;
                                 if (r && r.success && r.rootId) {
@@ -507,7 +507,7 @@
                             } else {
                                 let n = 0;
                                 for (let e = 0; e < t.players.length; e++) t.players[e].wonGame && (n = t.players[e].score);
-                                t.audience && (o += `<p>${t.audience.survived?"CONGRATULATIONS":"SUCH A TRAGEDY!"}</p>`, a += `<p>${t.audience.survived?"The audience has SURVIVED!":"The audience has DIED, and so have you!"}</p>`, a += "<BR>", a += `<p>${t.audience.count} audience ${1===t.audience.count?"member":"members"} got : $${t.audience.score}</p>`, a += "<BR>", a += `<p>Score to beat : $${n}</p>`);
+                                t.audience && (o += `<p>${t.audience.survived?"GLÜCKWUNSCH":"WELCH TRAUERSPIEL!"}</p>`, a += `<p>${t.audience.survived?"Das Publikum hat ÜBERLEBT!":"Das Publikum ist gestorben, genauso wie DU!"}</p>`, a += "<BR>", a += `<p>${t.audience.count} Publikum ${1===t.audience.count?"Mitglied":"Mitglieder"} hatten : $${t.audience.score}</p>`, a += "<BR>", a += `<p>Punkte zu toppen: $${n}</p>`);
                                 const s = e.model.get("room").artifact;
                                 if (s && s.success && s.rootId) {
                                     let t = "games.jackbox.tv"; - 1 !== s.rootId.indexOf("test") && (t = "games-test.jackbox.tv");
@@ -551,7 +551,7 @@
                             if ("Lobby" === n) {
                                 if (this.hideLobbyButtons(), !e.isAllowedToStartGame) return s()("#lobby-text").html("Sit back and relax!"), this.showScreen("#state-lobby"), void this.setupWithDollInfo(e.dollInfo);
                                 const i = t.lobbyState;
-                                "WaitingForMore" === i ? s()("#lobby-text").html("Waiting for all players to join") : "CanStart" === i ? (s()("#lobby-text").html("Press this button when everybody has joined"), s()("#button-startgame").show()) : "Countdown" === i ? (s()("#lobby-text").html("Press this button to cancel game start"), s()("#button-stopcountdown").show()) : "PostGame" === i && (s()("#lobby-text").html("What do you want to do?"), s()(".button-endbuttons").show()), this.showScreen("#state-lobby")
+                                "WaitingForMore" === i ? s()("#lobby-text").html("Warte, bis alle Spieler beigetreten sind") : "CanStart" === i ? (s()("#lobby-text").html("Drücke diesen Knopf, wenn alle Spieler beigetreten sind"), s()("#button-startgame").show()) : "Countdown" === i ? (s()("#lobby-text").html("Drücke diesen Knopf, um den Spielstart abzubrechen"), s()("#button-stopcountdown").show()) : "PostGame" === i && (s()("#lobby-text").html("Was möchtet ihr jetzt machen?"), s()(".button-endbuttons").show()), this.showScreen("#state-lobby")
                             } else if ("Gameplay" === n)
                                 if ("MakeSingleChoice" === i) {
                                     const t = null === e.chosen || void 0 === e.chosen,
@@ -569,11 +569,11 @@
                                     i = e.text,
                                     n = e.choices;
                                 if (t) {
-                                    s()("#make-many-choices-text").html(`<p id='many-text'>${i}</p>`), s()("#make-many-choices-sub-text").html("<p id='many-sub-text'>Tap any items below that fit this category.</p>");
+                                    s()("#make-many-choices-text").html(`<p id='many-text'>${i}</p>`), s()("#make-many-choices-sub-text").html("<p id='many-sub-text'>Tippe auf alle zutreffenden Antworten.</p>");
                                     let t = "";
                                     for (let e = 0; e < n.length; e++) t += '<div class="col-xs-10">', t += `<button data-choice="${e}" id="make-many-choices-button-${e}" class="light-text make-many-choices-button button-game button-large pure-button pure-input-1">${n[e].text}</button>`, t += '</div><div class="col-xs-2">', t += `<i data-choice="${e}" id="make-many-choices-checkbox-${e}" class="checkbox box-unchecked make-many-choices-checkbox"></i>`, t += "</div>";
                                     s()("#make-many-choices-choices").html(t), s()("#make-many-choices-submit-button-container").show()
-                                } else s()("#make-many-choices-text").html("<p>Thanks.</p>"), s()("#make-many-choices-sub-text").html(""), s()("#make-many-choices-choices").html(""), s()("#make-many-choices-submit-button-container").hide();
+                                } else s()("#make-many-choices-text").html("<p>Danke.</p>"), s()("#make-many-choices-sub-text").html(""), s()("#make-many-choices-choices").html(""), s()("#make-many-choices-submit-button-container").hide();
                                 this.showScreen("#state-make-many-choices")
                             } else if ("EnterSingleText" === i) e.entry ? this.showScreen("#state-logo") : (e.error ? (s()("#enter-single-text-error").html(`<p>${e.error}</p>`), s()("#enter-single-text-error").show()) : s()("#enter-single-text-error").hide(), "#state-enter-single-text" !== this.activeScreen && (s()("#enter-single-text-input").val(""), s()("#enter-single-text-input").prop("type", e.inputType), s()("#enter-single-text-field").show(), s()("#state-enter-single-text #enter-single-text-text-container").html(`<span class="container-text">${e.text}</span>`)), this.showScreen("#state-enter-single-text"));
                             else if ("EnterSingleDrawing" === i)
@@ -665,7 +665,7 @@
                             t += `<button data-choice="${e.key}" class="light-text button-choice button-game button-large pure-button pure-input-1">${e.text}</button>`
                         })), s()("#make-single-choice-choices").html(t), this.showScreen("#state-make-single-choice")
                     } else if ("multiple" === o) {
-                        s()("#make-many-choices-text").html(`<p>${i}</p>`), s()("#make-many-choices-sub-text").html("<p>Tap the items below that fit into this category.</p>");
+                        s()("#make-many-choices-text").html(`<p>${i}</p>`), s()("#make-many-choices-sub-text").html("<p>Tippe auf alle zutreffenden Antworten.</p>");
                         let t = "";
                         for (let e = 0; e < n.length; e++) t += '<div class="col-xs-10">', t += `<button data-choice="${e}" id="make-many-choices-button-${e}" class="light-text make-many-choices-button button-game button-large pure-button pure-input-1">${n[e].text}</button>`, t += '</div><div class="col-xs-2">', t += `<i data-choice="${e}" id="make-many-choices-checkbox-${e}" class="checkbox box-unchecked make-many-choices-checkbox"></i>`, t += "</div>";
                         s()("#make-many-choices-choices").html(t), s()("#make-many-choices-submit-button-container").show(), this.showScreen("#state-make-many-choices")
@@ -696,7 +696,7 @@
                     }) : (h.app.client.sessionSend("vote", "Trivia Death Vote", {
                         type: "vote",
                         vote: e
-                    }), s()("#make-single-choice-text").html("<p>Thanks. Now wait quietly.</p>"), s()("#make-single-choice-choices").html("")), s()(".button-choice").removeClass("selected"), s()(t.currentTarget).addClass("selected"), !1
+                    }), s()("#make-single-choice-text").html("<p>Danke. Jetzt warte leise.</p>"), s()("#make-single-choice-choices").html("")), s()(".button-choice").removeClass("selected"), s()(t.currentTarget).addClass("selected"), !1
                 },
                 chooseManyChoices(t) {
                     const e = s()(t.currentTarget).data("choice"),
@@ -729,7 +729,7 @@
                         h.app.client.sessionSend("vote", "Trivia Death Vote", {
                             type: "vote",
                             vote: e.join(",")
-                        }), s()("#make-many-choices-text").html("<p>Thanks.</p>"), s()("#make-many-choices-sub-text").html(""), s()("#make-many-choices-choices").html(""), s()("#make-many-choices-submit-button-container").hide()
+                        }), s()("#make-many-choices-text").html("<p>Danke.</p>"), s()("#make-many-choices-sub-text").html(""), s()("#make-many-choices-choices").html(""), s()("#make-many-choices-submit-button-container").hide()
                     }
                 },
                 submitEnterSingleText() {
@@ -739,7 +739,7 @@
                     }), !1
                 },
                 submitEnterSingleDrawing() {
-                    if (this.currentCanvas.isClean) return alert("You have to draw something!"), !1;
+                    if (this.currentCanvas.isClean) return alert("Du musst etwas malen!"), !1;
                     const t = {
                         drawing: this.currentCanvas.getBase64Image()
                     };

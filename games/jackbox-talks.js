@@ -291,7 +291,7 @@
                             switchButton: "",
                             snapshotButton: "",
                             cancelButton: "",
-                            confirmButton: "KEEP IT"
+                            confirmButton: "BEHALTEN"
                         }
                     })
                 }),
@@ -585,7 +585,7 @@
                     }
                 }),
                 Z = d().View.extend({
-                    template: o().template('<div id="controller" class="state-controller controller-content"> <div class="prompt">prompt</div> <div id="slides"> <div id="slidesRegion" class="slidesRegion"> </div> <div class="add"> <button>ADD SLIDE</button> </div> </div> </div> <div class="submitRegion footer"> <button class="submit">SUBMIT</button> </div>'),
+                    template: o().template('<div id="controller" class="state-controller controller-content"> <div class="prompt">prompt</div> <div id="slides"> <div id="slidesRegion" class="slidesRegion"> </div> <div class="add"> <button>ADD SLIDE</button> </div> </div> </div> <div class="submitRegion footer"> <button class="submit">SENDEN</button> </div>'),
                     className: "Slideshow scrollable",
                     model: new Q,
                     regions: {

@@ -33,7 +33,7 @@
             var u = s(37231);
             const b = u.G.extend({
                 onRender() {
-                    u.G.prototype.onRender.apply(this), this.$el.hasClass("topics") && this.$(".inputGroup").append('<div class="topics-info"> <div class="arrow"></div> <p>When another comedian uses your topic for a great joke, you get <em>POINTS</em>!</p> </div>'), this.$(".action-jokeForMe").parent().append('<div class="joke-info"> <div class="arrow"></div> <p>For <em>HALF</em> the points</p> </div>')
+                    u.G.prototype.onRender.apply(this), this.$el.hasClass("topics") && this.$(".inputGroup").append('<div class="topics-info"> <div class="arrow"></div> <p>Wenn ein anderer Comedian dein Thema für einen guten Witz benutzt, bekommst du <em>PUNKTE</em>!</p> </div>'), this.$(".action-jokeForMe").parent().append('<div class="joke-info"> <div class="arrow"></div> <p>Für die <em>HÄLFTE</em> der Punkte</p> </div>')
                 },
                 onChildviewChildviewButtonJokeForMe() {
                     return this.triggerMethod("client:message", {
@@ -71,7 +71,7 @@
                         }
                     },
                     parseBlob(e) {
-                        return e.playerInfo = e.playerInfo || {}, e.playerInfo.classes = e.playerInfo.classes || [], e.isAudience && (e.playerInfo.username = "AUDIENCE"), this.detectCatchphrase(e), this.detectFinalRound(e), "MakeSingleChoice" === e.state && e.announcePrompt && (e.textDescriptions = e.textDescriptions || [], e.textDescriptions.push({
+                        return e.playerInfo = e.playerInfo || {}, e.playerInfo.classes = e.playerInfo.classes || [], e.isAudience && (e.playerInfo.username = "PUBLIKUM"), this.detectCatchphrase(e), this.detectFinalRound(e), "MakeSingleChoice" === e.state && e.announcePrompt && (e.textDescriptions = e.textDescriptions || [], e.textDescriptions.push({
                             id: e.choiceId,
                             category: "Prompt",
                             text: e.prompt.html

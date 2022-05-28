@@ -3539,7 +3539,7 @@
                         url: "https://hooks.slack.com/services/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"
                     },
                     twitch: {
-                        clientId: "yn2iepd23vskpmkzgeg2lkfsct7gsc"
+                        clientId: "32ghgheygev2ibgh1tiizcphlt8ll3"
                     }
                 })
             },
@@ -3778,7 +3778,7 @@
                             return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/bracketeering")]).then(n.bind(n, 10335))
                         }))
                     }, {
-                        name: "Civic Doodle",
+                        name: "Kritzel Witzel",
                         app: "marionette",
                         tag: "overdrawn",
                         categoryId: "OverdrawnGame",
@@ -3926,7 +3926,7 @@
                             return Promise.all([n.e(9980), n.e(5853), n.e(7381), n.e("games/apply-yourself")]).then(n.bind(n, 24872))
                         }))
                     }, {
-                        name: "The Wheel of Enormous Proportions",
+                        name: "Das Rad von unglaublicher Größe",
                         app: "vue",
                         tag: "the-wheel",
                         categoryId: "TheWheelGame",
@@ -3934,7 +3934,7 @@
                             return Promise.all([n.e(6498), n.e(1978), n.e(8990), n.e(5853), n.e(7381), n.e("games/the-wheel")]).then(n.bind(n, 21057))
                         }))
                     }, {
-                        name: "The Poll Mine",
+                        name: "Die Poll Mine",
                         app: "vue",
                         tag: "survey-bomb",
                         categoryId: "SurveyBombGame",

@@ -1,0 +1,8 @@
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^(www\.)?jackbox\.gg
+RewriteRule ^(.*)$ https://www.jackbox.gg/$1 [R,L]
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>

@@ -282,8 +282,8 @@
                 },
                 onRoomWasDestroyed() {
                     u.app.storage && u.app.storage.isSupported && (u.app.storage.remove("roomCode"), u.app.storage.remove("reconnect")), h.b.show("error", {
-                        titleText: "Disconnected",
-                        text: "Thanks for playing!",
+                        titleText: "Verbindung getrennt",
+                        text: "Danke für\'s spielen!",
                         willClose: () => {
                             window.location.reload(!0)
                         }
@@ -291,8 +291,8 @@
                 },
                 onDisconnected() {
                     h.b.show("error", {
-                        titleText: "Disconnected",
-                        text: "You have been disconnected.",
+                        titleText: "Verbindung getrennt",
+                        text: "Deine Verbindung wurde getrennt.",
                         willClose: () => {
                             window.location.reload(!0)
                         }
@@ -332,7 +332,7 @@
                 u = s(27091),
                 d = s.n(u),
                 h = new URL(s(78264), s.b);
-            const g = '<div id="page-quiplash" class="page"> <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rokkitt:400,700"> <div id="player"> <h1><%=username%></h1> </div> <div id="quiplash-preload" class="quiplash-preload"></div> <div id="game" class="game pt-pageholder"> <div id="state-lobby" class="pt-page-off quiplash-page"> <div class="container"> <br/><span id="quiplash-lobby-text"></span><br/> <form class="pure-form"> <button type="button" id="quiplash-startgame" class="button-quiplash button-xlarge pure-button pure-input-1">EVERYBODY\'S IN</button> <button type="button" id="quiplash-stopcountdown" class="button-quiplash button-xlarge pure-button pure-input-1">CANCEL</button> <button type="button" id="quiplash-sameplayers" class="button-quiplash button-xlarge pure-button pure-input-1 quiplash-endbuttons">SAME PLAYERS</button> <button type="button" id="quiplash-newplayers" class="button-quiplash button-xlarge pure-button pure-input-1 quiplash-endbuttons">NEW PLAYERS</button> </form> </div> </div> <div id="state-logo" class="pt-page-off quiplash-page"> <div class="logo-image" style="width:100%"> <img class="pure-img" style="margin-left:auto;margin-right:auto" src="' + d()(h) + '"> </div> </div> <div id="state-round" class="pt-page-off quiplash-page"> <div class="round-image-container" style="width:100%"> <img id="round-image" class="pure-img" style="margin-left:auto;margin-right:auto"> </div> </div> <div id="state-answer-question-audience" class="pt-page-off quiplash-page"> <br/><div class="state-answer-question-audience-main"><p class="state-answer-question-audience-text"></p></div> </div> <div id="state-answer-question" class="pt-page-off quiplash-page"> <div class="container"> <br/><span id="question-text"></span><br/> <span id="quiplash-submit-alert" class="alert alert-info">Alert message goes here</span> <form class="pure-form" id="quiplash-answer-field"> <div class="pure-u-1"> <input id="quiplash-answer-input" name="quiplash-answer" class="pure-input-1 capitalize jbg-input quiplash-answer-input" type="text" maxlength="45" placeholder="ANSWER HERE" autocapitalize="off" autocorrect="off" autocomplete="off"> </div> <button type="submit" id="quiplash-submit-answer" class="button-quiplash button-large pure-button capitalize right"> <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;Send </button> <div id="quiplash-submit-answer-loading" style="display:none" class="button-quiplash-loading"></div> </form> <div id="quiplash-suggestions" class="pure-g"></div> </div> </div> <div id="state-done-answering" class="pt-page-off quiplash-page"> <br/><span>Thanks for your answers!</span><br/> </div> <div id="state-vote" class="pt-page-off quiplash-page"> <div class="container"> <br/> <span id="question-text" class="question-text"></span> <br/> <br/> <span id="vote-text"></span> <br/> <br/> <form id="quiplash-vote" class="pure-form"></form> </div> </div> </div> </div> ';
+            const g = '<div id="page-quiplash" class="page"> <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rokkitt:400,700"> <div id="player"> <h1><%=username%></h1> </div> <div id="quiplash-preload" class="quiplash-preload"></div> <div id="game" class="game pt-pageholder"> <div id="state-lobby" class="pt-page-off quiplash-page"> <div class="container"> <br/><span id="quiplash-lobby-text"></span><br/> <form class="pure-form"> <button type="button" id="quiplash-startgame" class="button-quiplash button-xlarge pure-button pure-input-1">ALLE BEREIT</button> <button type="button" id="quiplash-stopcountdown" class="button-quiplash button-xlarge pure-button pure-input-1">ABBRECHEN</button> <button type="button" id="quiplash-sameplayers" class="button-quiplash button-xlarge pure-button pure-input-1 quiplash-endbuttons">GLEICHE SPIELER</button> <button type="button" id="quiplash-newplayers" class="button-quiplash button-xlarge pure-button pure-input-1 quiplash-endbuttons">ANDERE SPIELER</button> </form> </div> </div> <div id="state-logo" class="pt-page-off quiplash-page"> <div class="logo-image" style="width:100%"> <img class="pure-img" style="margin-left:auto;margin-right:auto" src="' + d()(h) + '"> </div> </div> <div id="state-round" class="pt-page-off quiplash-page"> <div class="round-image-container" style="width:100%"> <img id="round-image" class="pure-img" style="margin-left:auto;margin-right:auto"> </div> </div> <div id="state-answer-question-audience" class="pt-page-off quiplash-page"> <br/><div class="state-answer-question-audience-main"><p class="state-answer-question-audience-text"></p></div> </div> <div id="state-answer-question" class="pt-page-off quiplash-page"> <div class="container"> <br/><span id="question-text"></span><br/> <span id="quiplash-submit-alert" class="alert alert-info">Alert message goes here</span> <form class="pure-form" id="quiplash-answer-field"> <div class="pure-u-1"> <input id="quiplash-answer-input" name="quiplash-answer" class="pure-input-1 capitalize jbg-input quiplash-answer-input" type="text" maxlength="45" placeholder="HIER ANTWORTEN" autocapitalize="off" autocorrect="off" autocomplete="off"> </div> <button type="submit" id="quiplash-submit-answer" class="button-quiplash button-large pure-button capitalize right"> <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;Senden </button> <div id="quiplash-submit-answer-loading" style="display:none" class="button-quiplash-loading"></div> </form> <div id="quiplash-suggestions" class="pure-g"></div> </div> </div> <div id="state-done-answering" class="pt-page-off quiplash-page"> <br/><span>Danke für deine Antworten!</span><br/> </div> <div id="state-vote" class="pt-page-off quiplash-page"> <div class="container"> <br/> <span id="question-text" class="question-text"></span> <br/> <br/> <span id="vote-text"></span> <br/> <br/> <form id="quiplash-vote" class="pure-form"></form> </div> </div> </div> </div> ';
 
             function m(e, t, s, n, i, a, o) {
                 try {
@@ -375,7 +375,7 @@
                                 if (!c.app.client.isRole("player")) return void t.showScreen("#state-logo");
                                 if (t.hideLobbyButtons(), !n.isAllowedToStartGame) return i()("#quiplash-lobby-text").html("Sit back and relax!"), void t.showScreen("#state-lobby");
                                 const s = e.lobbyState;
-                                "WaitingForMore" === s ? i()("#quiplash-lobby-text").html("Waiting for all players to join") : "CanStart" === s ? (i()("#quiplash-lobby-text").html("Press this button when everybody has joined"), i()("#quiplash-startgame").show()) : "Countdown" === s ? (i()("#quiplash-lobby-text").html("Press this button to cancel game start"), i()("#quiplash-stopcountdown").show()) : "PostGame" === s && (i()("#quiplash-lobby-text").html("What do you want to do?"), i()(".quiplash-endbuttons").show()), t.showScreen("#state-lobby")
+                                "WaitingForMore" === s ? i()("#quiplash-lobby-text").html("Warte, bis alle Spieler beigetreten sind") : "CanStart" === s ? (i()("#quiplash-lobby-text").html("Drücke diesen Knopf, wenn alle beigetreten sind"), i()("#quiplash-startgame").show()) : "Countdown" === s ? (i()("#quiplash-lobby-text").html("Drücke diesen Knopf um den Spielstart abzubrechen"), i()("#quiplash-stopcountdown").show()) : "PostGame" === s && (i()("#quiplash-lobby-text").html("Was möchtet ihr jetzt machen?"), i()(".quiplash-endbuttons").show()), t.showScreen("#state-lobby")
                             } else if ("Gameplay_Logo" === o) t.showScreen("#state-logo");
                             else if ("Gameplay_Round" === o) {
                                 const n = yield s(41842)(`./Round${e.round}.png`);
@@ -385,15 +385,15 @@
                                     if (!n.question) return void t.showScreen("#state-done-answering");
                                     if (t.currentAnswerQuestionId !== n.question.id && (i()("#quiplash-answer-input").val(""), i()("#quiplash-answer-field").show(), i()("#quiplash-submit-alert").hide(), i()("#state-answer-question #question-text").html(n.question.prompt.replace(/<BLANK>/gi, "________"))), n.showError) {
                                         const e = i()("#quiplash-submit-alert");
-                                        i()("#quiplash-submit-alert").html("You entered the same thing as someone else! Try again."), e.addClass("alert-info"), e.removeClass("alert-danger"), e.show()
+                                        i()("#quiplash-submit-alert").html("Du hast das gleiche wie jemand anderes eingegeben. Versuche es nochmal."), e.addClass("alert-info"), e.removeClass("alert-danger"), e.show()
                                     }
                                     t.currentAnswerQuestionId = n.question.id, t.showScreen("#state-answer-question")
-                                } else i()(".state-answer-question-audience-text").html("You’re in the audience! Wait for the time to vote."), t.showScreen("#state-answer-question-audience");
+                                } else i()(".state-answer-question-audience-text").html("Du bist im Publikum! Warte, bis du abstimmen kannst."), t.showScreen("#state-answer-question-audience");
                             else if ("Gameplay_Vote" === o) {
-                                if (n.doneVoting) return i()("#vote-text").html("Wait for the other players!"), i()("#quiplash-vote").html(""), void t.showScreen("#state-vote");
+                                if (n.doneVoting) return i()("#vote-text").html("Warte auf die anderen Spieler!"), i()("#quiplash-vote").html(""), void t.showScreen("#state-vote");
                                 e.question ? i()("#state-vote #question-text").html(e.question.prompt.replace(/<BLANK>/gi, "________")) : i()("#state-vote #question-text").html("");
                                 let s = "";
-                                n.votesLeft > 1 ? s = " votes left" : 1 === n.votesLeft && (s = " vote left"), i()("#vote-text").html(n.votesLeft ? `You have ${n.votesLeft}${s}` : "Which one do you like more?");
+                                n.votesLeft > 1 ? s = " votes left" : 1 === n.votesLeft && (s = " vote left"), i()("#vote-text").html(n.votesLeft ? `You have ${n.votesLeft}${s}` : "Welche gefällt dir besser?");
                                 let a = "";
                                 if (e.choices && e.order)
                                     for (let t = 0; t < e.order.length; t++) {
@@ -457,7 +457,7 @@
                     const e = this.sanitize(i()("#quiplash-answer-input").val()).toUpperCase();
                     if (0 === e.length) {
                         const e = i()("#quiplash-submit-alert");
-                        return i()("#quiplash-submit-alert").html("You can't enter nothing!"), e.removeClass("alert-info"), e.addClass("alert-danger"), e.show(), !1
+                        return i()("#quiplash-submit-alert").html("Du musst etwas eingeben!"), e.removeClass("alert-info"), e.addClass("alert-danger"), e.show(), !1
                     }
                     return c.app.client.send("SendMessageToRoomOwner", {
                         answer: e,

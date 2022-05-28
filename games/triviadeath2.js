@@ -35,7 +35,7 @@
                         if ("FinalRound" !== this.model.get("roundType")) {
                             const s = this.model.get("choices");
                             if (!s) return e;
-                            e = `<div class="chosenText">You have chosen<br>${s.find((e=>e.key===t[0])).html}</div>`
+                            e = `<div class="chosenText">Du hast gewählt<br>${s.find((e=>e.key===t[0])).html}</div>`
                         }
                         return {
                             html: e
@@ -269,7 +269,7 @@
                 D = new URL(s(69089), s.b),
                 E = new URL(s(46978), s.b),
                 T = new URL(s(82547), s.b);
-            const B = '<div> <canvas id="phone" class="canvas phone" width="825" height="972"></canvas> <button id="reset" class="button reset">Reset</button> <div class="visuallyhidden"> <img id="fingerStop" src="' + b()(D) + '"/> <img id="fingerWheel" src="' + b()(E) + '"/> <img id="numberPlate" src="' + b()(T) + '"/> </div> </div>',
+            const B = '<div> <canvas id="phone" class="canvas phone" width="825" height="972"></canvas> <button id="reset" class="button reset">Zurücksetzen</button> <div class="visuallyhidden"> <img id="fingerStop" src="' + b()(D) + '"/> <img id="fingerWheel" src="' + b()(E) + '"/> <img id="numberPlate" src="' + b()(T) + '"/> </div> </div>',
                 $ = u.S.extend({
                     defaults: {
                         choices: [],
@@ -399,7 +399,7 @@
                         const t = this.sprites.find((t => "dialed" === t.type)),
                             e = this.model.get("dialed");
                         let s = this.model.get("status") || "";
-                        "busy" === s.toLowerCase() && (s = "NUMBER BUSY"), "connected" === s.toLowerCase() && (s = "CONNECTED"), "wrongnumber" === s.toLowerCase() && (s = "WRONG NUMBER"), t && (t.val = e, t.status = s)
+                        "busy" === s.toLowerCase() && (s = "BESETZT"), "connected" === s.toLowerCase() && (s = "VERBUNDEN"), "wrongnumber" === s.toLowerCase() && (s = "FALSCH VERBUNDEN"), t && (t.val = e, t.status = s)
                     },
                     onRender() {
                         this.stickit()
@@ -468,7 +468,7 @@
                 O = new URL(s(12370), s.b),
                 V = new URL(s(5345), s.b),
                 X = new URL(s(29713), s.b);
-            const Y = '<div> <div class="prompt">Slide your chip to pick a spot to drop.</div> <canvas id="drop" class="canvas drop" width="640" height="640"></canvas> <div class="visuallyhidden"> <img id="ChipGreen" src="' + b()(A) + '"/> <img id="ChipPurple" src="' + b()(F) + '"/> <img id="ChipBlue" src="' + b()(W) + '"/> <img id="ChipGray" src="' + b()(_) + '"/> <img id="ChipYellow" src="' + b()(H) + '"/> <img id="ChipOrange" src="' + b()(O) + '"/> <img id="ChipRed" src="' + b()(V) + '"/> <img id="ChipPink" src="' + b()(X) + '"/> </div> </div>',
+            const Y = '<div> <div class="prompt">Bewege deinen Chip an eine Stelle, um ihn fallenzulassen.</div> <canvas id="drop" class="canvas drop" width="640" height="640"></canvas> <div class="visuallyhidden"> <img id="ChipGreen" src="' + b()(A) + '"/> <img id="ChipPurple" src="' + b()(F) + '"/> <img id="ChipBlue" src="' + b()(W) + '"/> <img id="ChipGray" src="' + b()(_) + '"/> <img id="ChipYellow" src="' + b()(H) + '"/> <img id="ChipOrange" src="' + b()(O) + '"/> <img id="ChipRed" src="' + b()(V) + '"/> <img id="ChipPink" src="' + b()(X) + '"/> </div> </div>',
                 q = u.S.extend({
                     defaults: {
                         classes: []
@@ -609,15 +609,15 @@
                                 return -1
                         }
                     },
-                    isPostGameLobby: t => "What do you want to do?" === t.prompt.html,
+                    isPostGameLobby: t => "Was möchtet ihr machen?" === t.prompt.html,
                     parseBlob(t) {
                         const e = t;
-                        if (e.classes = e.classes || [], e.playerInfo = e.playerInfo || {}, e.playerInfo.classes = e.playerInfo.classes || [], e.isAudience && (e.playerInfo.username = "AUDIENCE", e.dollInfo = {
+                        if (e.classes = e.classes || [], e.playerInfo = e.playerInfo || {}, e.playerInfo.classes = e.playerInfo.classes || [], e.isAudience && (e.playerInfo.username = "PUBLIKUM", e.dollInfo = {
                                 id: "Audience"
                             }), e.roundType && e.classes.push(e.roundType), e.dollInfo && e.dollInfo.id && (-1 === e.classes.indexOf(e.dollInfo.id) && e.classes.push(e.dollInfo.id), -1 === e.playerInfo.classes.indexOf(e.dollInfo.id) && e.playerInfo.classes.push(e.dollInfo.id)), "Gameplay" === e.state && (e.state = "Logo"), "MakeSingleChoice" === e.state) {
                             if (e.isAudience && (e.doneText = {
                                     html: null
-                                }, e.prompt && "Guess who will die and win money!" === e.prompt.html && (e.choiceId = "whowilldie")), e.isPlayer && void 0 !== e.chosen && null == e.doneText ? e.state = "Logo" : n().isEmpty(e.doneText) || null === e.doneText.html || (e.chosen = {
+                                }, e.prompt && "Errate wer stirbt und bekomme Geld!" === e.prompt.html && (e.choiceId = "whowilldie")), e.isPlayer && void 0 !== e.chosen && null == e.doneText ? e.state = "Logo" : n().isEmpty(e.doneText) || null === e.doneText.html || (e.chosen = {
                                     html: `<div class="chosenText">${e.doneText.html}</div>`
                                 }, delete e.doneText), e.madness) {
                                 if ("Choices" === e.madness) {
@@ -626,7 +626,7 @@
                                         return s.key = s.key || e, s
                                     }));
                                     for (let t = 1; t < 11; t++) e.choices.unshift({
-                                        text: "I'm not Crazy!",
+                                        text: "Ich bin nicht verrückt!",
                                         index: -t,
                                         key: -t,
                                         action: "choose"
@@ -672,7 +672,7 @@
                                     if (i) {
                                         const o = i[0];
                                         let a = "";
-                                        "+" === o ? a = " plus " : "-" === o ? a = " minus " : "*" === o ? a = " multiplied by " : "/" === o && (a = " divided by ");
+                                        "+" === o ? a = " plus " : "-" === o ? a = " minus " : "*" === o ? a = " mal " : "/" === o && (a = " geteilt durch ");
                                         const n = s[0] + a + s[1];
                                         let h = "";
                                         h += `<span aria-hidden="true">${t}</span>`, h += `<span class="textDescriptions">${n}</span>`, e.prompt.html = h, e.textDescriptions = e.textDescriptions || [], e.textDescriptions.push({

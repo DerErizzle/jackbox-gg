@@ -255,7 +255,7 @@
                         const t = {};
                         if (this.inputComponent.model.set("error", ""), "object" == typeof e) {
                             if (e[0] = e[0].replace(/\s\s+/g, " ").trim(), e[1] = e[1].replace(/\s\s+/g, " ").trim(), t.inputs = e, "" === e[0] || "" === e[1]) return this.inputComponent.model.set("error", "You must write two things."), !1
-                        } else if (e = e.replace(/\s\s+/g, " ").trim(), t.entry = e, 0 === t.entry.length) return this.inputComponent.model.set("error", "You must write something."), !1;
+                        } else if (e = e.replace(/\s\s+/g, " ").trim(), t.entry = e, 0 === t.entry.length) return this.inputComponent.model.set("error", "Du musst etwas schreiben."), !1;
                         return this.triggerMethod("client:message", t), !1
                     }
                 });
@@ -271,7 +271,7 @@
                         }
                     }),
                     update() {
-                        M.W.prototype.update.apply(this, []), this.model.get("playerCanStartGame") || "TMI" !== this.model.get("type") || this.titleComponent.model.set("text", "TIP: This game is better when you use your real name!")
+                        M.W.prototype.update.apply(this, []), this.model.get("playerCanStartGame") || "TMI" !== this.model.get("type") || this.titleComponent.model.set("text", "TIPP: Das Spiel funktioniert besser, wenn du deinen echten Namen verwendest!")
                     }
                 }),
                 I = v.s.extend({
@@ -345,7 +345,7 @@
                             className: l
                         }
                     }))), "CategorySelection" === e.state && (e.state = "MakeSingleChoice", e.classes = ["CategorySelection"], e.prompt = e.isChoosing ? {
-                        text: "Pick a Category"
+                        text: "Wähle eine Kategorie"
                     } : {
                         text: `${e.choosingPlayerName} is picking a category`
                     }, e.choices = e.choices && e.isChoosing ? e.choices.map(((e, t) => ({

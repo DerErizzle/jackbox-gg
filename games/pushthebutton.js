@@ -101,10 +101,10 @@
                     })
                 },
                 startInterval() {
-                    this.intervalCount = 0, this.model.set("message", "HOLD TO ACCUSE"), this.model.set("shake", "none"), this.interval = setInterval(this.onInterval.bind(this), 1e3)
+                    this.intervalCount = 0, this.model.set("message", "HALTEN, UM ZU BESCHULDIGEN"), this.model.set("shake", "none"), this.interval = setInterval(this.onInterval.bind(this), 1e3)
                 },
                 onInterval() {
-                    return this.intervalCount += 1, 1 === this.intervalCount ? (this.model.set("message", "ARE YOU SURE?"), void this.model.set("shake", "light")) : 2 === this.intervalCount ? (this.model.set("message", "THIS IS SERIOUS!"), void this.model.set("shake", "heavy")) : (this.triggerMethod("client:message", {
+                    return this.intervalCount += 1, 1 === this.intervalCount ? (this.model.set("message", "BIST DU SICHER?"), void this.model.set("shake", "light")) : 2 === this.intervalCount ? (this.model.set("message", "DAS IST ERNST!"), void this.model.set("shake", "heavy")) : (this.triggerMethod("client:message", {
                         action: "pushthebutton"
                     }), void this.killInterval())
                 },
@@ -132,7 +132,7 @@
                         },
                         ".count": {
                             observe: "numTimesTested",
-                            onGet: e => 1 === e ? "Tested 1 time" : `Tested ${e} times`,
+                            onGet: e => 1 === e ? "1 Mal getestet" : `${e} Mal getestet`,
                             classes: {
                                 hidden: {
                                     observe: "numTimesTested",
@@ -159,10 +159,10 @@
                         u.E.prototype.onRender.apply(this), "ConfirmedIdentity" === this.model.get("choiceId") && null === this.model.get("chosen") && this.createConfirmDelay()
                     },
                     createConfirmDelay() {
-                        this.model.get("choices")[0].html = "CONFIRM IN 5", this.model.get("choices")[0].disabled = !0;
+                        this.model.get("choices")[0].html = "BESTÄTIGEN IN 5", this.model.get("choices")[0].disabled = !0;
                         let e = 4,
                             t = window.setInterval((() => {
-                                e ? this.model.get("choices")[0].html = `CONFIRM IN ${e}` : (this.model.get("choices")[0].html = "CONFIRM", this.model.get("choices")[0].disabled = !1, window.clearInterval(t), t = void 0), e -= 1, this.update()
+                                e ? this.model.get("choices")[0].html = `BESTÄTIGEN IN ${e}` : (this.model.get("choices")[0].html = "BESTÄTIGEN", this.model.get("choices")[0].disabled = !1, window.clearInterval(t), t = void 0), e -= 1, this.update()
                             }), 1e3)
                     }
                 });
@@ -817,7 +817,7 @@
                 }),
                 W = m().View.extend({
                     className: "response active",
-                    template: l().template('<p class="empty glitchable glitch-text glitch-element">NO RESPONSES TO INVESTIGATE</p>')
+                    template: l().template('<p class="empty glitchable glitch-text glitch-element">KEINE ANTWORTEN ZUM UNTERSUCHEN</p>')
                 }),
                 F = m().CollectionView.extend({
                     tagName: "div",

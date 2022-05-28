@@ -52,7 +52,7 @@
             const h = a.v.extend({
                 sessionModulePrefix: "SplitTheRoom",
                 parseBlob(e) {
-                    if ("EnterSingleText" === e.state && (e.placeholder || (e.placeholder = "Fill in the blank here..."), Object.prototype.hasOwnProperty.call(e, "counter") || (e.counter = !0), e.maxLength || (e.maxLength = 45)), "MakeSingleChoice" === e.state) {
+                    if ("EnterSingleText" === e.state && (e.placeholder || (e.placeholder = "Fülle die Lücke aus..."), Object.prototype.hasOwnProperty.call(e, "counter") || (e.counter = !0), e.maxLength || (e.maxLength = 45)), "MakeSingleChoice" === e.state) {
                         if (e.scenario) {
                             e.textDescriptions = e.textDescriptions || [];
                             const t = c()("<div />").html(e.scenario.html).text() || "",
@@ -64,9 +64,9 @@
                             })
                         }
                         e.choices && (e.choices = e.choices.map((e => "thumbsUp" === e.className ? s(s({}, e), {}, {
-                            label: "thumbs up"
+                            label: "Daumen hoch"
                         }) : "thumbsDown" === e.className ? s(s({}, e), {}, {
-                            label: "thumbs down"
+                            label: "Daumen runter"
                         }) : e)))
                     }
                     return e.artifact && (e.artifact.artifactId !== this.artifactId && (this.shouldHideArtifact = !1, this.artifactId = e.artifact.artifactId), "Lobby" !== e.state && "Logo" !== e.state && (this.shouldHideArtifact = !0), this.shouldHideArtifact && delete e.artifact), e.censorablePlayers && delete e.censorablePlayers, e

@@ -397,7 +397,7 @@
                             observe: ["self", "monster"],
                             onGet(e) {
                                 let t = "a";
-                                return -1 !== "aeiouAEIOU".indexOf(e[1].name[0]) && (t = "an"), !0 === e[0] ? `Du bist ${t}` : `Dieser Spieler ist ${t}`
+                                return -1 !== "aeiouAEIOU".indexOf(e[1].name[0]) && (t = "an"), !0 === e[0] ? `Du bist:` : `Dieser Spieler ist:`
                             }
                         },
                         ".monsterClassName": {
@@ -443,7 +443,7 @@
                         },
                         ".blockButton": {
                             observe: "blocked",
-                            onGet: e => !0 === e ? "Unblock" : "Block",
+                            onGet: e => !0 === e ? "Freigeben" : "Blockieren",
                             attributes: [{
                                 name: "style",
                                 observe: "self",
@@ -696,7 +696,7 @@
                                         t && t.$el.scrollTop(t.$el[0].scrollHeight)
                                     }
                                 }
-                                e.summaryCollection.set(e.chat.conversations), "chat" === e.chat.mode ? (e.bottomComponent.model.set("text", `You have ${e.chat.messagesAvailableToSend}${1===e.chat.messagesAvailableToSend?" message ":" messages "} left to send`), e.bottomComponent.model.set("background", e.player.color.medium)) : "date" === e.chat.mode ? e.bottomComponent.model.set("text", "Klicke den DATE Knopf auf dem Bildschirm, oder während einer Konversation.") : e.bottomComponent.model.set("text", ""), e.chat.mode && e.mode !== e.chat.mode && (!e.detailContactId && e.getRegion("summary") && e.getRegion("summary").currentView === e.summaryList ? e.showChatSummary() : e.detailContactId && e.showChatDetail(e.detailContactId)), e.mode = e.chat.mode, e.chat.showProfile && e.showPlayerProfile(e.player, !0)
+                                e.summaryCollection.set(e.chat.conversations), "chat" === e.chat.mode ? (e.bottomComponent.model.set("text", `Du kannst noch ${e.chat.messagesAvailableToSend}${1===e.chat.messagesAvailableToSend?" Nachricht ":" Nachrichten "} senden`), e.bottomComponent.model.set("background", e.player.color.medium)) : "date" === e.chat.mode ? e.bottomComponent.model.set("text", "Klicke den DATE Knopf auf dem Bildschirm, oder während einer Konversation.") : e.bottomComponent.model.set("text", ""), e.chat.mode && e.mode !== e.chat.mode && (!e.detailContactId && e.getRegion("summary") && e.getRegion("summary").currentView === e.summaryList ? e.showChatSummary() : e.detailContactId && e.showChatDetail(e.detailContactId)), e.mode = e.chat.mode, e.chat.showProfile && e.showPlayerProfile(e.player, !0)
                             } else if (d.app.client.isRole("audience")) {
                                 if (e.model.changed.alerts && e.showAlerts(e.model.get("alerts")), e.summaryTopComponent.model.set("player", e.player), e.summaryTopComponent.model.set("mode", "AUDIENCE"), e.summaryTopComponent.model.set("description", "Wähle, was als nächstes gesagt werden soll"), o = e.chat && e.chat.history.length > e.chatDetailCollection.length, e.chat && e.chat.history) {
                                     e.allContacts = l().union([e.player], e.chat.contacts);

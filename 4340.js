@@ -27,10 +27,10 @@
             }
 
             function u(t) {
-                return function() {
+                return function () {
                     var e = this,
                         i = arguments;
-                    return new Promise((function(s, o) {
+                    return new Promise((function (s, o) {
                         var n = t.apply(e, i);
 
                         function a(t) {
@@ -110,13 +110,13 @@
                 }
                 static update(t, e) {
                     var i = this;
-                    return u((function*() {
+                    return u((function* () {
                         e && "PostGame" === e.lobbyState ? (i.view || (yield i.init(t, e)), i.show()) : i.hide()
                     }))()
                 }
                 static init(t) {
                     var e = this;
-                    return u((function*() {
+                    return u((function* () {
                         t ? (e.bannerData = yield e.loadBannerData(t), e.bannerData && (e.view = new v({
                             model: new(r().Model)(e.bannerData)
                         }), e.isInitialized = !0)) : e.bannerData = !1
@@ -133,7 +133,7 @@
                     })
                 }
                 static loadBannerData(t) {
-                    return u((function*() {
+                    return u((function* () {
                         try {
                             const e = yield fetch(p.v.banners.url), i = yield e.json();
                             return !(!i || !i.postGameBanners) && i.postGameBanners[t]
@@ -396,7 +396,7 @@
                     },
                     startCamera() {
                         var t, e = this;
-                        return (t = function*() {
+                        return (t = function* () {
                             e.canvas = document.getElementById("cameraCanvas"), e.image = document.getElementById("cameraImage"), e.video = document.getElementById("cameraVideo");
                             const t = e.altOption || "drawing";
                             if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
@@ -426,10 +426,10 @@
                                     e.cameraAccessDenied()
                                 }
                             })
-                        }, function() {
+                        }, function () {
                             var e = this,
                                 i = arguments;
-                            return new Promise((function(s, o) {
+                            return new Promise((function (s, o) {
                                 var n = t.apply(e, i);
 
                                 function a(t) {
@@ -529,7 +529,7 @@
                 var i = Object.keys(t);
                 if (Object.getOwnPropertySymbols) {
                     var s = Object.getOwnPropertySymbols(t);
-                    e && (s = s.filter((function(e) {
+                    e && (s = s.filter((function (e) {
                         return Object.getOwnPropertyDescriptor(t, e).enumerable
                     }))), i.push.apply(i, s)
                 }
@@ -605,12 +605,12 @@
                         this.showChildView("camera", this.cameraView)
                     },
                     onChildviewCameraSnapshot(t) {
-                        1 === t.length ? this.triggerMethod("client:message", function(t) {
+                        1 === t.length ? this.triggerMethod("client:message", function (t) {
                             for (var e = 1; e < arguments.length; e++) {
                                 var i = null != arguments[e] ? arguments[e] : {};
-                                e % 2 ? c(Object(i), !0).forEach((function(e) {
+                                e % 2 ? c(Object(i), !0).forEach((function (e) {
                                     h(t, e, i[e])
-                                })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : c(Object(i)).forEach((function(e) {
+                                })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : c(Object(i)).forEach((function (e) {
                                     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
                                 }))
                             }
@@ -1389,28 +1389,28 @@
                         formattedActiveContentId: null,
                         isLocal: !1,
                         strings: {
-                            wait: "Sit back and relax!",
-                            vip_waiting: "Waiting for all players to join",
-                            vip_canStart: "Press this button when everybody has joined",
-                            vip_cancel: "Press this button to cancel game start",
-                            vip_postgame: "What would you like to do now?",
-                            vip_episodes_menu: "Episodes Menu",
-                            vip_episodes_unload: "Unload Episode",
-                            vip_episodes_report: "Report Episode",
-                            vip_episodes_warning: "Warning: user generated content is not rated",
-                            vip_episodes_load: "Load an episode by id:",
-                            vip_episodes_select: "Or select an episode:",
-                            vip_episodes_back: "Back",
-                            vip_episodes_submit: "SUBMIT",
-                            vip_episodes_view_author: "View Author",
-                            button_start: "Everybody's In",
-                            button_cancel: "Cancel",
-                            button_changename: "Change Name",
-                            button_sameplayers: "Same Players",
-                            button_newplayers: "New Players",
-                            prompt_entername: "Enter your name",
-                            prompt_choosecharacter: "Select your character",
-                            button_censorOptions: "Censor Options",
+                            wait: "Lehn dich zurück und entspanne!",
+                            vip_waiting: "Warte auf die anderen Spieler",
+                            vip_canStart: "Drücke diesen Knopf, wenn alle bereit sind",
+                            vip_cancel: "Drücke diesen Knopf, um den Spielstart abzubrechen",
+                            vip_postgame: "Was möchtet ihr jetzt machen?",
+                            vip_episodes_menu: "Episoden Menü",
+                            vip_episodes_unload: "Episode deaktivieren",
+                            vip_episodes_report: "Episode melden",
+                            vip_episodes_warning: "Warnung: Nutzergenerierte Inhalte werden nicht geprüft",
+                            vip_episodes_load: "Lade Episode mit ID:",
+                            vip_episodes_select: "Oder wähle eine Episode:",
+                            vip_episodes_back: "Zurück",
+                            vip_episodes_submit: "senden",
+                            vip_episodes_view_author: "Autor anzeigen",
+                            button_start: "Alle Bereit",
+                            button_cancel: "Abbrechen",
+                            button_changename: "Name ändern",
+                            button_sameplayers: "Gleiche Spieler",
+                            button_newplayers: "Andere Spieler",
+                            prompt_entername: "Gib deinen Namen ein",
+                            prompt_choosecharacter: "Wähle deinen Charakter",
+                            button_censorOptions: "Zensur Einstellungen",
                             censor_prompt: ""
                         }
                     }
@@ -1606,7 +1606,7 @@
                     },
                     onButtonClick(t) {
                         var e, i = this;
-                        return (e = function*() {
+                        return (e = function* () {
                             const e = i;
                             t.preventDefault();
                             const s = o()(t.currentTarget).data("action");
@@ -1713,10 +1713,10 @@
                             }) : i.triggerMethod("client:message", {
                                 action: s
                             })
-                        }, function() {
+                        }, function () {
                             var t = this,
                                 i = arguments;
-                            return new Promise((function(s, o) {
+                            return new Promise((function (s, o) {
                                 var n = e.apply(t, i);
 
                                 function a(t) {
@@ -2499,7 +2499,7 @@
                 var i = Object.keys(t);
                 if (Object.getOwnPropertySymbols) {
                     var s = Object.getOwnPropertySymbols(t);
-                    e && (s = s.filter((function(e) {
+                    e && (s = s.filter((function (e) {
                         return Object.getOwnPropertyDescriptor(t, e).enumerable
                     }))), i.push.apply(i, s)
                 }
@@ -2509,9 +2509,9 @@
             function z(t) {
                 for (var e = 1; e < arguments.length; e++) {
                     var i = null != arguments[e] ? arguments[e] : {};
-                    e % 2 ? P(Object(i), !0).forEach((function(e) {
+                    e % 2 ? P(Object(i), !0).forEach((function (e) {
                         U(t, e, i[e])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : P(Object(i)).forEach((function(e) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : P(Object(i)).forEach((function (e) {
                         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
                     }))
                 }
@@ -2638,7 +2638,7 @@
                         blob: s
                     })
                 },
-                update: a().debounce((function() {
+                update: a().debounce((function () {
                     const t = this.model.get("blob");
                     t && (this.willUpdate(), t.playerInfo ? this.playerTopBar.model.set(t.playerInfo) : this.playerTopBar.model.clear(), this.currentState && this.currentState === t.state ? this.currentLayout && this.currentLayout.model.set(t) : (this.updateLayout(), this.currentLayout && this.currentLayout.model.set(t), this.throttledTrackScreenView || (this.throttledTrackScreenView = a().throttle(this.trackScreenView.bind(this), 48e4)), this.throttledTrackScreenView(this.getOption("appTag"))), t.textDescriptions && this.setTextDescriptions(t.textDescriptions), B.E.update(this.getOption("appTag"), t), t.artifact && u.Q.add(t.artifact, p.app.client.appTag), this.didUpdate())
                 }), 25),
@@ -2726,7 +2726,7 @@
                 },
                 onChildviewClientMessage(t) {
                     var e, i = this;
-                    return (e = function*() {
+                    return (e = function* () {
                         if (p.app.client.isRole("player"))
                             if (t.textKey) try {
                                 yield p.app.client.updateText(t.textKey, t.val)
@@ -2768,10 +2768,10 @@
                                     })
                                 }
                             }
-                    }, function() {
+                    }, function () {
                         var t = this,
                             i = arguments;
-                        return new Promise((function(s, o) {
+                        return new Promise((function (s, o) {
                             var n = e.apply(t, i);
 
                             function a(t) {
@@ -2943,8 +2943,8 @@
                             i = t.get("index"),
                             s = this.model.get("type");
                         switch (this.choicesList.children.forEach((t => {
-                                t.model.set("disabled", "single" === s), t.model.set("active", !1)
-                            })), s) {
+                            t.model.set("disabled", "single" === s), t.model.set("active", !1)
+                        })), s) {
                             case "multiple":
                                 if (this.model.get("toggle") ? t.set("selected", !t.get("selected")) : t.set("selected", !0), this.model.get("isAudience")) {
                                     const t = [];
@@ -3570,7 +3570,7 @@
                 var i = Object.keys(t);
                 if (Object.getOwnPropertySymbols) {
                     var s = Object.getOwnPropertySymbols(t);
-                    e && (s = s.filter((function(e) {
+                    e && (s = s.filter((function (e) {
                         return Object.getOwnPropertyDescriptor(t, e).enumerable
                     }))), i.push.apply(i, s)
                 }
@@ -3580,9 +3580,9 @@
             function k(t) {
                 for (var e = 1; e < arguments.length; e++) {
                     var i = null != arguments[e] ? arguments[e] : {};
-                    e % 2 ? y(Object(i), !0).forEach((function(e) {
+                    e % 2 ? y(Object(i), !0).forEach((function (e) {
                         f(t, e, i[e])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : y(Object(i)).forEach((function(e) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : y(Object(i)).forEach((function (e) {
                         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
                     }))
                 }

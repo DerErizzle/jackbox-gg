@@ -4540,7 +4540,7 @@
                             case "https://test.jackbox.tv":
                                 return "development";
                             default:
-                                return "catchall"
+                                return "production"
                         }
                     }
                     static queryParam(e) {

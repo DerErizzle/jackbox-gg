@@ -1518,7 +1518,7 @@
                         SLIDE_0_ITEM_2: "Löse andere Mordfälle, um von deinen abzulenken.",
                         SLIDE_1_TITLE: "Jede Mordwaffe, die du zeichnest, muss einen Buchstaben aus deinem Namen enthalten.",
                         SLIDE_1_ITEM_1: 'Dies ist deine "Visitenkarte".',
-                        SLIDE_1_ITEM_2: "Halte sie Geheim!",
+                        SLIDE_1_ITEM_2: "Halte sie geheim!",
                         SLIDE_2_TITLE: "Verstecke deinen Buchstaben als Teil deiner Zeichnung.",
                         SLIDE_2_ITEM_1: "Bewege deinen Buchstaben und male deine Waffe mit ihm.",
                         SLIDE_2_ITEM_2: "Halte Ausschau nach den Buchstaben anderer Spieler.",

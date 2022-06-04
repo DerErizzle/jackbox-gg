@@ -6071,12 +6071,12 @@
                         if (this.isTap(s)) return void this.onTap(t);
                         if (e < -10) return this.cancelSpin(e, .25), void this.$emit("statusChange", {
                             type: "incorrect",
-                            bannerText: "WRONG DIRECTION",
+                            bannerText: "FALSCHE RICHTUNG",
                             timeout: 1e3
                         });
                         if (e < 150) return this.cancelSpin(e, .75), void this.$emit("statusChange", {
                             type: "incorrect",
-                            bannerText: "SPIN FASTER",
+                            bannerText: "DREH SCHNELLER",
                             timeout: 1e3
                         });
                         const n = ((t, e) => {
@@ -6085,7 +6085,7 @@
                         })(e, s);
                         if (n < .1) return this.cancelSpin(e, .75), void this.$emit("statusChange", {
                             type: "incorrect",
-                            bannerText: "SPIN FASTER",
+                            bannerText: "DREH SCHNELLER",
                             timeout: 1e3
                         });
                         this.executeSpin(e, n)

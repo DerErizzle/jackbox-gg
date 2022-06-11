@@ -467,11 +467,11 @@
                                 if (!l.app.client.isRole("player")) return void t.showScreen("#state-logo");
                                 if (t.hideLobbyButtons(), !n.isAllowedToStartGame) return a()("#auction-lobby-text").html("sit back and relax!"), void t.showScreen("#state-lobby");
                                 const i = e.lobbyState;
-                                "WaitingForMore" === i ? a()("#auction-lobby-text").html("waiting for all players to join") : "CanStart" === i ? (a()("#auction-lobby-text").html("press this button when everybody has joined"), a()("#auction-startgame").show()) : "Countdown" === i && (a()("#auction-lobby-text").html("press this button to cancel game start"), a()("#auction-stopcountdown").show()), t.showScreen("#state-lobby")
+                                "WaitingForMore" === i ? a()("#auction-lobby-text").html("Warte, bis alle Spieler da sind") : "CanStart" === i ? (a()("#auction-lobby-text").html("Drücke diesen Knopf wenn alle bereit sind"), a()("#auction-startgame").show()) : "Countdown" === i && (a()("#auction-lobby-text").html("Drücke diesen Knopf um den Spielstart abzubrechen"), a()("#auction-stopcountdown").show()), t.showScreen("#state-lobby")
                             } else if ("Gameplay_Logo" === o) t.showScreen("#state-logo");
                             else if ("Gameplay_Draw" === o && "Gameplay_Draw" === i) {
                                 if (!n.title) return void t.showScreen("#state-done-drawing");
-                                t.titleThatImDrawing = n.title, a()("#page-auction #state-draw #title").html(`Please Draw : ${t.titleThatImDrawing.text}`), t.showScreen("#state-draw");
+                                t.titleThatImDrawing = n.title, a()("#page-auction #state-draw #title").html(`Bitte zeichne : ${t.titleThatImDrawing.text}`), t.showScreen("#state-draw");
                                 const e = t.$("#auction-sketchpad")[0],
                                     i = e.getContext("2d"),
                                     o = a()("#state-draw #title").outerHeight(!0) + a()("#auction-submitdrawing").outerHeight(!0) + 10;
@@ -480,7 +480,7 @@
                                 a()("#auction-money").html(t.formatMoney(n.money));
                                 let i = "";
                                 if (n.info && n.message)
-                                    for (r = 0; r < n.info.length; r++) i += '<div class="auction-info-content text-content">', i += `<p>${n.info[r].title} is worth ${t.formatMoney(n.info[r].value)}</p>`, i += "</div>";
+                                    for (r = 0; r < n.info.length; r++) i += '<div class="auction-info-content text-content">', i += `<p>${n.info[r].title} ist ${t.formatMoney(n.info[r].value)} wert</p>`, i += "</div>";
                                 a()("#auction-info").css("display", i.length > 0 ? "block" : "none"), a()("#auction-centered-info").html(i), a()("#auction-skip-content").css("display", e.skip ? "block" : "none"), t.onAuctionMessage(n.message);
                                 const o = e.currentBidderId !== t.model.id;
                                 let s = "";
@@ -493,20 +493,20 @@
                                     if (e.screwingPlayerId)
                                         if (e.screwingPlayerId === l.app.client.userId)
                                             for (r = 0; r < e.playersToScrew.length; r++) c += `<button type="button" data-player="${e.playersToScrew[r].id}" class="pure-input-1 button-large pure-button button-auction auction-screw-player-button">${e.playersToScrew[r].name}</button>`;
-                                        else c = "<span class='big-text'><p>Another player is screwing, hold your horses</p></span>";
-                                    else e.bids && (c = `<button type="button" class="pure-input-1 button-large pure-button button-auction auction-screw-button"${t?"":" disabled"}>SCREW</button>`)
+                                        else c = "<span class='big-text'><p>Halte dich zurück, ein anderer Spieler nagelt bereits</p></span>";
+                                    else e.bids && (c = `<button type="button" class="pure-input-1 button-large pure-button button-auction auction-screw-button"${t?"":" disabled"}>NAGELN</button>`)
                                 } else c = "";
                                 a()("#auction-screw-content").html(c);
                                 let d = "";
                                 if (void 0 !== e.playerSignalledForBank) {
                                     let t, i;
-                                    e.playerSignalledForBank ? (t = !0, i = "BANK CALLED") : n.numLoans >= 3 ? (t = !0, i = "BAD CREDIT") : n.timesOpenedBank >= 3 ? (t = !0, i = "STOP CALLING") : (t = !1, i = "CALL THE BANK"), d += `<button type="button" class="pure-input-1 button-large pure-button button-auction auction-open-bank-button"${t?" disabled":""}>${i}</button><br>`
-                                } else void 0 !== e.loanAmount && void 0 !== e.debtAmount && void 0 !== n.hasTakenOutLoanInCurrentBank && (n.numLoans >= 3 ? d += '<span class="big-text"><p>You\'ve taken out 3 loans already. No more for you!</p></span>' : (d += `<span class="big-text"><p>You will receive : ${t.formatMoney(e.loanAmount)}, and owe ${t.formatMoney(e.debtAmount)}</p></span>`, d += `<button type="button" class="pure-input-1 button-large pure-button button-auction auction-take-loan-button"${n.hasTakenOutLoanInCurrentBank?" disabled":""}>GET A LOAN</button><br>`));
+                                    e.playerSignalledForBank ? (t = !0, i = "BANK ANGERUFEN") : n.numLoans >= 3 ? (t = !0, i = "SCHLECHTE BEDINGUNGEN") : n.timesOpenedBank >= 3 ? (t = !0, i = "ANRUF BEENDEN") : (t = !1, i = "DIE BANK ANRUFEN"), d += `<button type="button" class="pure-input-1 button-large pure-button button-auction auction-open-bank-button"${t?" disabled":""}>${i}</button><br>`
+                                } else void 0 !== e.loanAmount && void 0 !== e.debtAmount && void 0 !== n.hasTakenOutLoanInCurrentBank && (n.numLoans >= 3 ? d += '<span class="big-text"><p>Du hast schon drei Kredite! Das reicht!</p></span>' : (d += `<span class="big-text"><p>Du erhältst : ${t.formatMoney(e.loanAmount)}, und schuldest ${t.formatMoney(e.debtAmount)}</p></span>`, d += `<button type="button" class="pure-input-1 button-large pure-button button-auction auction-take-loan-button"${n.hasTakenOutLoanInCurrentBank?" disabled":""}>KREDIT NEHMEN</button><br>`));
                                 a()("#auction-bank-content").html(d), t.showScreen("#state-auction")
                             } else if (o && "PostGame" === o) {
                                 if (!l.app.client.isRole("player")) return void t.showScreen("#state-logo");
-                                if (t.hideLobbyButtons(), !n.isAllowedToMakeChoice) return a()("#auction-lobby-text").html("sit back and relax!"), void t.showScreen("#state-post-game");
-                                a()("#auction-post-game-text").html("make your choice"), a()(".auction-endbuttons").show(), t.showScreen("#state-post-game")
+                                if (t.hideLobbyButtons(), !n.isAllowedToMakeChoice) return a()("#auction-lobby-text").html("Lehn dich zurück und entspanne!"), void t.showScreen("#state-post-game");
+                                a()("#auction-post-game-text").html("Treffe deine Wahl"), a()(".auction-endbuttons").show(), t.showScreen("#state-post-game")
                             }
                         } else c.b.show(Error("The room is full"), {
                             willClose: () => {
@@ -528,7 +528,7 @@
                     e ? (a()(t).show(), a()(`${t}-loading`).hide()) : (a()(t).hide(), a()(`${t}-loading`).show())
                 },
                 submitDrawing() {
-                    if (this.currentCanvas.isClean) return alert("You have to draw something!"), !1;
+                    if (this.currentCanvas.isClean) return alert("Du musst etwas zeichnen!"), !1;
                     this.enableLoadingButton("#drawful-submitdrawing", !1);
                     const t = {
                         id: this.titleThatImDrawing.id,

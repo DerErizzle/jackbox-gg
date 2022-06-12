@@ -59,7 +59,7 @@
                     style: "--remaining:" + (e.player.timer.timeLeft > 14 ? "0px" : 100 * (1 - e.player.timer.timeLeft / 15) + "vh")
                 }) : e._e()], 1) : e._e(), e._v(" "), e.audiencePlayer ? s("div", ["Logo" !== e.audiencePlayer.kind ? s("TopBar", {
                     attrs: {
-                        username: "AUDIENCE"
+                        username: "PUBLIKUM"
                     }
                 }) : e._e(), e._v(" "), "Logo" == e.audiencePlayer.kind ? s("LogoView", {
                     attrs: {
@@ -1426,7 +1426,7 @@
                     staticClass: "non-round"
                 }, [a("TopBar", {
                     attrs: {
-                        username: e.info ? e.info.name : "AUDIENCE",
+                        username: e.info ? e.info.name : "PUBLIKUM",
                         color: e.info ? e.info.color : null
                     }
                 }), e._v(" "), a("button", {

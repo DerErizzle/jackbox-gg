@@ -465,7 +465,7 @@
                             });
                             else if (o && "Lobby" === o) {
                                 if (!l.app.client.isRole("player")) return void t.showScreen("#state-logo");
-                                if (t.hideLobbyButtons(), !n.isAllowedToStartGame) return a()("#auction-lobby-text").html("sit back and relax!"), void t.showScreen("#state-lobby");
+                                if (t.hideLobbyButtons(), !n.isAllowedToStartGame) return a()("#auction-lobby-text").html("Lehne dich zurück und entspanne!"), void t.showScreen("#state-lobby");
                                 const i = e.lobbyState;
                                 "WaitingForMore" === i ? a()("#auction-lobby-text").html("Warte, bis alle Spieler da sind") : "CanStart" === i ? (a()("#auction-lobby-text").html("Drücke diesen Knopf wenn alle bereit sind"), a()("#auction-startgame").show()) : "Countdown" === i && (a()("#auction-lobby-text").html("Drücke diesen Knopf um den Spielstart abzubrechen"), a()("#auction-stopcountdown").show()), t.showScreen("#state-lobby")
                             } else if ("Gameplay_Logo" === o) t.showScreen("#state-logo");
@@ -505,10 +505,10 @@
                                 a()("#auction-bank-content").html(d), t.showScreen("#state-auction")
                             } else if (o && "PostGame" === o) {
                                 if (!l.app.client.isRole("player")) return void t.showScreen("#state-logo");
-                                if (t.hideLobbyButtons(), !n.isAllowedToMakeChoice) return a()("#auction-lobby-text").html("Lehn dich zurück und entspanne!"), void t.showScreen("#state-post-game");
+                                if (t.hideLobbyButtons(), !n.isAllowedToMakeChoice) return a()("#auction-lobby-text").html("Lehne dich zurück und entspanne!"), void t.showScreen("#state-post-game");
                                 a()("#auction-post-game-text").html("Treffe deine Wahl"), a()(".auction-endbuttons").show(), t.showScreen("#state-post-game")
                             }
-                        } else c.b.show(Error("The room is full"), {
+                        } else c.b.show(Error("Der Raum ist voll"), {
                             willClose: () => {
                                 window.location.reload(!0)
                             }

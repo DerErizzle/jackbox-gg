@@ -20,7 +20,7 @@
             const b = o.n(p)().View.extend({
                     className: "censorMenu",
                     model: new(c().Model)({}),
-                    template: m().template('<div>Are you sure you want to censor the answer <span class="censorMenuTitle">title</span></div> <div class="btn-toolbar choices"> <div class="button-group btn-group btn-block"> <button type="button" style="" class="button btn btn-lg censorRound">CENSOR THIS ENTRY</button> </div> <div class="button-group btn-group btn-block"> <button type="button" style="" class="button btn btn-lg censorGame">CENSOR THIS PLAYER</button> </div> <div class="button-group btn-group btn-block"> <button type="button" style="" class="button btn btn-lg cancel">CANCEL</button> </div> </div>'),
+                    template: m().template('<div>Möchtest du wirklich diese Antwort zensieren? <span class="censorMenuTitle">title</span></div> <div class="btn-toolbar choices"> <div class="button-group btn-group btn-block"> <button type="button" style="" class="button btn btn-lg censorRound">DIESEN EINTRAG ZENSIEREN</button> </div> <div class="button-group btn-group btn-block"> <button type="button" style="" class="button btn btn-lg censorGame">DIESEN SPIELER ZENSIEREN</button> </div> <div class="button-group btn-group btn-block"> <button type="button" style="" class="button btn btn-lg cancel">ABBRECHEN</button> </div> </div>'),
                     bindings: {
                         ".censorMenuTitle": {
                             observe: "title",
@@ -88,7 +88,7 @@
                             vote: this.model.get("choices")[o].text
                         }), this.model.setUpdate({
                             prompt: {
-                                text: `Thank you. Your choice: ${this.model.get("choices")[o].text}`,
+                                text: `Danke. Deine Wahl: ${this.model.get("choices")[o].text}`,
                                 html: null
                             },
                             choices: []
@@ -129,7 +129,7 @@
                 k = o(9659),
                 w = o(3682);
             const S = o(19690).E.extend({
-                    template: m().template('<form> <div class="form-group makeEntry"> <div class="inputGroup"> <div class="error text-danger"></div> <div class="enterText"> <textarea id="enter-text-textarea" rows="1" class="form-control" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea> <div class="doubleInput"> <div class="delimiter"> DELIM </div> <textarea id="enter-text-textarea-2" rows="1" class="form-control" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea> </div> <span class="inlineSubmit"> <div class="col-xs-6"> <button type="button" class="btn btn-block lieForMe" type="button">Lie For Me</button> </div> <div class="col-xs-6"> <button type="submit" class="btn btn-block submitButton" type="button">Send</button> </div> </span> </div> </div> </div> <div class="entryDone"> Thank you! Your entry: <span class="entryText">entryText</span> </div> </form>'),
+                    template: m().template('<form> <div class="form-group makeEntry"> <div class="inputGroup"> <div class="error text-danger"></div> <div class="enterText"> <textarea id="enter-text-textarea" rows="1" class="form-control" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea> <div class="doubleInput"> <div class="delimiter"> DELIM </div> <textarea id="enter-text-textarea-2" rows="1" class="form-control" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea> </div> <span class="inlineSubmit"> <div class="col-xs-6"> <button type="button" class="btn btn-block lieForMe" type="button">Lüge für mich</button> </div> <div class="col-xs-6"> <button type="submit" class="btn btn-block submitButton" type="button">Senden</button> </div> </span> </div> </div> </div> <div class="entryDone"> Danke! Deine Antwort: <span class="entryText">entryText</span> </div> </form>'),
                     bindings: {
                         ".makeEntry": {
                             observe: "entry",
@@ -235,7 +235,7 @@
                         this.shouldSubmit && this.onChildviewInputSubmit()
                     },
                     update() {
-                        f.G.prototype.update.apply(this), !0 === this.model.get("requireLie") && this.inputComponent.model.set("answerDelim", "Write one LIE about yourself."), this.inputComponent.model.set("doubleInput", this.model.get("requireLie") || this.model.get("doubleInput")), this.inputComponent.model.set("canUseSuggestions", this.model.get("canUseSuggestions")), this.inputComponent.model.set("usedSuggestion", this.model.get("usedSuggestion")), this.inputComponent.model.set("question", this.model.get("question")), this.model.get("entry") && this.model.get("entry").length > 0 ? this.buttonsCollection.reset() : this.model.get("suggestions") && this.buttonsCollection.set(this.model.get("suggestions").map((e => ({
+                        f.G.prototype.update.apply(this), !0 === this.model.get("requireLie") && this.inputComponent.model.set("answerDelim", "Schreibe eine LÜGE über dich selbst."), this.inputComponent.model.set("doubleInput", this.model.get("requireLie") || this.model.get("doubleInput")), this.inputComponent.model.set("canUseSuggestions", this.model.get("canUseSuggestions")), this.inputComponent.model.set("usedSuggestion", this.model.get("usedSuggestion")), this.inputComponent.model.set("question", this.model.get("question")), this.model.get("entry") && this.model.get("entry").length > 0 ? this.buttonsCollection.reset() : this.model.get("suggestions") && this.buttonsCollection.set(this.model.get("suggestions").map((e => ({
                             block: !0,
                             text: e
                         }))))
@@ -254,7 +254,7 @@
                         let e = this.inputComponent.getValue();
                         const t = {};
                         if (this.inputComponent.model.set("error", ""), "object" == typeof e) {
-                            if (e[0] = e[0].replace(/\s\s+/g, " ").trim(), e[1] = e[1].replace(/\s\s+/g, " ").trim(), t.inputs = e, "" === e[0] || "" === e[1]) return this.inputComponent.model.set("error", "You must write two things."), !1
+                            if (e[0] = e[0].replace(/\s\s+/g, " ").trim(), e[1] = e[1].replace(/\s\s+/g, " ").trim(), t.inputs = e, "" === e[0] || "" === e[1]) return this.inputComponent.model.set("error", "Du musst zwei Antworten schreiben."), !1
                         } else if (e = e.replace(/\s\s+/g, " ").trim(), t.entry = e, 0 === t.entry.length) return this.inputComponent.model.set("error", "Du musst etwas schreiben."), !1;
                         return this.triggerMethod("client:message", t), !1
                     }
@@ -347,7 +347,7 @@
                     }))), "CategorySelection" === e.state && (e.state = "MakeSingleChoice", e.classes = ["CategorySelection"], e.prompt = e.isChoosing ? {
                         text: "Wähle eine Kategorie"
                     } : {
-                        text: `${e.choosingPlayerName} is picking a category`
+                        text: `${e.choosingPlayerName} wählt eine Kategorie`
                     }, e.choices = e.choices && e.isChoosing ? e.choices.map(((e, t) => ({
                         text: e,
                         order: t,

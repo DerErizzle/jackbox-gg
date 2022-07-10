@@ -2529,7 +2529,7 @@
             const j = d().View.extend({
                 appId: "main",
                 appTag: "main",
-                appVersion: "4.2.1",
+                appVersion: "4.2.4",
                 currentState: null,
                 currentLayout: null,
                 template: a().template(D.Z),
@@ -3995,4 +3995,4 @@
         }
     }
 ]);
-//# sourceMappingURL=sourcemaps/4340.8bcd242a3ccf1b173c03.js.map
+//# sourceMappingURL=sourcemaps/4340.0f8dcfee16767c1b62c7.js.map

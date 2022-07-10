@@ -178,12 +178,12 @@
                     var F, q, V, R = window,
                         U = document,
                         K = navigator,
-                        B = U.currentScript && U.currentScript.src,
-                        J = function(e, t) {
+                        W = U.currentScript && U.currentScript.src,
+                        B = function(e, t) {
                             var n = R[e];
                             return R[e] = void 0 === n ? t : n, R[e]
                         },
-                        W = {
+                        J = {
                             async: 1,
                             nonce: 1,
                             onerror: 1,
@@ -194,7 +194,7 @@
                         H = function(e, t, n, r) {
                             var i = U.createElement("script");
                             return r && v(r, (function(e, t) {
-                                    e = e.toLowerCase(), W.hasOwnProperty(e) || i.setAttribute(e, t)
+                                    e = e.toLowerCase(), J.hasOwnProperty(e) || i.setAttribute(e, t)
                                 })), i.type = "text/javascript", i.async = !0,
                                 function(e, t) {
                                     e.src = t instanceof I && t.constructor === I ? t.m : "type_error:TrustedResourceUrl";
@@ -667,14 +667,14 @@
                             }))
                         },
                         Ke = function(e, t, n) {
-                            $e[e] = $e[e] || {}, $e[e][t] = Be(t, n)
+                            $e[e] = $e[e] || {}, $e[e][t] = We(t, n)
                         },
-                        Be = function(e, t) {
+                        We = function(e, t) {
                             var n = 1 !== (void 0 === t ? 2 : t) ? Ve(e) : Ne.get(e);
                             return "array" === X(n) || "object" === X(n) ? ne(n) : n
                         },
-                        Je = new RegExp(/^(.*\.)?(google|youtube|blogger|withgoogle)(\.com?)?(\.[a-z]{2})?\.?$/),
-                        We = {
+                        Be = new RegExp(/^(.*\.)?(google|youtube|blogger|withgoogle)(\.com?)?(\.[a-z]{2})?\.?$/),
+                        Je = {
                             cl: ["ecl"],
                             customPixels: ["nonGooglePixels"],
                             ecl: ["cl"],
@@ -702,7 +702,7 @@
                         Ze = function(e) {
                             var t = qe("gtm.allowlist") || qe("gtm.whitelist");
                             t && ke(9);
-                            var n = (t = "google gtagfl lcl zone oid op".split(" ")) && S(b(t), We),
+                            var n = (t = "google gtagfl lcl zone oid op".split(" ")) && S(b(t), Je),
                                 r = qe("gtm.blocklist") || qe("gtm.blacklist");
                             r || (r = qe("tagTypeBlacklist")) && ke(3), r ? ke(8) : r = [], Qe() && (r = b(r)).push("nonGooglePixels", "nonGoogleScripts", "sandboxedScripts"), 0 <= b(r).indexOf("google") && ke(2);
                             var i = r && S(b(r), He),
@@ -745,7 +745,7 @@
                             }
                         },
                         Qe = function() {
-                            return Je.test(R.location && R.location.hostname)
+                            return Be.test(R.location && R.location.hostname)
                         },
                         Ye = {
                             active: !0,
@@ -782,7 +782,7 @@
                         ot = [];
 
                     function st() {
-                        var e = J("google_tag_data", {});
+                        var e = B("google_tag_data", {});
                         return e.ics || (e.ics = {
                             entries: {},
                             set: ct,
@@ -1106,7 +1106,7 @@
                         };
 
                     function Rt() {
-                        var e = J("google_tag_data", {}),
+                        var e = B("google_tag_data", {}),
                             t = e.gl;
                         return t && t.decorators || (t = {
                             decorators: []
@@ -1122,26 +1122,26 @@
                             } var a = r.join("*");
                         if (void 0 !== t) {
                             var o = "xp_" + t,
-                                s = Wt[t](a);
+                                s = Jt[t](a);
                             a = a + "*" + [o, Dt(String(s))].join("*")
                         }
-                        return ["1", Bt(a), a].join("*")
+                        return ["1", Wt(a), a].join("*")
                     };
 
-                    function Bt(e, t) {
+                    function Wt(e, t) {
                         var n = [R.navigator.userAgent, (new Date).getTimezoneOffset(), Q(), Math.floor(_() / 60 / 1e3) - (void 0 === t ? 0 : t), e].join("*");
                         return qt(n).toString(36)
                     }
-                    var Jt = {},
-                        Wt = (Jt[1] = function(e, t) {
+                    var Bt = {},
+                        Jt = (Bt[1] = function(e, t) {
                             var n = [(new Date).getTimezoneOffset(), Q(), Math.floor(_() / 60 / 1e3) - (void 0 === t ? 0 : t), e].join("*");
                             return qt(n).toString(36)
-                        }, Jt[2] = function(e, t) {
+                        }, Bt[2] = function(e, t) {
                             if (K.userAgentData) {
                                 var n = [(new Date).getTimezoneOffset(), Q(), Math.floor(_() / 60 / 1e3) - (void 0 === t ? 0 : t), K.userAgentData.brands, K.userAgentData.mobile, K.userAgentData.platform, e].join("*");
                                 return qt(n).toString(36)
                             }
-                        }, Jt);
+                        }, Bt);
 
                     function Ht(e, t, n, r) {
                         function i(t) {
@@ -1490,7 +1490,7 @@
                             }
                         };
 
-                    function Bn(e, t, n, r) {
+                    function Wn(e, t, n, r) {
                         var i = ce[e],
                             a = function(e, t, n, r) {
                                 function i() {
@@ -1539,7 +1539,7 @@
                                 var l = pe(a[ie.Qf], n, []);
                                 if (l && l.length) {
                                     var u = l[0],
-                                        d = Bn(u.index, {
+                                        d = Wn(u.index, {
                                             onSuccess: o,
                                             onFailure: s,
                                             terminate: c
@@ -1562,11 +1562,11 @@
                                                 }
                                             }(r, i, n), {
                                                 onSuccess: function() {
-                                                    t[e] = Jn;
+                                                    t[e] = Bn;
                                                     for (var n = 0; n < r.length; n++) r[n]()
                                                 },
                                                 onFailure: function() {
-                                                    t[e] = Wn;
+                                                    t[e] = Jn;
                                                     for (var n = 0; n < i.length; n++) i[n]()
                                                 }
                                             }
@@ -1583,7 +1583,7 @@
                         var o = pe(i[ie.Nf], n, []);
                         if (o && o.length) {
                             var s = o[0];
-                            a = Bn(s.index, {
+                            a = Wn(s.index, {
                                 onSuccess: a,
                                 onFailure: 1 === s.hg ? t.terminate : a,
                                 terminate: t.terminate
@@ -1592,11 +1592,11 @@
                         return a
                     }
 
-                    function Jn(e) {
+                    function Bn(e) {
                         e()
                     }
 
-                    function Wn(e, t) {
+                    function Jn(e, t) {
                         t()
                     }
 
@@ -1661,7 +1661,7 @@
                                 };
                             c.$f = function() {
                                     var e = {};
-                                    return e.event = Be("event", 1), e.ecommerce = Be("ecommerce", 1), e.gtm = Be("gtm"), e.eventModel = Be("eventModel"), e
+                                    return e.event = We("event", 1), e.ecommerce = We("ecommerce", 1), e.gtm = We("gtm"), e.eventModel = We("eventModel"), e
                                 }(),
                                 function(e, t) {
                                     Ke(e, "event", 1), Ke(e, "ecommerce", 1), Ke(e, "gtm"), Ke(e, "eventModel")
@@ -1696,7 +1696,7 @@
                                         var i = ce[r],
                                             a = gn(t.rb);
                                         try {
-                                            var o = Bn(r, {
+                                            var o = Wn(r, {
                                                 onSuccess: a,
                                                 onFailure: a,
                                                 terminate: a
@@ -1993,8 +1993,8 @@
                         },
                         Cr = function() {
                             var e, t = function() {
-                                if (B) {
-                                    var e = B.toLowerCase();
+                                if (W) {
+                                    var e = W.toLowerCase();
                                     if (0 === e.indexOf("https://")) return 2;
                                     if (0 === e.indexOf("http://")) return 3
                                 }
@@ -2299,7 +2299,7 @@
                                         i = t.getWithConfig(n);
                                     if (void 0 === i) {
                                         var a = void 0;
-                                        Rr.hasOwnProperty(n) ? a = Rr[n] : Wr.hasOwnProperty(n) && (a = Wr[n]), 1 === a && (a = ri(n)), l(a) ? bn()((function() {
+                                        Rr.hasOwnProperty(n) ? a = Rr[n] : Jr.hasOwnProperty(n) && (a = Jr[n]), 1 === a && (a = ri(n)), l(a) ? bn()((function() {
                                             var t = bn().getByName(e).get(a);
                                             r(t)
                                         })) : r(void 0)
@@ -2368,18 +2368,18 @@
                         Rr = Object.freeze((Vr.client_storage = "storage", Vr.sample_rate = 1, Vr.site_speed_sample_rate = 1, Vr.store_gac = 1, Vr.use_amp_client_id = 1, Vr[me.kb] = 1, Vr[me.ma] = "storeGac", Vr[me.da] = 1, Vr[me.na] = 1, Vr[me.Da] = 1, Vr[me.Fb] = 1, Vr[me.Va] = 1, Vr[me.Gb] = 1, Vr)),
                         Ur = {},
                         Kr = Object.freeze((Ur._cs = 1, Ur._useUp = 1, Ur.allowAnchor = 1, Ur.allowLinker = 1, Ur.alwaysSendReferrer = 1, Ur.clientId = 1, Ur.cookieDomain = 1, Ur.cookieExpires = 1, Ur.cookieFlags = 1, Ur.cookieName = 1, Ur.cookiePath = 1, Ur.cookieUpdate = 1, Ur.legacyCookieDomain = 1, Ur.legacyHistoryImport = 1, Ur.name = 1, Ur.sampleRate = 1, Ur.siteSpeedSampleRate = 1, Ur.storage = 1, Ur.storeGac = 1, Ur.useAmpClientId = 1, Ur._cd2l = 1, Ur)),
-                        Br = Object.freeze({
+                        Wr = Object.freeze({
                             anonymize_ip: 1
                         }),
-                        Jr = {},
-                        Wr = Object.freeze((Jr.campaign = {
+                        Br = {},
+                        Jr = Object.freeze((Br.campaign = {
                             content: "campaignContent",
                             id: "campaignId",
                             medium: "campaignMedium",
                             name: "campaignName",
                             source: "campaignSource",
                             term: "campaignKeyword"
-                        }, Jr.app_id = 1, Jr.app_installer_id = 1, Jr.app_name = 1, Jr.app_version = 1, Jr.description = "exDescription", Jr.fatal = "exFatal", Jr.language = 1, Jr.page_hostname = "hostname", Jr.transport_type = "transport", Jr[me.aa] = "currencyCode", Jr[me.wf] = 1, Jr[me.nb] = "location", Jr[me.Yd] = "page", Jr[me.La] = "referrer", Jr[me.Tc] = "title", Jr[me.Df] = 1, Jr[me.pb] = 1, Jr)),
+                        }, Br.app_id = 1, Br.app_installer_id = 1, Br.app_name = 1, Br.app_version = 1, Br.description = "exDescription", Br.fatal = "exFatal", Br.language = 1, Br.page_hostname = "hostname", Br.transport_type = "transport", Br[me.aa] = "currencyCode", Br[me.wf] = 1, Br[me.nb] = "location", Br[me.Yd] = "page", Br[me.La] = "referrer", Br[me.Tc] = "title", Br[me.Df] = 1, Br[me.pb] = 1, Br)),
                         Hr = {},
                         zr = Object.freeze((Hr.content_id = 1, Hr.event_action = 1, Hr.event_category = 1, Hr.event_label = 1, Hr.link_attribution = 1, Hr.name = 1, Hr[me.fa] = 1, Hr[me.vf] = 1, Hr[me.Lb] = 1, Hr[me.ca] = 1, Hr)),
                         Zr = Object.freeze({
@@ -2470,8 +2470,8 @@
                                 } else {
                                     var b;
                                     if (b = g !== me.ba ? r(g) : Ct(n, g), zr.hasOwnProperty(g)) ni(zr[g], g, b, i);
-                                    else if (Br.hasOwnProperty(g)) ni(Br[g], g, b, o);
-                                    else if (Wr.hasOwnProperty(g)) ni(Wr[g], g, b, a);
+                                    else if (Wr.hasOwnProperty(g)) ni(Wr[g], g, b, o);
+                                    else if (Jr.hasOwnProperty(g)) ni(Jr[g], g, b, a);
                                     else if (Rr.hasOwnProperty(g)) ni(Rr[g], g, b, s);
                                     else if (/^(dimension|metric|content_group)\d+$/.test(g)) ni(1, g, b, a);
                                     else if (g === me.ba) {
@@ -3072,10 +3072,10 @@
                     };
                     Ri.prototype.getUntrustedUpdateValue = Ri.prototype.Ai;
                     var Ki = [],
-                        Bi = !1,
-                        Ji = !1;
+                        Wi = !1,
+                        Bi = !1;
 
-                    function Wi(e) {
+                    function Ji(e) {
                         var t = e._clear;
                         v(e, (function(e, n) {
                             "_clear" !== e && (t && Re(e, void 0), Re(e, n))
@@ -3096,16 +3096,16 @@
                     }
 
                     function zi() {
-                        for (var e = !1; !Ji && 0 < Ki.length;) {
-                            if (!Bi && Hi()) {
+                        for (var e = !1; !Bi && 0 < Ki.length;) {
+                            if (!Wi && Hi()) {
                                 var t = {},
                                     n = (t.event = "gtm.init_consent", t),
                                     r = {},
                                     i = (r.event = "gtm.init", r),
                                     a = Ki[0]["gtm.uniqueEventId"];
-                                a && (n["gtm.uniqueEventId"] = a - 2, i["gtm.uniqueEventId"] = a - 1), Ki.unshift(n, i), Bi = !0
+                                a && (n["gtm.uniqueEventId"] = a - 2, i["gtm.uniqueEventId"] = a - 1), Ki.unshift(n, i), Wi = !0
                             }
-                            Ji = !0, delete Le.eventModel, Ue();
+                            Bi = !0, delete Le.eventModel, Ue();
                             var o = Ki.shift();
                             if (null != o) {
                                 var s = Ui(o);
@@ -3146,17 +3146,17 @@
                                                 o = void 0
                                             }
                                             if (!o) {
-                                                Ji = !1;
+                                                Bi = !1;
                                                 continue
                                             }
                                         }
-                                        e = Wi(o) || e
+                                        e = Ji(o) || e
                                     }
                                 } finally {
                                     s && Ue(!0)
                                 }
                             }
-                            Ji = !1
+                            Bi = !1
                         }
                         return !e
                     }
@@ -3271,13 +3271,13 @@
                                 var o = $t("__TAG_ASSISTANT");
                                 o.length && o[0].length && (i = 4)
                             }
-                            i || Yi(U.documentElement.getAttribute("data-tag-assistant-present")) && (i = 5), i && B ? function(t) {
+                            i || Yi(U.documentElement.getAttribute("data-tag-assistant-present")) && (i = 5), i && W ? function(t) {
                                 var n = R["google.tagmanager.debugui2.queue"];
                                 n || (n = [], R["google.tagmanager.debugui2.queue"] = n, H("https://" + xe.Cd + "/debug/bootstrap?id=" + xe.J + "&src=GTAG&cond=" + t + "&gtm=" + er()));
                                 var r = {
                                     messageType: "CONTAINER_STARTING",
                                     data: {
-                                        scriptSource: B,
+                                        scriptSource: W,
                                         containerProduct: "OGT",
                                         debug: !1,
                                         id: xe.J
@@ -3300,8 +3300,8 @@
                                     oe.push(f)
                                 }
                                 if (ue = ta, q = Ti, Ee[xe.J] = na, E(Ae, ta.g), V = ge, function() {
-                                        var e = J("dataLayer", []),
-                                            t = J("google_tag_manager", {});
+                                        var e = B("dataLayer", []),
+                                            t = B("google_tag_manager", {});
                                         t = t.dataLayer = t.dataLayer || {},
                                             function(e) {
                                                 an ? e() : sn.push(e)
@@ -3465,7 +3465,7 @@
                         d.o.setup(), S.locale = d.o.locale, this.$setSentryTag("app", "entry"), this.$analytics.setApplication({
                             appTag: "SignIn",
                             appId: "signin",
-                            appVersion: "4.2.1"
+                            appVersion: "4.2.4"
                         })
                     },
                     computed: {
@@ -3589,14 +3589,14 @@
                         app: "marionette",
                         tag: "ecast-test-client",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/ecast-test-client")]).then(n.bind(n, 67363))
+                            return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/ecast-test-client")]).then(n.bind(n, 67363))
                         }))
                     }, {
                         name: "House of Jackbox",
                         app: "marionette",
                         tag: "house-of-jackbox",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/house-of-jackbox")]).then(n.bind(n, 79004))
+                            return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/house-of-jackbox")]).then(n.bind(n, 79004))
                         }))
                     }, {
                         name: "Quiplash 2 International",
@@ -3604,14 +3604,14 @@
                         tag: "quiplash2-international",
                         categoryId: "quiplash2-internationalGame",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/quiplash2-international")]).then(n.bind(n, 43141))
+                            return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/quiplash2-international")]).then(n.bind(n, 43141))
                         }))
                     }, {
                         name: "Guesspionage Crowdplay",
                         app: "marionette",
                         tag: "guesspionage-crowdplay",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/guesspionage-crowdplay")]).then(n.bind(n, 50310))
+                            return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/guesspionage-crowdplay")]).then(n.bind(n, 50310))
                         }))
                     }, {
                         name: "Drawful 2",
@@ -3620,99 +3620,99 @@
                         categoryId: "DrawfulGame",
                         shopItems: ["shirts"],
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(972), n.e("games/drawful2")]).then(n.bind(n, 17411))
+                            return Promise.all([n.e(7416), n.e(524), n.e(6368), n.e(972), n.e("games/drawful2")]).then(n.bind(n, 17411))
                         }))
                     }, {
                         name: "Drawful 2",
                         app: "marionette",
                         tag: "drawful2international",
-                        hasModeration: !0,
+                        features: ["moderation"],
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/drawful2international")]).then(n.bind(n, 76490))
+                            return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/drawful2international")]).then(n.bind(n, 76490))
                         }))
                     }, {
                         name: "Acquisitions, Inc.",
                         app: "marionette",
                         tag: "acquisitions-inc",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/acquisitions-inc")]).then(n.bind(n, 44489))
+                            return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/acquisitions-inc")]).then(n.bind(n, 44489))
                         }))
                     }, {
                         name: "You Don't Know Jack 2015",
                         app: "marionette",
                         tag: "ydkj2015",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(972), n.e("games/ydkj2015")]).then(n.bind(n, 35519))
+                            return Promise.all([n.e(7416), n.e(524), n.e(6368), n.e(972), n.e("games/ydkj2015")]).then(n.bind(n, 35519))
                         }))
                     }, {
                         name: "Drawful",
                         app: "marionette",
                         tag: "drawful",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(972), n.e("games/drawful")]).then(n.bind(n, 81099))
+                            return Promise.all([n.e(7416), n.e(524), n.e(6368), n.e(972), n.e("games/drawful")]).then(n.bind(n, 81099))
                         }))
                     }, {
                         name: "Word Spud",
                         app: "marionette",
                         tag: "wordspud",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(972), n.e("games/wordspud")]).then(n.bind(n, 50977))
+                            return Promise.all([n.e(7416), n.e(524), n.e(6368), n.e(972), n.e("games/wordspud")]).then(n.bind(n, 50977))
                         }))
                     }, {
                         name: "Lie Swatter",
                         app: "marionette",
                         tag: "lieswatter",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(972), n.e("games/lieswatter")]).then(n.bind(n, 93119))
+                            return Promise.all([n.e(7416), n.e(524), n.e(6368), n.e(972), n.e("games/lieswatter")]).then(n.bind(n, 93119))
                         }))
                     }, {
                         name: "Fibbage",
                         app: "marionette",
                         tag: "fibbage",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(972), n.e("games/fibbage")]).then(n.bind(n, 21304))
+                            return Promise.all([n.e(7416), n.e(524), n.e(6368), n.e(972), n.e("games/fibbage")]).then(n.bind(n, 21304))
                         }))
                     }, {
                         name: "Fibbage 2",
                         app: "marionette",
                         tag: "fibbage2",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(972), n.e("games/fibbage2")]).then(n.bind(n, 91791))
+                            return Promise.all([n.e(7416), n.e(524), n.e(6368), n.e(972), n.e("games/fibbage2")]).then(n.bind(n, 91791))
                         }))
                     }, {
                         name: "Earwax",
                         app: "marionette",
                         tag: "earwax",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(972), n.e("games/earwax")]).then(n.bind(n, 36024))
+                            return Promise.all([n.e(7416), n.e(524), n.e(6368), n.e(972), n.e("games/earwax")]).then(n.bind(n, 36024))
                         }))
                     }, {
                         name: "Bidiots",
                         app: "marionette",
                         tag: "auction",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(972), n.e("games/auction")]).then(n.bind(n, 41571))
+                            return Promise.all([n.e(7416), n.e(524), n.e(6368), n.e(972), n.e("games/auction")]).then(n.bind(n, 41571))
                         }))
                     }, {
                         name: "Bomb Corp",
                         app: "marionette",
                         tag: "bombintern",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(972), n.e("games/bombintern")]).then(n.bind(n, 63191))
+                            return Promise.all([n.e(7416), n.e(524), n.e(6368), n.e(972), n.e("games/bombintern")]).then(n.bind(n, 63191))
                         }))
                     }, {
                         name: "Quiplash",
                         app: "marionette",
                         tag: "quiplash",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(972), n.e("games/quiplash")]).then(n.bind(n, 64304))
+                            return Promise.all([n.e(7416), n.e(524), n.e(6368), n.e(972), n.e("games/quiplash")]).then(n.bind(n, 64304))
                         }))
                     }, {
                         name: "Fakin' It",
                         app: "marionette",
                         tag: "fakinit",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(972), n.e("games/fakinit")]).then(n.bind(n, 22987))
+                            return Promise.all([n.e(7416), n.e(524), n.e(6368), n.e(972), n.e("games/fakinit")]).then(n.bind(n, 22987))
                         }))
                     }, {
                         name: "Tee K.O.",
@@ -3721,7 +3721,7 @@
                         categoryId: "TeeKOGame",
                         shopItems: ["shirts"],
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(382), n.e(972), n.e("games/awshirt")]).then(n.bind(n, 79039))
+                            return Promise.all([n.e(7416), n.e(524), n.e(6368), n.e(382), n.e(972), n.e("games/awshirt")]).then(n.bind(n, 79039))
                         }))
                     }, {
                         name: "Quiplash 2",
@@ -3729,7 +3729,7 @@
                         tag: "quiplash2",
                         categoryId: "Quiplash2Game",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(972), n.e("games/quiplash2")]).then(n.bind(n, 16190))
+                            return Promise.all([n.e(7416), n.e(524), n.e(6368), n.e(972), n.e("games/quiplash2")]).then(n.bind(n, 16190))
                         }))
                     }, {
                         name: "Trivia Murder Party",
@@ -3737,21 +3737,21 @@
                         tag: "triviadeath",
                         categoryId: "TriviaDeathResults",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(972), n.e("games/triviadeath")]).then(n.bind(n, 77342))
+                            return Promise.all([n.e(7416), n.e(524), n.e(6368), n.e(972), n.e("games/triviadeath")]).then(n.bind(n, 77342))
                         }))
                     }, {
                         name: "Guesspionage",
                         app: "marionette",
                         tag: "pollposition",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(972), n.e("games/pollposition")]).then(n.bind(n, 57879))
+                            return Promise.all([n.e(7416), n.e(524), n.e(6368), n.e(972), n.e("games/pollposition")]).then(n.bind(n, 57879))
                         }))
                     }, {
                         name: "Fibbage 3",
                         app: "marionette",
                         tag: "fibbage3",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/fibbage3")]).then(n.bind(n, 76516))
+                            return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/fibbage3")]).then(n.bind(n, 76516))
                         }))
                     }, {
                         name: "Survive the Internet",
@@ -3759,7 +3759,7 @@
                         tag: "survivetheinternet",
                         categoryId: "STIGame",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/survivetheinternet")]).then(n.bind(n, 73315))
+                            return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/survivetheinternet")]).then(n.bind(n, 73315))
                         }))
                     }, {
                         name: "Monster Seeking Monster",
@@ -3767,7 +3767,7 @@
                         tag: "monstermingle",
                         categoryId: "MonsterMingleGame",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/monstermingle")]).then(n.bind(n, 54750))
+                            return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/monstermingle")]).then(n.bind(n, 54750))
                         }))
                     }, {
                         name: "Bracketeering",
@@ -3775,7 +3775,7 @@
                         tag: "bracketeering",
                         categoryId: "BRKGame",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/bracketeering")]).then(n.bind(n, 10335))
+                            return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/bracketeering")]).then(n.bind(n, 10335))
                         }))
                     }, {
                         name: "Kritzel Witzel",
@@ -3784,7 +3784,7 @@
                         categoryId: "OverdrawnGame",
                         shopItems: ["shirts"],
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/overdrawn")]).then(n.bind(n, 4342))
+                            return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/overdrawn")]).then(n.bind(n, 4342))
                         }))
                     }, {
                         name: "You Don't Know Jack 2018",
@@ -3792,7 +3792,7 @@
                         tag: "ydkj2018",
                         categoryId: "YDKJ2018Game",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/ydkj2018")]).then(n.bind(n, 94239))
+                            return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/ydkj2018")]).then(n.bind(n, 94239))
                         }))
                     }, {
                         name: "Split the Room",
@@ -3800,7 +3800,7 @@
                         tag: "splittheroom",
                         categoryId: "SplitTheRoomGame",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/splittheroom")]).then(n.bind(n, 14433))
+                            return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/splittheroom")]).then(n.bind(n, 14433))
                         }))
                     }, {
                         name: "Mad Verse City",
@@ -3808,7 +3808,7 @@
                         tag: "rapbattle",
                         categoryId: "RapBattleGame",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/rapbattle")]).then(n.bind(n, 94059))
+                            return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/rapbattle")]).then(n.bind(n, 94059))
                         }))
                     }, {
                         name: "Zeeple Dome",
@@ -3816,7 +3816,7 @@
                         tag: "slingshoot",
                         categoryId: "SlingShootGame",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/slingshoot")]).then(n.bind(n, 41919))
+                            return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/slingshoot")]).then(n.bind(n, 41919))
                         }))
                     }, {
                         name: "Patently Stupid",
@@ -3825,7 +3825,7 @@
                         categoryId: "PatentlyStupidGame",
                         shopItems: ["mugs"],
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/patentlystupid")]).then(n.bind(n, 41073))
+                            return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/patentlystupid")]).then(n.bind(n, 41073))
                         }))
                     }, {
                         name: "Trivia Murder Party 2",
@@ -3833,7 +3833,7 @@
                         tag: "triviadeath2",
                         categoryId: "TriviaDeath2Game",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/triviadeath2")]).then(n.bind(n, 20188))
+                            return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/triviadeath2")]).then(n.bind(n, 20188))
                         }))
                     }, {
                         name: "Role Models",
@@ -3843,7 +3843,7 @@
                         shopItems: ["shirts"],
                         features: ["camera"],
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/rolemodels")]).then(n.bind(n, 24970))
+                            return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/rolemodels")]).then(n.bind(n, 24970))
                         }))
                     }, {
                         name: "Joke Boat",
@@ -3851,7 +3851,7 @@
                         tag: "jokeboat",
                         categoryId: "JokeboatGame",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/jokeboat")]).then(n.bind(n, 50946))
+                            return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/jokeboat")]).then(n.bind(n, 50946))
                         }))
                     }, {
                         name: "Dictionarium",
@@ -3859,7 +3859,7 @@
                         tag: "ridictionary",
                         categoryId: "RidictionaryGame",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/ridictionary")]).then(n.bind(n, 85993))
+                            return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/ridictionary")]).then(n.bind(n, 85993))
                         }))
                     }, {
                         name: "Push the Button",
@@ -3867,26 +3867,25 @@
                         tag: "pushthebutton",
                         categoryId: "PushTheButtonGame",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/pushthebutton")]).then(n.bind(n, 56716))
+                            return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/pushthebutton")]).then(n.bind(n, 56716))
                         }))
                     }, {
                         name: "Talking Points",
                         app: "marionette",
                         tag: "jackbox-talks",
-                        hasModeration: !0,
+                        features: ["camera", "moderation"],
                         categoryId: "JackboxTalksGame",
-                        features: ["camera"],
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/jackbox-talks")]).then(n.bind(n, 54677))
+                            return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/jackbox-talks")]).then(n.bind(n, 54677))
                         }))
                     }, {
                         name: "Quiplash 3",
                         app: "marionette",
                         tag: "quiplash3",
-                        hasModeration: !0,
+                        features: ["moderation"],
                         categoryId: "quiplash3Game",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/quiplash3")]).then(n.bind(n, 99499))
+                            return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/quiplash3")]).then(n.bind(n, 99499))
                         }))
                     }, {
                         name: "The Devils and the Details",
@@ -3895,17 +3894,17 @@
                         categoryId: "EverydayGame",
                         shopItems: ["mugs"],
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(1978), n.e(38), n.e(972), n.e(4442), n.e(4340), n.e("games/everyday")]).then(n.bind(n, 7851))
+                            return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(1978), n.e(38), n.e(972), n.e(4442), n.e(4340), n.e("games/everyday")]).then(n.bind(n, 7851))
                         }))
                     }, {
                         name: "Champ'd Up",
                         app: "marionette",
                         tag: "worldchamps",
-                        hasModeration: !0,
+                        features: ["moderation"],
                         categoryId: "WorldChampionsGame",
                         shopItems: ["cards"],
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/worldchamps")]).then(n.bind(n, 35783))
+                            return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/worldchamps")]).then(n.bind(n, 35783))
                         }))
                     }, {
                         name: "Blather 'Round",
@@ -3913,13 +3912,13 @@
                         tag: "blanky-blank",
                         categoryId: "BlankyBlankGame",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(990), n.e(1916), n.e(972), n.e(4442), n.e(4340), n.e("games/blanky-blank")]).then(n.bind(n, 47642))
+                            return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(1916), n.e(972), n.e(4442), n.e(4340), n.e("games/blanky-blank")]).then(n.bind(n, 47642))
                         }))
                     }, {
                         name: "Job Job",
                         app: "vue",
                         tag: "apply-yourself",
-                        hasModeration: !0,
+                        features: ["moderation"],
                         categoryId: "JobGameGame",
                         hasPreviews: !0,
                         importFn: () => r(void 0, void 0, void 0, (function*() {
@@ -3931,7 +3930,7 @@
                         tag: "the-wheel",
                         categoryId: "TheWheelGame",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(1978), n.e(8990), n.e(5853), n.e(7381), n.e("games/the-wheel")]).then(n.bind(n, 21057))
+                            return Promise.all([n.e(7416), n.e(1978), n.e(8990), n.e(5853), n.e(7381), n.e("games/the-wheel")]).then(n.bind(n, 21057))
                         }))
                     }, {
                         name: "Die Poll Mine",
@@ -3945,7 +3944,7 @@
                         name: "Weapons Drawn",
                         app: "vue",
                         tag: "murder-detectives",
-                        hasModeration: !0,
+                        features: ["moderation"],
                         categoryId: "MurderDetectivesGame",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
                             return Promise.all([n.e(9623), n.e(5853), n.e(7381), n.e(2530), n.e("games/murder-detectives")]).then(n.bind(n, 28274))
@@ -3954,7 +3953,7 @@
                         name: "Drawful Animate",
                         app: "vue",
                         tag: "drawful-animate",
-                        hasModeration: !0,
+                        features: ["moderation"],
                         categoryId: "DrawfulAnimateGame",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
                             return Promise.all([n.e(9623), n.e(7611), n.e(5853), n.e(7381), n.e(2530), n.e("games/drawful-animate")]).then(n.bind(n, 66333))
@@ -3963,15 +3962,16 @@
                         name: "Quiplash 3",
                         app: "vue",
                         tag: "quiplash3-tjsp",
-                        hasModeration: !0,
+                        features: ["moderation"],
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(5853), n.e(7381), n.e("games/quiplash3-tjsp")]).then(n.bind(n, 64785))
+                            return Promise.all([n.e(7416), n.e(5853), n.e(7381), n.e(2828), n.e("games/quiplash3-tjsp")]).then(n.bind(n, 64785))
                         }))
                     }, {
                         name: "Tee K.O.",
                         app: "vue",
                         tag: "awshirt-tjsp",
-                        hasModeration: !0,
+                        features: ["moderation"],
+                        shopItems: ["shirts"],
                         importFn: () => r(void 0, void 0, void 0, (function*() {
                             return Promise.all([n.e(2529), n.e(5853), n.e(7381), n.e(3317), n.e("games/awshirt-tjsp")]).then(n.bind(n, 12659))
                         }))
@@ -3980,7 +3980,7 @@
                         app: "vue",
                         tag: "triviadeath2-tjsp",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(4442), n.e(5853), n.e(7381), n.e(3317), n.e("games/triviadeath2-tjsp")]).then(n.bind(n, 87383))
+                            return Promise.all([n.e(7416), n.e(4442), n.e(5853), n.e(7381), n.e(3317), n.e(2828), n.e("games/triviadeath2-tjsp")]).then(n.bind(n, 87383))
                         }))
                     }],
                     o = e => i.includes(e),
@@ -4318,7 +4318,7 @@
                                 c = `${r} ${1===r?"entity":"entities"}`,
                                 l = [{
                                     type: "mrkdwn",
-                                    text: "*Version:* 4.2.1"
+                                    text: "*Version:* 4.2.4"
                                 }, {
                                     type: "mrkdwn",
                                     text: `*Domain:* ${window.location.hostname}`
@@ -4827,6 +4827,14 @@
                                 set(e) {
                                     p.wsClient || (p.wsClient = e, e.on("notification", p.sync), e.on("connection", p.sync), e.on("artifact", (e => f.Q.add(e))), p.sync())
                                 }
+                            }), Object.defineProperty(e.prototype, "$clientWelcome", {
+                                get() {
+                                    if (!p.clientWelcome) throw Error("[ecastPlugin] ClientWelcome does not exist yet");
+                                    return p.clientWelcome
+                                },
+                                set(e) {
+                                    p.clientWelcome = e
+                                }
                             }), e.prototype.$syncEcast = p.sync, e.prototype.$pauseEcastUpdates = p.pause, e.prototype.$resumeEcastUpdates = p.resume, e.mixin({
                                 beforeCreate() {
                                     this.$options.usesBlobcast && (p.shouldParseBlobcast = !0), this.$options.ecastKeys && p.addKeys(this.$options.ecastKeys), this.$options.ecastProviders && p.addProviders(this.$options.ecastProviders)
@@ -4868,7 +4876,7 @@
                             environment: s.c.clientEnvironment,
                             ignoreErrors: ["ceCurrentVideo.currentTime", "chrome-extension", "ResizeObserver", "webkitExitFullScreen", "window.webkit.messageHandlers.selectedTextHandler.postMessage", "promiseResolveThenableJob", "Cannot read property 'then' of undefined", "null is not an object (evaluating 't.scrollHeight')", "Cannot read properties of null (reading 'removeEventListener')"],
                             logErrors: !0,
-                            release: "jackbox-tv@4.2.1",
+                            release: "jackbox-tv@4.2.4",
                             beforeSend: (e, t) => {
                                 return n = this, r = void 0, c = function*() {
                                     if (t.originalException instanceof a.EcastEntityNotFound) return i.uT("no entity found having key", {
@@ -4965,7 +4973,7 @@
                             const r = null !== (t = null === (e = this.error.event) || void 0 === e ? void 0 : e.event_id) && void 0 !== t ? t : "Unknown";
                             let i = "";
                             const a = null === (n = this.error.hint) || void 0 === n ? void 0 : n.originalException;
-                            return i = a ? "string" == typeof a ? a : a.message : "An unknown error occured", `Version:\n4.2.1\n\nEvent ID:\n${r}\n\n${i}`
+                            return i = a ? "string" == typeof a ? a : a.message : "An unknown error occured", `Version:\n4.2.4\n\nEvent ID:\n${r}\n\n${i}`
                         }
                     },
                     methods: {
@@ -5471,4 +5479,4 @@
     var u = l.O(void 0, [5221], (() => l(61966)));
     u = l.O(u)
 })();
-//# sourceMappingURL=sourcemaps/main.9aa06ead658a0c14e151.js.map
+//# sourceMappingURL=sourcemaps/main.c6470b53c02689ac3a08.js.map

@@ -560,7 +560,7 @@
                                     if (t) {
                                         s()("#make-single-choice-text").html(`<p>${i}</p>`);
                                         let t = "";
-                                        for (let e = 0; e < n.length; e++) t += `<button data-choice="${e}" class="${n[e].disabled?`background-finger background-finger-${e}`:""} light-text button-choice button-game button-large btn" ${n[e].disabled?"disabled":""}>${n[e].disabled?"&zwnj;":n[e].text}</button>`;
+                                        for (let e = 0; e < n.length; e++) t += `<button data-choice="${e}" class="${n[e].disabled?`background-finger background-finger-${e}`:""} light-text button-choice button-game button-large btn" ${n[e].disabled?"disabled":""}>${n[e].disabled?"&zwnj;":(l=="Gib das Muster durch das Tippen der Knöpfe wieder."?n[e].text.replace("Orange","Orange").replace("Blue","Blau").replace("Green","Grün").replace("Gun","Pistole").replace("Knife","Messer").replace("Hammer","Hammer").replace("Grenade","Granate"):n[e].text)}</button>`;
                                         s()("#make-single-choice-choices").html(t)
                                     } else s()("#make-single-choice-text").html("<p>Danke.</p>"), s()("#make-single-choice-choices").html("");
                                     this.showScreen("#state-make-single-choice")
@@ -579,7 +579,7 @@
                             else if ("EnterSingleDrawing" === i)
                                 if (e.entry) this.showScreen("#state-logo");
                                 else {
-                                    s()("#enter-single-drawing-text-container").html(`<p>Please Draw :<br>${e.text}</p>`), this.showScreen("#state-enter-single-drawing");
+                                    s()("#enter-single-drawing-text-container").html(`<p>Bitte zeichne :<br>${e.text}</p>`), this.showScreen("#state-enter-single-drawing");
                                     const t = this.$el.find("#sketchpad")[0],
                                         i = t.getContext("2d"),
                                         n = this.$el.find("#player").outerHeight() + this.$el.find("#enter-single-drawing-text-container").outerHeight() + this.$el.find("#enter-single-drawing-submit-container").outerHeight();

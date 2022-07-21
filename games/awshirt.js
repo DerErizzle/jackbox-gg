@@ -282,8 +282,8 @@
                 },
                 onRoomWasDestroyed() {
                     h.app.storage && h.app.storage.isSupported && (h.app.storage.remove("roomCode"), h.app.storage.remove("reconnect")), p.b.show("error", {
-                        titleText: "Disconnected",
-                        text: "Thanks for playing!",
+                        titleText: "Verbindung getrennt",
+                        text: "Danke für's spielen!",
                         willClose: () => {
                             window.location.reload(!0)
                         }
@@ -291,8 +291,8 @@
                 },
                 onDisconnected() {
                     p.b.show("error", {
-                        titleText: "Disconnected",
-                        text: "You have been disconnected.",
+                        titleText: "Verbindung getrennt",
+                        text: "Danke für's spielen!",
                         willClose: () => {
                             window.location.reload(!0)
                         }

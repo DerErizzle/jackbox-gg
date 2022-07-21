@@ -181,7 +181,7 @@
                     staticClass: "error"
                 }, [e._v(e._s(e.player.error))]) : e._e(), e._v(" "), e.badAnswer ? s("span", {
                     staticClass: "error"
-                }, [e._v("That's not allowed! Please enter something else.")]) : e._e()]) : e._e(), e._v(" "), s("button", {
+                }, [e._v("Das ist nicht erlaubt! Bitte gib etwas anderes ein.")]) : e._e()]) : e._e(), e._v(" "), s("button", {
                     staticClass: "submit-button control",
                     attrs: {
                         type: "submit",

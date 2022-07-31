@@ -38,7 +38,7 @@
                         key: n
                     }), this.$el.find("#input-region").prop("hidden", !0), this.$el.find("#buttons").prop("hidden", !0)) : (this.guesses.push(o), this.model.setUpdate({
                         prompt: {
-                            html: `${this.prompt.html}<br />\n                        <span class="description">${s} isn't right, keep trying!</span>\n                    `
+                            html: `${this.prompt.html}<br />\n                        <span class="description">${s} ist nicht richtig. Versuch es weiter!</span>\n                    `
                         }
                     })), this.model.setUpdate({
                         error: l
@@ -432,7 +432,7 @@
                             text: "Submit"
                         }]) : "writing" === n ? this.navigationCollection.set([{
                             disabled: !0,
-                            text: "Make a sentence!"
+                            text: "Baue einen Satz!"
                         }]) : l ? this.navigationCollection.set([{
                             action: "skipSentence",
                             text: "Skip"
@@ -513,7 +513,7 @@
                     defaults: {
                         entryId: "sentence0",
                         prompt: {
-                            text: "Unknown prompt!"
+                            text: "Unbekannter Prompt!"
                         },
                         sentence: {
                             words: [{
@@ -533,7 +533,7 @@
                 }),
                 D = g().View.extend({
                     className: "MakeSentence scrollable",
-                    template: a().template('<div id="controller" class="state-controller controller-content"> <span id="prompt" class="">Describe prompt</span> <div id="sentence" class="">sentence</div> </div>'),
+                    template: a().template('<div id="controller" class="state-controller controller-content"> <span id="prompt" class="">Prompt beschreiben</span> <div id="sentence" class="">sentence</div> </div>'),
                     model: new L,
                     childViewEvents: {
                         "change:word": "changeSentence",
@@ -613,7 +613,7 @@
                 },
                 parseBlob(e) {
                     switch (e.isAudience && (e.playerInfo = {
-                            username: "AUDIENCE"
+                            username: "PUBLIKUM"
                         }), e.state) {
                         case "MakeSentence":
                             e.playerInfo && (e.playerInfo.topBarColor = A().playerBarPresenter);

@@ -560,7 +560,7 @@
                                     if (t) {
                                         s()("#make-single-choice-text").html(`<p>${i}</p>`);
                                         let t = "";
-                                        for (let e = 0; e < n.length; e++) t += `<button data-choice="${e}" class="${n[e].disabled?`background-finger background-finger-${e}`:""} light-text button-choice button-game button-large btn" ${n[e].disabled?"disabled":""}>${n[e].disabled?"&zwnj;":(l=="Gib das Muster durch das Tippen der Knöpfe wieder."?n[e].text.replace("Orange","Orange").replace("Blue","Blau").replace("Green","Grün").replace("Gun","Pistole").replace("Knife","Messer").replace("Hammer","Hammer").replace("Grenade","Granate"):n[e].text)}</button>`;
+                                        for (let e = 0; e < n.length; e++) t += `<button data-choice="${e}" class="${n[e].disabled?`background-finger background-finger-${e}`:""} light-text button-choice button-game button-large btn" ${n[e].disabled?"disabled":""}>${n[e].disabled?"&zwnj;":(i=="Gib das Muster durch das Tippen der Knöpfe wieder."?n[e].text.replace("Orange","Orange").replace("Blue","Blau").replace("Green","Grün").replace("Gun","Pistole").replace("Knife","Messer").replace("Hammer","Hammer").replace("Grenade","Granate"):n[e].text)}</button>`;
                                         s()("#make-single-choice-choices").html(t)
                                     } else s()("#make-single-choice-text").html("<p>Danke.</p>"), s()("#make-single-choice-choices").html("");
                                     this.showScreen("#state-make-single-choice")

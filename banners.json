@@ -29,17 +29,14 @@
             "text": "Noch unsicher?",
             "src": "/assets/custom/empfehlungen.png",
             "href": "https://jackboxpatch.de/Empfehlungen.html"
-        
         },
         {
             "start": "2020-10-15",
             "text": "Übersetzungen unterstützen",
             "src": "/assets/custom/patreon.png",
             "href": "https://www.patreon.com/join/jackboxpatch/"
-        
         }
     ],
-
     "postGameBanners": {
         "quiplash3": {
             "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 6!",

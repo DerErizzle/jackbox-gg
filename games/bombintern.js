@@ -82,7 +82,7 @@
                         action: "SlideBannerClicked",
                         label: this.getCampaign(),
                         value: 0
-                    }), this.model.get("url") && window.open(this.model.get("url"), "_blank")
+                    }, !0), this.model.get("url") && window.open(this.model.get("url"), "_blank")
                 },
                 onRender() {
                     this.stickit()
@@ -95,7 +95,7 @@
                         action: "SlideBannerOn",
                         label: this.getCampaign(),
                         value: 0
-                    })
+                    }, !0)
                 },
                 getCampaign() {
                     const e = this.model.get("url");
@@ -176,7 +176,7 @@
             const f = l().View.extend({
                 appId: "legacymain",
                 appTag: "legacymain",
-                appVersion: "4.2.4",
+                appVersion: "4.2.10",
                 template: null,
                 initialize(e) {
                     this.mergeOptions(e, ["appId", "appTag"]), p.app.analytics.setApplication({
@@ -498,13 +498,7 @@
                                 }
                                 break;
                             case "DayEnd":
-                                switch (a) {
-                                    case "DayEndDecision":
-                                        e.$el.find("#bombintern-dayend-text").html("Day Complete!"), e.showScreen(".state-dayend");
-                                        break;
-                                    default:
-                                        e.$el.find("#bombintern-message-text").html("Day Complete!"), e.showScreen(".state-message")
-                                }
+                                "DayEndDecision" === a ? (e.$el.find("#bombintern-dayend-text").html("Day Complete!"), e.showScreen(".state-dayend")) : (e.$el.find("#bombintern-message-text").html("Day Complete!"), e.showScreen(".state-message"));
                                 break;
                             case "GameOver":
                                 switch (a) {
@@ -600,11 +594,6 @@
                                     break;
                                 case "WiredBomb":
                                 case "CoffeeBomb":
-                                    s += "<span>FOLLOW THE INSTRUCTIONS</span>";
-                                    break;
-                                case "FilingBomb":
-                                case "CopierBomb":
-                                    break;
                                 case "KeypadBomb":
                                     s += "<span>FOLLOW THE INSTRUCTIONS</span>"
                             }
@@ -830,4 +819,4 @@
         }
     }
 ]);
-//# sourceMappingURL=sourcemaps/3191.908863961ae4a91d93c4.js.map
+//# sourceMappingURL=sourcemaps/3191.bad1f4537db7942185fa.js.map

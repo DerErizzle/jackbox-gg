@@ -3894,7 +3894,7 @@
                             return Promise.all([n.e(7416), n.e(524), n.e(990), n.e(972), n.e(4442), n.e(4340), n.e("games/quiplash3")]).then(n.bind(n, 99499))
                         }))
                     }, {
-                        name: "The Devils and the Details",
+                        name: "Die Teufel im Detail",
                         app: "marionette",
                         tag: "everyday",
                         categoryId: "EverydayGame",

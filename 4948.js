@@ -1380,7 +1380,7 @@
                     staticClass: "confirm"
                 }, [i("div", {
                     staticClass: "contain"
-                }, [i("p", [i("span", [e._v("Are you sure?")]), e._v("\n                    This will permanently remove this game"), i("br"), e._v("from your past games list.\n                ")]), e._v(" "), i("button", {
+                }, [i("p", [i("span", [e._v("Bist du sicher?")]), e._v("\n                    Dadurch wird dieses Spiel dauerhaft"), i("br"), e._v("aus der Liste entfernt.\n                ")]), e._v(" "), i("button", {
                     staticClass: "confirm-yes",
                     on: {
                         click: function(t) {
@@ -1412,7 +1412,7 @@
                     },
                     name() {
                         var e, t;
-                        return this.showConfirm ? "Are You Sure?" : this.isManaging ? "Remove Game?" : null !== (t = null === (e = this.config) || void 0 === e ? void 0 : e.name) && void 0 !== t ? t : ""
+                        return this.showConfirm ? "Bist du sicher?" : this.isManaging ? "Spiel entfernen?" : null !== (t = null === (e = this.config) || void 0 === e ? void 0 : e.name) && void 0 !== t ? t : ""
                     },
                     imageClasses() {
                         var e;

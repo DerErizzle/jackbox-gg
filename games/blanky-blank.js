@@ -429,17 +429,17 @@
                             l = e.includes(parseInt(Object.keys(o).slice(-1)[0], 10));
                         i ? this.navigationCollection.set([{
                             action: "submitSentence",
-                            text: "Submit"
+                            text: "Senden"
                         }]) : "writing" === n ? this.navigationCollection.set([{
                             disabled: !0,
                             text: "Baue einen Satz!"
                         }]) : l ? this.navigationCollection.set([{
                             action: "skipSentence",
-                            text: "Skip"
+                            text: "Überspringen"
                         }]) : this.navigationCollection.set([{
                             action: "nextBlank",
                             disabled: !c,
-                            text: "Next"
+                            text: "Weiter"
                         }])
                     },
                     updateSelectedSentence(e, t) {

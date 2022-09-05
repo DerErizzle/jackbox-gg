@@ -412,16 +412,16 @@
                                     e.currentStream = t, e.video.srcObject = t, yield e.video.play(), e.gotDevices(s)
                                 } catch (i) {
                                     console.error(i), d.b.show("alert", {
-                                        titleText: "Unable to Access Camera",
-                                        text: `Looks like we don't have access to your device's camera. You can refresh and try again, or choose the ${t} option instead.`,
+                                        titleText: "Kamera konnte nicht geladen werden",
+                                        text: `Scheinbar haben wir keinen Zugriff auf deine Kamera. Du kannst die Seite neu laden und es nochmal versuchen, oder stattdessen die ${t} Option auswählen.`,
                                         willClose: () => {
                                             e.cameraAccessDenied()
                                         }
                                     })
                                 }
                             } else d.b.show("alert", {
-                                titleText: "No Camera Access",
-                                text: `It looks like camera access isn't available from this browser. Try the ${t} option instead.`,
+                                titleText: "Kein Kamera Zugriff",
+                                text: `Scheinbar hat der Browser keinen Zugriff auf deine Kamera. Versuche stattdessen die ${t} Option.`,
                                 willClose: () => {
                                     e.cameraAccessDenied()
                                 }
@@ -1053,11 +1053,11 @@
                         autocapitalize: !1,
                         className: "",
                         inlineSubmit: !1,
-                        inlineSubmitText: "Submit",
+                        inlineSubmitText: "Senden",
                         error: "",
                         strings: {
-                            ERROR_NOTHING_ENTERED: "You need to enter something!",
-                            ERROR_REJECTED_TEXT: "That's not allowed, enter something else! (You can change the level of filtering in the game's settings menu)"
+                            ERROR_NOTHING_ENTERED: "Du musst etwas eingeben!",
+                            ERROR_REJECTED_TEXT: "Das ist nicht erlaubt, gib etwas anderes ein! (Du kannst das Filter-Level in den Einstellungen des Spiels anpassen)"
                         }
                     }
                 }),
@@ -1935,10 +1935,10 @@
                         doneText: {},
                         announcePrompt: !1,
                         strings: {
-                            your_choice: "Thank you. Your choice: ",
-                            censor_prompt: "Censor this?",
-                            censor_confirm: "Yes, Censor!",
-                            censor_cancel: "No!"
+                            your_choice: "Vielen Dank. Deine Wahl: ",
+                            censor_prompt: "Das zensieren?",
+                            censor_confirm: "Ja, zensieren!",
+                            censor_cancel: "Nein!"
                         }
                     }
                 }),
@@ -2847,10 +2847,10 @@
                         announcePrompt: !1,
                         countGroupName: null,
                         strings: {
-                            your_choice: "Thank you. Your choice: ",
-                            censor_prompt: "Censor this?",
-                            censor_confirm: "Yes, Censor!",
-                            censor_cancel: "No!"
+                            your_choice: "Vielen Dank. Deine Wahl: ",
+                            censor_prompt: "Das zensieren?",
+                            censor_confirm: "Ja, zensieren!",
+                            censor_cancel: "Nein!"
                         }
                     }
                 }),
@@ -2922,7 +2922,7 @@
                         this.promptComponent.model.clear({
                             silent: !0
                         }).set(this.model.get("prompt")), this.choicesList.options.block = this.model.get("block"), this.choicesList.collection.set(this.model.get("choices")), "multiple" === this.model.get("type") && a().all(this.model.get("choices"), (t => !t.disabled)) && this.choicesList.collection.push({
-                            text: "Submit",
+                            text: "Senden",
                             action: "submit",
                             block: !1
                         }), this.model.get("isAudience") && (void 0 !== this.model.get("choiceId") && this.model.get("choiceId") === this.getOption("choiceId") || (this.selected = [], this.audienceChoice = void 0, this.votesLeft = void 0), this.selected.length > 0 && ("multiple" === this.model.get("type") ? this.choicesList.children.forEach((t => {
@@ -2975,7 +2975,7 @@
                         })), !1
                     },
                     displayAudienceChoice(t) {
-                        let e = "Thank you.";
+                        let e = "Vielen Dank.";
                         const i = t.map((t => {
                             const e = this.choicesList.children.find((e => e.model.get("index") === t));
                             return e ? e.model.get("html") || e.model.get("text") : ""
